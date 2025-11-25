@@ -12,26 +12,18 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo-2.svg"
-                    alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
-                  />
-                  <Image
                     src="/images/logo/logo.svg"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
+                    alt="UMAssist logo"
+                    className="w-auto h-10"
+                    width={40}
+                    height={40}
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  My socials if you want to reach out below!
                 </p>
                 <div className="flex items-center">
-                  <a
+                  {/* <a
                     href="/"
                     aria-label="social-link"
                     target="_blank"
@@ -50,9 +42,9 @@ const Footer = () => {
                         fill="currentColor"
                       />
                     </svg>
-                  </a>
+                  </a> */}
                   <a
-                    href="/"
+                    href="https://x.com/_t2ddy"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -74,7 +66,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://github.com/t-2ddy"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -82,15 +74,21 @@ const Footer = () => {
                   >
                     <svg
                       width="18"
-                      height="14"
-                      viewBox="0 0 18 14"
-                      className="fill-current"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path d="M17.5058 2.07119C17.3068 1.2488 16.7099 0.609173 15.9423 0.395963C14.5778 7.26191e-08 9.0627 0 9.0627 0C9.0627 0 3.54766 7.26191e-08 2.18311 0.395963C1.41555 0.609173 0.818561 1.2488 0.619565 2.07119C0.25 3.56366 0.25 6.60953 0.25 6.60953C0.25 6.60953 0.25 9.68585 0.619565 11.1479C0.818561 11.9703 1.41555 12.6099 2.18311 12.8231C3.54766 13.2191 9.0627 13.2191 9.0627 13.2191C9.0627 13.2191 14.5778 13.2191 15.9423 12.8231C16.7099 12.6099 17.3068 11.9703 17.5058 11.1479C17.8754 9.68585 17.8754 6.60953 17.8754 6.60953C17.8754 6.60953 17.8754 3.56366 17.5058 2.07119ZM7.30016 9.44218V3.77687L11.8771 6.60953L7.30016 9.44218Z" />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.544 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                        fill="currentColor"
+                      />
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/in/theoleonard777/"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -120,7 +118,7 @@ const Footer = () => {
                       href="/blog"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Guides
                     </Link>
                   </li>
                   <li>
@@ -215,23 +213,14 @@ const Footer = () => {
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
+              If you want to learn more about me check out my{" "}
               <a
-                href="http://uideck.com"
+                href="https://t2ddy-personal.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary"
+                className="hover:text-primary text-primary"
               >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
+                portfolio here
               </a>
             </p>
           </div>

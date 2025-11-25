@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -51,12 +52,19 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
+                className={`header-logo flex items-center gap-2 ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
+                <Image
+                  src="/images/logo/logo.svg"
+                  alt="UMAssist logo"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10"
+                />
                 <span className="text-2xl font-bold text-black dark:text-white">
-                  Uma Guides
+                  UMAssist
                 </span>
               </Link>
             </div>

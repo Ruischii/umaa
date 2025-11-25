@@ -7,20 +7,20 @@ const AboutSectionTwo = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div
-              className="relative mx-auto mb-12 aspect-25/24 max-w-[500px] text-center lg:m-0"
+              className="relative mx-auto mb-12 aspect-25/24 max-w-[600px] text-center lg:m-0"
               data-wow-delay=".15s"
             >
               <Image
-                src="/images/about/about-image-2.svg"
+                src="/images/about/aboutImg2.svg"
                 alt="about image"
                 fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
+                className="dark:hidden"
               />
               <Image
-                src="/images/about/about-image-2-dark.svg"
+                src="/images/about/aboutImg2.svg"
                 alt="about image"
                 fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                className="hidden dark:block"
               />
             </div>
           </div>
@@ -28,29 +28,27 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
+                  Top Player Assisted
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  All guide information is taken from the to players within the global community. This ensures
+                  on the accuracy and reliability of the information provided.
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
+                  Universal Guides
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  From casual players to spenders, everyone gets actionable insights for building competitive umas.
                 </p>
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
+                  Overview
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
+                  Every guide is written to be understandable at a glance with the info you need to train and race effectively.
                 </p>
               </div>
             </div>
