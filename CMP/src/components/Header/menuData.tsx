@@ -20,6 +20,12 @@ const menuData: Menu[] = [
     newTab: false,
   },
   {
+    id: 34,
+    title: "Team Trials",
+    path: "/team-trials",
+    newTab: false,
+  },
+  {
     id: 3,
     title: "Support",
     path: "/contact",
