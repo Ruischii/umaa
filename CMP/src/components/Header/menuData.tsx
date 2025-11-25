@@ -15,8 +15,8 @@ const menuData: Menu[] = [
   },
   {
     id: 33,
-    title: "Guides",
-    path: "/blog",
+    title: "CM Guides",
+    path: "/guides",
     newTab: false,
   },
   {
@@ -50,14 +50,14 @@ const menuData: Menu[] = [
       },
       {
         id: 43,
-        title: "Guides Grid Page",
-        path: "/blog",
+        title: "CM Guides Grid Page",
+        path: "/guides",
         newTab: false,
       },
       {
         id: 45,
-        title: "Guides Details Page",
-        path: "/blog-details",
+        title: "CM Guides Details Page",
+        path: "/guides-details",
         newTab: false,
       },
       {

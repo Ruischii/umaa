@@ -1,5 +1,6 @@
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
+import GuideNav from "@/components/Common/GuideNav";
 import Image from "next/image";
 
 import { Metadata } from "next";
@@ -9,6 +10,18 @@ export const metadata: Metadata = {
   description: "Complete guide for Team Trials mode in Uma Musume Pretty Derby",
   // other metadata
 };
+
+const guideNavItems = [
+  { id: "training-flow", title: "Training Flow" },
+  { id: "card-priority", title: "Card Priority" },
+  { id: "race-strategy", title: "Race Strategy" },
+  { id: "stat-goals", title: "Stat Goals" },
+  { id: "skill-buying", title: "Skill Buying" },
+  { id: "energy-management", title: "Energy Management" },
+  { id: "explosions", title: "Explosions" },
+  { id: "parent-selection", title: "Parent Selection" },
+  { id: "mindset", title: "Team Mindset" },
+];
 
 const TeamTrialsPage = () => {
   return (
@@ -21,6 +34,7 @@ const TeamTrialsPage = () => {
                 <h2 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white">
                   Team Trials Mode Guide
                 </h2>
+                <GuideNav items={guideNavItems} />
                 <div className="border-body-color/10 mb-10 flex flex-wrap items-center justify-between border-b pb-4 dark:border-white/10">
                   <div className="flex flex-wrap items-center">
                     <div className="mr-10 mb-5 flex items-center">
@@ -103,70 +117,330 @@ const TeamTrialsPage = () => {
                 </div>
                 <div>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Master Team Trials mode with these proven strategies and rules that work across almost every scenario. This guide focuses on building stable, consistent Uma builds rather than chasing peak tournament runs.
                   </p>
-                  <div className="mb-10 w-full overflow-hidden rounded-sm">
-                    <div className="relative aspect-97/60 w-full sm:aspect-97/44">
-                      <Image
-                        src="/images/blog/blog-details-02.jpg"
-                        alt="image"
-                        fill
-                        className="object-cover object-center"
-                      />
-                    </div>
-                  </div>
-                  <p className="text-body-color mb-8 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis enim lobortis scelerisque fermentum. Neque
-                    sodales ut etiam sit amet. Ligula ullamcorper
-                    <strong className="text-primary dark:text-white">
-                      malesuada
-                    </strong>
-                    proin libero nunc consequat interdum varius. Quam
-                    pellentesque nec nam aliquam sem et tortor consequat.
-                    Pellentesque adipiscing commodo elit at imperdiet.
-                  </p>
-                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Semper auctor neque vitae tempus quam pellentesque nec.
-                    <span className="text-primary underline dark:text-white">
-                      Amet dictum sit amet justo
-                    </span>
-                    donec enim diam. Varius sit amet mattis vulputate enim nulla
-                    aliquet porttitor. Odio pellentesque diam volutpat commodo
-                    sed.
-                  </p>
-                  <h3 className="font-xl mb-10 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white">
-                    Digital marketplace for Ui/Ux designers.
+
+                  <h3 id="training-flow" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
+                    1. Prioritize Training Flow Correctly
                   </h3>
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    These rules remain true across almost every scenario:
+                  </p>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    Early Game (Turns 1–12)
+                  </h4>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Chase friendship (green smile icons) first.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Try to activate friendship on as many cards as possible before the mid-game.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Don't worry too much about which stat — early stats matter less than early friendship activation.
+                    </li>
+                  </ul>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    White Bubbles (Training Boost Icons)
+                  </h4>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      White bubbles are extremely valuable early.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      They scale your training later, so building them up sooner = better long-term stat curve.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Prioritize friendship + white bubble combinations when possible.
+                    </li>
+                  </ul>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    Late Game
+                  </h4>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Follow the stat-based training conditions.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Speed becomes the most efficient stat by mid–late game.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Wit becomes important to reach activation thresholds (400–500+ depending on Uma).
+                    </li>
+                  </ul>
+
+                  <h3 id="card-priority" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
+                    2. Card Priority & Deck Logic
+                  </h3>
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Even if you don't have MLB cards or meta SSRs:
+                  </p>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    General Deck Priorities
+                  </h4>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      <strong className="text-primary dark:text-white">Speed</strong> (2–3 cards minimum)
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      <strong className="text-primary dark:text-white">Wit</strong> (1–2 cards)
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      <strong className="text-primary dark:text-white">Stamina / Power / Support</strong> flex spot depending on distance requirement
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Borrow the strongest Speed support you can (Kitasan Black is the universal go-to for a reason)
+                    </li>
+                  </ul>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    Why This Works
+                  </h4>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Speed cap and training efficiency determine almost every run's ceiling.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Wit gives: Skill points, Additional training stats, Race performance stability.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Stamina is the only stat that can cause you to fail races — hit the requirement early.
+                    </li>
+                  </ul>
+
+                  <h3 id="race-strategy" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
+                    3. Race Strategy Rules That Always Work
+                  </h3>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    Run Front (逃げ/Nige) for Career Mode
+                  </h4>
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Even if your Uma is normally Mid/Chaser:
+                  </p>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Running front reduces the chance of being blocked.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Losing debut and early G3 races = lost SP, lost mood, derailed run.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      You can adjust back later if the distance requires more stamina than you have, or running front guarantees a choke due to race design.
+                    </li>
+                  </ul>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    Always Check Race UI for Weird Meta Picks
+                  </h4>
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Sometimes enemy teams put an Uma in a bizarre strategy or distance. Always check once before each Unity Cup race to avoid surprise losses.
+                  </p>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    Getting Top 3 Matters
+                  </h4>
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Getting Top 3 in optional races gives the SP you need. Even 2nd or 3rd is totally fine — SP matters way more than +1 stat.
+                  </p>
+
+                  <h3 id="stat-goals" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
+                    4. Stat Goals by Distance (Team Trials Focused)
+                  </h3>
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    General rough targets for Team Trials (These are for stable, general-purpose Uma builds):
+                  </p>
+
+                  <div className="mb-10 overflow-x-auto">
+                    <table className="text-body-color w-full border-collapse border border-gray-300 dark:border-gray-700">
+                      <thead>
+                        <tr className="bg-primary/10">
+                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Distance</th>
+                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Speed</th>
+                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Stamina</th>
+                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Power</th>
+                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Guts</th>
+                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Wit</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">Short</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1200</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">300–400</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">800+</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">300</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–500</td>
+                        </tr>
+                        <tr className="bg-body-color/5">
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">Mile</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1200</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">600+</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">800+</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">300</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–500</td>
+                        </tr>
+                        <tr>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">Medium</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1200</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">800–900</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">900+</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–500</td>
+                        </tr>
+                        <tr className="bg-body-color/5">
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">Long</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1000+</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1000+</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">900+</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–600</td>
+                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–500</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    consectetur adipiscing elit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    mattis vulputate cupidatat.
+                    Speed cap and Wit stability are always the biggest contributors for Team Trials.
+                  </p>
+
+                  <h3 id="skill-buying" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
+                    5. Skill Buying Logic
+                  </h3>
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Universal rules that never change:
+                  </p>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    Always Prioritize
+                  </h4>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Good passive skills (green) → Adaptations, corner skills, straight skills.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Stamina recovery if your stamina is borderline.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Strategy-appropriate acceleration if available.
+                    </li>
+                  </ul>
+
+                  <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
+                    Save Skill Points Unless Fast Learner Already Triggered
+                  </h4>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      If you haven't seen Fast Learner: Hold SP until end of career.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      If Fast Learner is done: You can start purchasing early if it helps stabilize races.
+                    </li>
+                  </ul>
+
+                  <h3 id="energy-management" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
+                    6. Recovery / Energy Management
+                  </h3>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Never "extra train" unless 100% energy.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Prefer training that gives +Energy (Wit, Power when Rico/Haru are present).
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Wrecking (Resting) is fine — better than failing runs.
+                    </li>
+                  </ul>
+
+                  <h3 id="explosions" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
+                    7. Why White/Blue Explosions Matter
+                  </h3>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      <strong className="text-primary dark:text-white">White</strong> = Training boost scaling
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      <strong className="text-primary dark:text-white">Blue</strong> = Massive stat efficiency spike
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      The order and timing of seeing these is what separates a good run from a scuffed run.
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Blue on off-type cards (like Wit cards when your Speed deck is stacked) → Is still worth taking early since it boosts later success rates.
+                    </li>
+                  </ul>
+
+                  <h3 id="parent-selection" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
+                    8. Parent Selection Rules
+                  </h3>
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Always use <span className="text-primary underline dark:text-white">UMADB</span> or <span className="text-primary underline dark:text-white">Run Genesis</span> to:
+                  </p>
+                  <ul className="text-body-color mb-8 list-inside list-disc">
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Find double sparkle parents
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Find the right skill inheritance
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      Avoid bad rolls / bad clubs / bad friend picks
+                    </li>
+                  </ul>
+                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Most mistakes come from bad roots, not bad decks.
+                  </p>
+
+                  <h3 id="mindset" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
+                    9. Team Trials Mindset
+                  </h3>
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Team Trials doesn't require "meta tournament monsters." You want:
                   </p>
                   <ul className="text-body-color mb-10 list-inside list-disc">
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      Consectetur adipiscing elit in voluptate velit.
+                      Stable stat lines
                     </li>
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      Mattis vulputate cupidatat.
+                      Consistent race completion
                     </li>
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      Vulputate enim nulla aliquet porttitor odio pellentesque
+                      Good front-running
                     </li>
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      Ligula ullamcorper malesuada proin
+                      Reliable skill packages
+                    </li>
+                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      No-brainer adapt skills and corner skills
                     </li>
                   </ul>
+                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    <strong className="text-primary dark:text-white">Consistency &gt; High-end peak runs.</strong>
+                  </p>
+
                   <div className="bg-primary/10 relative z-10 mb-10 overflow-hidden rounded-md p-8 md:p-9 lg:p-8 xl:p-9">
-                    <p className="text-body-color text-center text-base font-medium italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod incididunt utionals labore et dolore magna
-                      aliqua. Quis lobortis scelerisque fermentum, The Neque ut
-                      etiam sit amet.
+                    <h4 className="text-body-color mb-4 text-center text-xl font-bold text-black dark:text-white">
+                      ⭐ Summary Cheat Sheet (Ultra-Condensed)
+                    </h4>
+                    <p className="text-body-color mb-4 text-center text-base font-medium">
+                      To build a strong Uma for Team Trials:
                     </p>
+                    <ul className="text-body-color list-inside list-disc space-y-2 text-base font-medium">
+                      <li>Chase friendship early, white bubbles early.</li>
+                      <li>Borrow the best speed support you can.</li>
+                      <li>Run 2–3 Speed, 1–2 Wit, 1 Flex.</li>
+                      <li>Run Front in most career races to avoid blocking.</li>
+                      <li>Hit stamina minimums early.</li>
+                      <li>Use UMADB/RunGenesis for inheritance.</li>
+                      <li>Buy good passives first, stamina recovery if needed.</li>
+                      <li>Don't panic if you place 2nd or 3rd in gold races.</li>
+                      <li>Aim for balanced stat lines and fully stable skill sets.</li>
+                    </ul>
                     <span className="absolute top-0 left-0 z-[-1]">
                       <svg
                         width="132"
@@ -308,20 +582,16 @@ const TeamTrialsPage = () => {
                       </svg>
                     </span>
                   </div>
-                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    consectetur adipiscing elit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    mattis vulputate cupidatat.
-                  </p>
+
                   <div className="items-center justify-between sm:flex">
                     <div className="mb-5">
                       <h4 className="text-body-color mb-3 text-sm font-medium">
                         Popular Tags :
                       </h4>
                       <div className="flex items-center">
-                        <TagButton text="Design" />
-                        <TagButton text="Development" />
-                        <TagButton text="Info" />
+                        <TagButton text="Team Trials" />
+                        <TagButton text="Guide" />
+                        <TagButton text="Strategy" />
                       </div>
                     </div>
                     <div className="mb-5">

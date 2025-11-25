@@ -16,20 +16,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/about/page.js"
     ],
-    "/blog/page": [
+    "/guides/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/blog/page.js"
+      "static/chunks/app/guides/page.js"
     ],
     "/team-trials/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/team-trials/page.js"
     ],
-    "/contact/page": [
+    "/guides-details/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
+      "static/chunks/app/guides-details/page.js"
     ]
   }
 }
