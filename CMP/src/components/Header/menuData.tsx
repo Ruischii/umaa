@@ -55,12 +55,6 @@ const menuData: Menu[] = [
         newTab: false,
       },
       {
-        id: 44,
-        title: "Guides Sidebar Page",
-        path: "/blog-sidebar",
-        newTab: false,
-      },
-      {
         id: 45,
         title: "Guides Details Page",
         path: "/blog-details",
