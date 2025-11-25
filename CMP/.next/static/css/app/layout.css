@@ -429,9 +429,6 @@ layer(base);
   .my-1\.5 {
     margin-block: calc(var(--spacing) * 1.5);
   }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
-  }
   .mt-\[6px\] {
     margin-top: 6px;
   }
@@ -560,9 +557,6 @@ layer(base);
   }
   .h-\[70px\] {
     height: 70px;
-  }
-  .h-full {
-    height: 100%;
   }
   .h-px {
     height: 1px;
@@ -945,9 +939,6 @@ layer(base);
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
-  .py-6 {
-    padding-block: calc(var(--spacing) * 6);
-  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
@@ -983,9 +974,6 @@ layer(base);
   }
   .pt-\[150px\] {
     padding-top: 150px;
-  }
-  .pt-\[180px\] {
-    padding-top: 180px;
   }
   .pr-1 {
     padding-right: calc(var(--spacing) * 1);
@@ -1617,11 +1605,6 @@ layer(base);
       margin: calc(var(--spacing) * 0);
     }
   }
-  .lg\:mt-0 {
-    @media (width >= 992px) {
-      margin-top: calc(var(--spacing) * 0);
-    }
-  }
   .lg\:mr-0 {
     @media (width >= 992px) {
       margin-right: calc(var(--spacing) * 0);
@@ -2194,12 +2177,6 @@ layer(base);
   .dark\:opacity-60 {
     &:is(.dark *) {
       opacity: 60%;
-    }
-  }
-  .dark\:shadow-none {
-    &:is(.dark *) {
-      --tw-shadow: 0 0 #0000;
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
   .dark\:shadow-sticky-dark {

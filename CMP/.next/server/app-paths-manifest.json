@@ -1,9 +1,7 @@
 {
-  "/blog/page": "app/blog/page.js",
-  "/team-trials/page": "app/team-trials/page.js",
-  "/page": "app/page.js",
-  "/blog-details/page": "app/blog-details/page.js",
-  "/about/page": "app/about/page.js",
   "/contact/page": "app/contact/page.js",
-  "/error/page": "app/error/page.js"
+  "/blog/page": "app/blog/page.js",
+  "/about/page": "app/about/page.js",
+  "/team-trials/page": "app/team-trials/page.js",
+  "/page": "app/page.js"
 }
