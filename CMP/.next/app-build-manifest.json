@@ -11,25 +11,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/about/page": [
+    "/team-trials/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/page.js"
+      "static/chunks/app/team-trials/page.js"
     ],
     "/guides/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/guides/page.js"
     ],
-    "/team-trials/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/team-trials/page.js"
-    ],
-    "/guides-details/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/guides-details/page.js"
+      "static/chunks/app/about/page.js"
     ]
   }
 }

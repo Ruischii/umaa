@@ -14,8 +14,8 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
-        description="This is a fan made app for the game Uma Musume Pretty Derby to help players have an easy access to helpful information to make competing and getting carrots a little easier."
+        pageName="About UMAssist"
+        description="This is a fan made webapp for the game Uma Musume Pretty Derby to help players have an easy access to helpful information to make competing and getting their carrots a little easier."
       />
       <AboutSectionOne />
       <AboutSectionTwo />

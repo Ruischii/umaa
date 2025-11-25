@@ -31,7 +31,7 @@ const AboutSectionTwo = () => {
                   Top Player Influenced Findings
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  All guide information is taken from the to players within the global community. This ensures
+                  All guide information is documented from the to players within the global community. This ensures
                   on the accuracy and reliability of the information provided.
                 </p>
               </div>
