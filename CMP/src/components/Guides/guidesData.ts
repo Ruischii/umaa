@@ -12,6 +12,7 @@ export type CMGuide = {
   tags: string[];
   publishDate: string;
   isCurrent: boolean;
+  underConstruction?: boolean;
   content?: string;
 };
 
@@ -47,6 +48,7 @@ export const guidesData: CMGuide[] = [
     tags: ["champions-meeting"],
     publishDate: "2025",
     isCurrent: false,
+    underConstruction: true,
   },
   {
     id: 3,
@@ -63,6 +65,7 @@ export const guidesData: CMGuide[] = [
     tags: ["champions-meeting"],
     publishDate: "2025",
     isCurrent: true,
+    underConstruction: true,
   },
 ];
 

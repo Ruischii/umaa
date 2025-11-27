@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const UnderConstruction = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="py-8 md:py-4 lg:py-2">
       <div className="container">
         <div className="flex flex-col items-center justify-center text-center">
           <div className="relative w-full max-w-md aspect-square mb-8">
@@ -24,7 +24,7 @@ const UnderConstruction = () => {
           <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
             Under Construction . . .
           </h2>
-          <p className="max-w-2xl text-base text-body-color dark:text-body-color-dark sm:text-lg">
+          <p className="max-w-2xl text-base text-body-color dark:text-body-color-dark sm:text-lg pb-14">
             Check my{" "}
             <a
               href="https://x.com/t_2ddy"

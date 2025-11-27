@@ -1,4 +1,6 @@
 import SharePost from "@/components/Blog/SharePost";
+import Breadcrumb from "@/components/Common/Breadcrumb";
+import UnderConstruction from "@/components/Common/UnderConstruction";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -37,8 +39,27 @@ const GuidePage = async ({ params }: Props) => {
     notFound();
   }
 
+  if (guide.underConstruction) {
+    return (
+      <>
+        <Breadcrumb
+          pageName={guide.title}
+          description={guide.paragraph}
+          parent={{ name: "CM Guides", href: "/guides" }}
+        />
+        <UnderConstruction />
+      </>
+    );
+  }
+
   return (
-    <section className="pt-[150px] pb-[120px]">
+    <>
+      <Breadcrumb
+        pageName={guide.title}
+        description={guide.paragraph}
+        parent={{ name: "CM Guides", href: "/guides" }}
+      />
+      <section className="pb-[120px]">
       <div className="container">
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 lg:w-8/12">
@@ -125,6 +146,7 @@ const GuidePage = async ({ params }: Props) => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

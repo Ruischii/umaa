@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <>
+    <div className="pt-28 lg:pt-[150px]">
       <UnderConstruction />
-    </>
+    </div>
   );
 };
 

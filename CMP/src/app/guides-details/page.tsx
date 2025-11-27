@@ -1,19 +1,25 @@
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
+import Breadcrumb from "@/components/Common/Breadcrumb";
 import Image from "next/image";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Details Page for Startup Nextjs Template",
+  title: "Guide Details | umaAssist",
+  description: "Champions Meeting guide for Uma Musume Pretty Derby",
   // other metadata
 };
 
 const BlogDetailsPage = () => {
   return (
     <>
-      <section className="pt-[150px] pb-[120px]">
+      <Breadcrumb
+        pageName="Guide Details"
+        description="Complete Champions Meeting guide with strategies and tips."
+        parent={{ name: "CM Guides", href: "/guides" }}
+      />
+      <section className="pb-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4 lg:w-8/12">
