@@ -55,12 +55,14 @@ const AboutSectionOne = () => {
                   src="/images/about/aboutImg.svg"
                   alt="about-image"
                   fill
+                  loading="eager"
                   className="mx-auto max-w-full dark:hidden lg:mr-0"
                 />
                 <Image
                   src="/images/about/aboutImg.svg"
                   alt="about-image"
                   fill
+                  loading="eager"
                   className="mx-auto hidden max-w-full dark:block lg:mr-0"
                 />
               </div>

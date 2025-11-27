@@ -14,12 +14,14 @@ const AboutSectionTwo = () => {
                 src="/images/about/aboutImg2.svg"
                 alt="about image"
                 fill
+                loading="eager"
                 className="dark:hidden"
               />
               <Image
                 src="/images/about/aboutImg2.svg"
                 alt="about image"
                 fill
+                loading="eager"
                 className="hidden dark:block"
               />
             </div>
