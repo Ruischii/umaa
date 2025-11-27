@@ -42,8 +42,8 @@ const AboutSectionOne = () => {
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="Global Server" />
-                    <List text="Quickstart CM Guides" />
-                    <List text="Reliable Information" />
+                    <List text="In-Depth Guides" />
+                    <List text="Summarized Guides" />
                   </div>
                 </div>
               </div>

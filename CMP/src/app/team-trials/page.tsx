@@ -2,12 +2,13 @@ import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
 import GuideNav from "@/components/Common/GuideNav";
 import TeamTrialsSection from "@/components/About/TeamTrialsSection";
+import ScoringDropdown from "@/components/TeamTrials/ScoringDropdown";
 import Image from "next/image";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Team Trials Mode Guide | UMAssist",
+  title: "Team TrialsGuide | UMAssist",
   description: "Complete guide for Team Trials mode in Uma Musume Pretty Derby",
   // other metadata
 };
@@ -33,9 +34,10 @@ const TeamTrialsPage = () => {
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4 lg:w-8/12">
               <div>
-                <h2 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white">
-                  Team Trials Mode Guide
+                <h2 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white relative z-20">
+                  Team Trials Guide
                 </h2>
+                <GuideNav items={guideNavItems} />
                 <div>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Master Team Trials mode with these proven strategies and rules that work across almost every scenario. This guide focuses on building stable, consistent Uma builds rather than chasing peak tournament runs.
@@ -353,7 +355,7 @@ const TeamTrialsPage = () => {
                         <p className="text-body-color mb-4 text-center text-base font-medium">
                           To build a strong Uma for Team Trials:
                         </p>
-                        <ul className="text-body-color list-inside list-disc space-y-2 text-base font-medium">
+                        <ul className="text-body-color list-inside list-disc space-y-4 text-base font-medium">
                           <li>Chase friendship early, white bubbles early.</li>
                           <li>Borrow the best speed support you can.</li>
                           <li>Run 2–3 Speed, 1–2 Wit, 1 Flex.</li>
@@ -362,7 +364,7 @@ const TeamTrialsPage = () => {
                           <li>Use UMADB/RunGenesis for inheritance.</li>
                           <li>Buy good passives first, stamina recovery if needed.</li>
                           <li>Don't panic if you place 2nd or 3rd in gold races.</li>
-                          <li>Aim for balanced stat lines and fully stable skill sets.</li>
+                          <li>Aim for key stats with balanced stat lines and fully stable skill sets.</li>
                         </ul>
                       </div>
                       <div className="w-full px-4 lg:w-1/3 mt-6 lg:mt-0 flex items-center justify-center">
@@ -518,27 +520,7 @@ const TeamTrialsPage = () => {
                       </svg>
                     </span>
                   </div>
-
-                  <div className="items-center justify-between sm:flex">
-                    <div className="mb-5">
-                      <h4 className="text-body-color mb-3 text-sm font-medium">
-                        Popular Tags :
-                      </h4>
-                      <div className="flex items-center">
-                        <TagButton text="Team Trials" />
-                        <TagButton text="Guide" />
-                        <TagButton text="Strategy" />
-                      </div>
-                    </div>
-                    <div className="mb-5">
-                      <h5 className="text-body-color mb-3 text-sm font-medium sm:text-right">
-                        Share this post :
-                      </h5>
-                      <div className="flex items-center sm:justify-end">
-                        <SharePost />
-                      </div>
-                    </div>
-                  </div>
+                  <ScoringDropdown />
                 </div>
               </div>
             </div>

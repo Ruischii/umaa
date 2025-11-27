@@ -33,8 +33,8 @@ const AboutSectionTwo = () => {
                   Top Player Influenced Findings
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  All guide information is documented from the to players within the global community. This ensures
-                  on the accuracy and reliability of the information provided.
+                  All guide information is documented from global server's top players testing and performance, 
+                  ensuring the accuracy and reliability of the information provided.
                 </p>
               </div>
               <div className="mb-9">
@@ -42,7 +42,7 @@ const AboutSectionTwo = () => {
                   Universal CM Guides
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  From casual players to spenders, everyone gets actionable insights for building competitive umas.
+                  From casual players, non-spenders, to whales, you will find the things you needfor building your competitive umas.
                 </p>
               </div>
               <div className="mb-1">
@@ -50,7 +50,7 @@ const AboutSectionTwo = () => {
                   Overview
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Every guide is written to be understandable at a glance with the info you need to train and race effectively.
+                  Every guide is written to be understandable at a glance with the info you need to train and race right away.
                 </p>
               </div>
             </div>

@@ -14,6 +14,7 @@ type GuideNavProps = {
 const GuideNav = ({ items }: GuideNavProps) => {
   const [activeId, setActiveId] = useState<string>("");
   const [isVisible, setIsVisible] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,27 +90,65 @@ const GuideNav = ({ items }: GuideNavProps) => {
           isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        <nav className="bg-white dark:bg-dark border border-body-color/10 dark:border-white/10 rounded-md shadow-md p-2 max-h-[80vh] overflow-y-auto w-36">
-          <h4 className="text-body-color mb-2 text-xs font-semibold text-black dark:text-white px-1">
-            Contents
-          </h4>
-          <ul className="space-y-0.5">
-            {items.map((item) => (
-              <li key={item.id}>
-                <button
-                  onClick={() => scrollToSection(item.id)}
-                  className={`text-left w-full px-2 py-1 text-xs rounded transition-colors ${
-                    activeId === item.id
-                      ? "bg-primary text-white dark:bg-primary dark:text-white font-medium"
-                      : "text-body-color hover:bg-body-color/10 dark:text-white/70 dark:hover:bg-white/10"
-                  }`}
-                >
-                  {item.title}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        {isCollapsed ? (
+          /* Collapsed bubble state */
+          <button
+            onClick={() => setIsCollapsed(false)}
+            className="w-10 h-10 bg-primary hover:bg-primary/90 text-white rounded-full shadow-lg flex items-center justify-center origin-left hover:scale-110 transition-transform"
+            aria-label="Expand navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        ) : (
+          /* Expanded nav state */
+          <nav className="bg-white dark:bg-dark border border-body-color/10 dark:border-white/10 rounded-md shadow-md p-2 max-h-[80vh] overflow-y-auto w-36">
+            {/* Collapse button */}
+            <button
+              onClick={() => setIsCollapsed(true)}
+              className="w-full flex items-center justify-between mb-2 px-1 py-1 rounded hover:bg-body-color/10 dark:hover:bg-white/10 transition-colors group"
+              aria-label="Collapse navigation"
+            >
+              <h4 className="text-xs font-semibold text-black dark:text-white">
+                Contents
+              </h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-4 h-4 text-body-color dark:text-white/70 group-hover:text-primary transition-colors"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <ul className="space-y-0.5">
+              {items.map((item) => (
+                <li key={item.id}>
+                  <button
+                    onClick={() => scrollToSection(item.id)}
+                    className={`text-left w-full px-2 py-1 text-xs rounded transition-colors ${
+                      activeId === item.id
+                        ? "bg-primary text-white dark:bg-primary dark:text-white font-medium"
+                        : "text-body-color hover:bg-body-color/10 dark:text-white/70 dark:hover:bg-white/10"
+                    }`}
+                  >
+                    {item.title}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </div>
 
       {/* Mobile/Tablet Horizontal Scroll Nav */}

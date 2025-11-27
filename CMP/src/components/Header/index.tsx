@@ -102,7 +102,12 @@ const Header = () => {
                   }`}
                 >
                   <ul className="block lg:flex lg:space-x-12">
-                    {menuData.map((menuItem, index) => (
+                    {menuData.map((menuItem, index) => {
+                      // Debug log
+                      if (process.env.NODE_ENV === 'development') {
+                        console.log('Menu item:', menuItem.title, menuItem.path);
+                      }
+                      return (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
                           <Link
@@ -151,7 +156,8 @@ const Header = () => {
                           </>
                         )}
                       </li>
-                    ))}
+                      );
+                    })}
                   </ul>
                 </nav>
               </div>
