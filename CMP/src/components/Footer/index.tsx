@@ -13,7 +13,7 @@ const Footer = () => {
                 <Link href="/" className="mb-8 inline-block">
                   <Image
                     src="/images/logo/logo.svg"
-                    alt="UMAssist logo"
+                    alt="umaAssist logo"
                     className="w-auto h-10"
                     width={40}
                     height={40}

@@ -58,14 +58,14 @@ const Header = () => {
               >
                 <Image
                   src="/images/logo/logo.svg"
-                  alt="UMAssist logo"
+                  alt="umaAssist logo"
                   width={40}
                   height={40}
                   priority
                   className="h-10 w-10"
                 />
                 <span className="text-2xl font-bold text-black dark:text-white">
-                  UMAssist
+                  umaa
                 </span>
               </Link>
             </div>

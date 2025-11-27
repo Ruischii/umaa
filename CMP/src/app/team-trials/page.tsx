@@ -1,14 +1,15 @@
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
 import GuideNav from "@/components/Common/GuideNav";
-import TeamTrialsSection from "@/components/About/TeamTrialsSection";
+import Breadcrumb from "@/components/Common/Breadcrumb";
+import TeamTrialsSection from "@/components/TeamTrials/TeamTrialsSection";
 import ScoringDropdown from "@/components/TeamTrials/ScoringDropdown";
 import Image from "next/image";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Team TrialsGuide | UMAssist",
+  title: "Team TrialsGuide | umaAssist",
   description: "Complete guide for Team Trials mode in Uma Musume Pretty Derby",
   // other metadata
 };
@@ -28,8 +29,12 @@ const guideNavItems = [
 const TeamTrialsPage = () => {
   return (
     <>
+      <Breadcrumb
+        pageName="Team Trials Guide"
+        description="Consitency is key, having good runs often is better than peak runs once in a while. This guide focuses on building stable, consistent Uma builds rather than chasing peak tournament runs."
+      />
       <TeamTrialsSection />
-      <section className="pt-12 pb-[120px]">
+      <section className="pb-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4 lg:w-8/12">
@@ -40,7 +45,8 @@ const TeamTrialsPage = () => {
                 <GuideNav items={guideNavItems} />
                 <div>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Master Team Trials mode with these proven strategies and rules that work across almost every scenario. This guide focuses on building stable, consistent Uma builds rather than chasing peak tournament runs.
+                    These are the core rules that you should follow to have a good chance of winning Team Trials and scoring high to move up divisions. If you would like
+                    to learn more about the scoring, the bottom of the page contains specific details on what affect score gains.
                   </p>
 
                   <h3 id="training-flow" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">

@@ -1,0 +1,47 @@
+# UMAssist Project Guidelines
+
+## Code Style
+- No comments in code unless complex logic requires explanation
+- Use TypeScript for all new files
+- Follow existing naming conventions
+- No emojis in code
+
+## Project Structure
+- Components in src/components/
+- Pages in src/app/
+- Utilities in src/lib/
+- Types in src/types/
+
+## Guides System
+- All Champions Meeting guides go in src/components/Guides/guidesData.ts
+- Use slug format: "cm-month-year" (e.g., "cm-december-2024")
+- Always set isCurrent: true on new guide, false on old
+- Team Trials is static - only update src/app/team-trials/page.tsx every 6 months
+- Champions Meeting guides have dynamic routes at /guides/[slug]/page.tsx
+- Use getCurrentCMGuide(), getCMGuideBySlug(), getAllCMGuides() from src/lib/guides.ts
+
+## Tech Stack
+- Next.js 15
+- React 19
+- Tailwind CSS v4
+- TypeScript
+- next-themes for dark mode
+
+## Naming Conventions
+- Components: PascalCase (MyComponent.tsx)
+- Files: lowercase with hyphens (my-file.ts)
+- Functions: camelCase (myFunction)
+- Constants: UPPER_SNAKE_CASE
+
+## Database/Data
+- Use guidesData.ts as single source of truth for CM guides
+- Functions in lib/guides.ts query this data
+
+## Do's and Don'ts
+- DO: Use server components by default
+- DO: Use the lib/guides.ts helper functions for guides
+- DO: Add 'use client' only when needed (state, hooks, event listeners)
+- DON'T: Add comments unless necessary
+- DON'T: Use localStorage (not supported)
+- DON'T: Create inline CSS, use Tailwind utilities only
+- DON'T: Add emojis to code files
