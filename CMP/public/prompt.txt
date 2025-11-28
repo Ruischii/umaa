@@ -1,0 +1,663 @@
+help me write a json file that contains a skill name and the image that it is related to, for the purpose of this file ignore duplicate skill names and treat them as the same without any symbol at the end
+the skill should be documented with the skill name, image type, and skill description (if there are 2 of the same skill use the first stated description
+
+speed:
+Right-Handed ◎
+Increase performance on right-handed tracks.
+Right-Handed ○
+Moderately increase performance on right-handed tracks.
+Left-Handed ◎
+Increase performance on left-handed tracks.
+Left-Handed ○
+Moderately increase performance on left-handed tracks.
+Spring Runner ◎
+Increase performance in spring.
+Spring Runner ○
+Moderately increase performance in spring.
+Summer Runner ◎
+Increase performance in summer.
+Summer Runner ○
+Moderately increase performance in summer.
+Fall Runner ◎
+Increase performance in fall.
+Fall Runner ○
+Moderately increase performance in fall.
+Winter Runner ◎
+Increase performance in winter.
+Winter Runner ○
+Moderately increase performance in winter.
+Outer Post Proficiency ◎
+Increase performance in brackets 6–8.
+Outer Post Proficiency ○
+Moderately increase performance in brackets 6–8.
+Maverick ◎
+Greatly increase performance when no other runners are using the same strategy.
+Maverick ○
+Increase performance when no other runners are using the same strategy.
+Long Shot ◎
+Increase performance when 4th favorite or below.
+Long Shot ○
+Moderately increase performance when 4th favorite or below.
+Sympathy
+Moderately increase performance when many runners share a sympathetic heart.
+Lone Wolf
+Moderately increase performance when no other runners have the heart of a lone wolf.
+Towards the Scenery I Seek
+Moderately increase performance in pursuit of that long sought-after scenery.
+Show Me What Lies Beyond!
+Moderately increase Silence Suzuka's performance thanks to the desire to see her running reach new heights.
+Chin Up, Derby Umamusume!
+Feel closer to being Japan's top racer, moderately increasing performance.
+Unchanging
+Greatly increase performance with the same ambition of days past.
+Fall Frenzy
+Increase performance in fall, boosting Speed and Power.
+Spring Spectacle
+Increase performance in spring, boosting Speed and Power.
+Right-Handed Demon
+Increase proficiency in right-handed tracks, increasing Speed and Power.
+
+stam:
+Tokyo Racecourse ◎
+Increase performance at Tokyo Racecourse.
+Tokyo Racecourse ○
+Moderately increase performance at Tokyo Racecourse.
+Nakayama Racecourse ◎
+Increase performance at Nakayama Racecourse.
+Nakayama Racecourse ○
+Moderately increase performance at Nakayama Racecourse.
+Hanshin Racecourse ◎
+Increase performance at Hanshin Racecourse.
+Hanshin Racecourse ○
+Moderately increase performance at Hanshin Racecourse.
+Kyoto Racecourse ◎
+Increase performance at Kyoto Racecourse.
+Kyoto Racecourse ○
+Moderately increase performance at Kyoto Racecourse.
+Chukyo Racecourse ◎
+Increase performance at Chukyo Racecourse.
+Chukyo Racecourse ○
+Moderately increase performance at Chukyo Racecourse.
+Sapporo Racecourse ◎
+Increase performance at Sapporo Racecourse.
+Sapporo Racecourse ○
+Moderately increase performance at Sapporo Racecourse.
+Hakodate Racecourse ◎
+Increase performance at Hakodate Racecourse.
+Hakodate Racecourse ○
+Moderately increase performance at Hakodate Racecourse.
+Fukushima Racecourse ◎
+Increase performance at Fukushima Racecourse.
+Fukushima Racecourse ○
+Moderately increase performance at Fukushima Racecourse.
+Niigata Racecourse ◎
+Increase performance at Niigata Racecourse.
+Niigata Racecourse ○
+Moderately increase performance at Niigata Racecourse.
+Kokura Racecourse ◎
+Increase performance at Kokura Racecourse.
+Kokura Racecourse ○
+Moderately increase performance at Kokura Racecourse.
+Standard Distance ◎
+Increase performance over standard distances (multiples of 400m).
+Standard Distance ○
+Moderately increase performance over standard distances (multiples of 400m).
+Non-Standard Distance ◎
+Increase performance over non-standard distances (non-multiples of 400m).
+Non-Standard Distance ○
+Moderately increase performance over non-standard distances (non-multiples of 400m).
+Oi Racecourse ◎
+Increase performance at Oi Racecourse.
+Oi Racecourse ○
+Moderately increase performance at Oi Racecourse.
+Unquenched Thirst
+Moderately increase performance with the desire to race.
+Hoiya! Have a Good Run!
+Moderately increase Silence Suzuka's performance thanks to a charm that guarantees a satisfying run.
+Long Race Enthusiast
+Increase proficiency in Long Turf races. This skill is exclusive to the event.
+Yodo Invicta
+Increase performance at Kyoto Racecourse, boosting Stamina and Wit.
+For the Team
+The whole team feels super determined to win this special race, greatly increasing performance.
+
+strength:
+Firm Conditions ◎
+Increase performance on firm ground.
+Firm Conditions ○
+Moderately increase performance on firm ground.
+Wet Conditions ◎
+Increase performance on good, soft, and heavy ground.
+Wet Conditions ○
+Moderately increase performance on good, soft, and heavy ground.
+Competitive Spirit ◎
+Increase performance when many other runners are using the same strategy.
+Competitive Spirit ○
+Moderately increase performance when many other runners are using the same strategy.
+As a Friend and Rival
+Moderately increase Silence Suzuka's performance through the happiness felt seeing a friend find their running style.
+Mile Race Enthusiast
+Increase proficiency in Mile Turf races. This skill is exclusive to the event.
+Firm Course Menace
+Increase performance on firm ground, boosting Power and Speed.
+
+guts:
+Sunny Days ◎
+Increase performance in sunny weather.
+Sunny Days ○
+Moderately increase performance in sunny weather.
+Cloudy Days ◎
+Increase performance in cloudy weather.
+Cloudy Days ○
+Moderately increase performance in cloudy weather.
+Rainy Days ◎
+Increase performance in rainy weather.
+Rainy Days ○
+Moderately increase performance in rainy weather.
+Snowy Days ◎
+Increase performance in snowy weather.
+Snowy Days ○
+Moderately increase performance in snowy weather.
+Target in Sight ◎
+Increase performance when the favorite is using the same strategy.
+Target in Sight ○
+Moderately increase performance when the favorite is using the same strategy.
+
+wit:
+Inner Post Proficiency ◎
+Increase performance in brackets 1–3.
+Inner Post Proficiency ○
+Moderately increase performance in brackets 1–3.
+Front Runner Savvy ◎
+Increase ability to get into a good position. (Front Runner)
+Front Runner Savvy ○
+Moderately increase ability to get into a good position. (Front Runner)
+Pace Chaser Savvy ◎
+Increase ability to get into a good position. (Pace Chaser)
+Pace Chaser Savvy ○
+Moderately increase ability to get into a good position. (Pace Chaser)
+Late Surger Savvy ◎
+Increase ability to get into a good position. (Late Surger)
+Late Surger Savvy ○
+Moderately increase ability to get into a good position. (Late Surger)
+End Closer Savvy ◎
+Increase ability to get into a good position. (End Closer)
+End Closer Savvy ○
+Moderately increase ability to get into a good position. (End Closer)
+Restraint
+Increase Wit and moderately decrease the chance of being Rushed.
+Medium Race Enthusiast
+Increase proficiency in Medium Turf races. This skill is exclusive to the event.
+
+luck:
+Lucky Seven
+Moderately good things may happen when in bracket 7.
+
+recovery:
+Introduction to Physiology
+Moderately recover endurance and slightly increase velocity for a moderate duration when sitting off the pace on a corner in the second half of the race.
+Agnes Tachyon (Original)'s unique
+Clear Heart
+Recover endurance when well-positioned mid-race.
+Super Creek (Original)'s unique
+Super-Duper Stoked
+Moderately recover endurance with a glance at nearby runners when positioned toward the back on the final corner.
+Haru Urara (Original)'s unique
+U=ma2
+Recover endurance and moderately increase velocity for a moderate duration when sitting off the pace on a corner in the second half of the race.
+Agnes Tachyon (Original)'s unique
+Pure Heart
+Greatly recover endurance when well-positioned mid-race.
+Super Creek (Original)'s unique
+Super-Duper Climax
+Recover endurance with a glance at nearby runners when positioned toward the back on the final corner.
+Haru Urara (Original)'s unique
+Swinging Maestro
+Recover endurance on a corner with efficient turning.
+Corner Recovery ○
+Slightly recover endurance on a corner with efficient turning.
+Breath of Fresh Air
+Recover endurance on a straight.
+Straightaway Recovery
+Slightly recover endurance on a straight.
+Iron Will
+Recover endurance when the way ahead is jammed early-race or mid-race.
+Lay Low
+Slightly recover endurance when the way ahead is jammed early-race or mid-race.
+Indomitable
+Recover endurance when passed by another runner mid-race.
+Pace Strategy
+Slightly recover endurance when passed by another runner mid-race.
+Unruffled
+Recover endurance when surrounded mid-race.
+Calm in a Crowd
+Slightly recover endurance when surrounded mid-race.
+Calm and Collected
+Decrease fatigue upon approaching mid-race. (Pace Chaser)
+Stamina to Spare
+Slightly decrease fatigue upon approaching mid-race. (Pace Chaser)
+Race Planner
+Decrease fatigue mid-race. (Pace Chaser)
+Preferred Position
+Slightly decrease fatigue mid-race. (Pace Chaser)
+Sleeping Lion
+Decrease fatigue mid-race. (End Closer)
+Standing By
+Slightly decrease fatigue mid-race. (End Closer)
+Wait-and-See
+Slightly decrease fatigue and very slightly increase acceleration when positioned toward the back mid-race. (Sprint)
+Keen Eye
+Decrease fatigue, then moderately decrease velocity of runners ahead when positioned toward the back upon approaching mid-race. (Mile)
+Watchful Eye
+Slightly decrease fatigue, then very slightly decrease velocity of runners ahead when positioned toward the back upon approaching mid-race. (Mile)
+Trackblazer
+Decrease fatigue when positioned toward the front mid-race. (Medium)
+Rosy Outlook
+Slightly decrease fatigue when positioned toward the front mid-race. (Medium)
+Cooldown
+Decrease fatigue by taking a breather upon entering a straight. (Long)
+Deep Breaths
+Slightly decrease fatigue by taking a breather upon entering a straight. (Long)
+Adrenaline Rush
+Regain the energy to run when close to exhausting strength. (Long)
+Extra Tank
+Slightly regain the energy to run when close to exhausting strength. (Long)
+Miraculous Step
+Decrease fatigue when moving sideways. (Medium)
+Soft Step
+Slightly decrease fatigue when moving sideways. (Medium)
+Passing Pro
+Slightly decrease fatigue when determined to pass another runner. (Long)
+Restless
+Reduce fatigue on an uphill. (Front Runner)
+Moxie
+Slightly reduce fatigue on an uphill. (Front Runner)
+Gourmand
+Recover endurance mid-race. (Pace Chaser)
+Hydrate
+Slightly recover endurance mid-race. (Pace Chaser)
+Relax
+Recover endurance late-race. (Late Surger)
+A Small Breather
+Slightly recover endurance late-race. (Late Surger)
+Go-Home Specialist
+Reduce fatigue on a downhill. (End Closer)
+After-School Stroll
+Slightly reduce fatigue on a downhill. (End Closer)
+Serenity
+Regain composure by calming down when the way ahead is jammed. (End Closer)
+Levelheaded
+Slightly regain composure by calming down when the way ahead is jammed. (End Closer)
+Triple 7s
+Slightly gain energy with 777m remaining.
+Shake It Out
+Slightly recover endurance after activating many skills late-race.
+Superior Heal
+Greatly recover endurance with a gentle light when overtaken toward the back mid-race.
+Grass Wonder (Fantasy)'s unique
+Dazzl'n ♪ Diver
+Recover endurance by relaxing after activating 2 skills mid-race.
+Special Week (Summer)'s unique
+Every Rose Has Its Fangs
+Suck endurance from runners ahead when well-positioned and pressured by another runner mid-race.
+Rice Shower (Halloween)'s unique
+Lie in Wait
+Recover endurance when positioned toward the back upon approaching mid-race. (Late Surger)
+Be Still
+Slightly recover endurance when positioned toward the back upon approaching mid-race. (Late Surger)
+VIP Pass
+Decrease fatigue when determined to pass another runner. (Long)
+Familiar Ground
+Slightly recover endurance when positioned toward the back mid-race. (Dirt)
+Cheers of a Fellow Dreamer
+Recover Silence Suzuka's endurance on a corner in the second half of the race through a friend's cheers of support.
+Ready, Go!
+Moderately recover endurance and slightly increase velocity with newfound resolve when in midpack around halfway through the race.
+Matikanetannhauser (Original)'s unique
+Go, Go, Mun!
+Recover endurance and moderately increase velocity with newfound resolve when in midpack around halfway through the race.
+Matikanetannhauser (Original)'s unique
+Of Calm Mind
+If positioned in the midpack around when the mid-race starts, slightly decrease velocity and greatly recover endurance. (Long)
+Free-Spirited
+If positioned in the midpack around when the mid-race starts, slightly decrease velocity and moderately recover endurance. (Long)
+Keep Pushing Ahead
+If positioned toward the front from the start of the race until the second half of the race, good vibes recover endurance and moderately increase velocity steadily.
+Mejiro Palmer (Original)'s unique
+Master of the Sands
+Recover endurance and increase velocity when positioned toward the back mid-race. (Dirt)
+
+velocity:
+Corner Adept ○
+Slightly increase velocity on a corner with skilled turning.
+Straightaway Adept
+Slightly increase velocity on a straight.
+Ramp Up
+Slightly increase velocity when passing another runner mid-race.
+Homestretch Haste
+Slightly increase velocity in the last spurt.
+Fast-Paced
+Slightly increase ability to go to the front mid-race. (Front Runner)
+Prepared to Pass
+Slightly increase ability to break out of the pack on the final corner. (Pace Chaser)
+Position Pilfer
+Slightly increase velocity mid-race. (Late Surger)
+Outer Swell
+Slightly increase velocity when passing another runner on the outside on the final corner. (Late Surger)
+Masterful Gambit
+Slightly move up in preparation to close the gap when positioned toward the back late-race. (End Closer)
+Gap Closer
+Slightly increase spurting ability when positioned toward the back late-race. (Sprint)
+Productive Plan
+Slightly widen the margin when positioned toward the front early-race. (Mile)
+Up-Tempo
+Slightly increase positioning ability when positioned toward the front mid-race. (Medium)
+Steadfast
+Slightly increase ability to fight back when passed by another runner on the final corner. (Medium)
+Inside Scoop
+Slightly increase velocity when near the inner rail on the final corner. (Long)
+Sprint Straightaways ◎
+Moderately increase velocity on a straight. (Sprint)
+Sprint Straightaways ○
+Slightly increase velocity on a straight. (Sprint)
+Sprint Corners ◎
+Moderately increase velocity on a corner. (Sprint)
+Sprint Corners ○
+Slightly increase velocity on a corner. (Sprint)
+Huge Lead
+Slightly increase ability to maintain the lead when leading by a large margin mid-race. (Sprint)
+Mile Straightaways ◎
+Moderately increase velocity on a straight. (Mile)
+Mile Straightaways ○
+Slightly increase velocity on a straight. (Mile)
+Mile Corners ◎
+Moderately increase velocity on a corner. (Mile)
+Mile Corners ○
+Slightly increase velocity on a corner. (Mile)
+Shifting Gears
+Slightly increase passing ability when positioned toward the front mid-race. (Mile)
+Unyielding Spirit
+Slightly increase passing ability. (Mile)
+Medium Straightaways ◎
+Moderately increase velocity on a straight. (Medium)
+Medium Straightaways ○
+Slightly increase velocity on a straight. (Medium)
+Medium Corners ◎
+Moderately increase velocity on a corner. (Medium)
+Medium Corners ○
+Slightly increase velocity on a corner. (Medium)
+Long Straightaways ◎
+Moderately increase velocity on a straight. (Long)
+Long Straightaways ○
+Slightly increase velocity on a straight. (Long)
+Long Corners ◎
+Moderately increase velocity on a corner. (Long)
+Long Corners ○
+Slightly increase velocity on a corner. (Long)
+Keeping the Lead
+Slightly increase ability to maintain the lead when leading by a fair margin mid-race. (Long)
+Pressure
+Slightly increase velocity when passing another runner late-race. (Long)
+Front Runner Straightaways ◎
+Moderately increase velocity on a straight. (Front Runner)
+Front Runner Straightaways ○
+Slightly increase velocity on a straight. (Front Runner)
+Front Runner Corners ◎
+Moderately increase velocity on a corner. (Front Runner)
+Front Runner Corners ○
+Slightly increase velocity on a corner. (Front Runner)
+Leader's Pride
+Slightly increase ability to pass or challenge another runner early-race or mid-race. (Front Runner)
+Pace Chaser Straightaways ◎
+Moderately increase velocity on a straight. (Pace Chaser)
+Pace Chaser Straightaways ○
+Slightly increase velocity on a straight. (Pace Chaser)
+Pace Chaser Corners ◎
+Moderately increase velocity on a corner. (Pace Chaser)
+Pace Chaser Corners ○
+Slightly increase velocity on a corner. (Pace Chaser)
+Late Surger Straightaways ◎
+Moderately increase velocity on a straight. (Late Surger)
+Late Surger Straightaways ○
+Slightly increase velocity on a straight. (Late Surger)
+Late Surger Corners ◎
+Moderately increase velocity on a corner. (Late Surger)
+Late Surger Corners ○
+Slightly increase velocity on a corner. (Late Surger)
+1,500,000 CC
+Slightly increase velocity on an uphill. (Late Surger)
+End Closer Straightaways ◎
+Moderately increase velocity on a straight. (End Closer)
+End Closer Straightaways ○
+Slightly increase velocity on a straight. (End Closer)
+End Closer Corners ◎
+Moderately increase velocity on a corner. (End Closer)
+End Closer Corners ○
+Slightly increase velocity on a corner. (End Closer)
+Uma Stan
+Slightly increase velocity when close to many runners.
+Tail Held High
+Slightly increase velocity after activating many skills mid-race.
+Slipstream
+Slightly decrease wind resistance when following directly behind another runner.
+Playtime's Over!
+Slightly increase velocity when followed by another runner directly behind for a long time.
+Top Pick
+Slightly increase velocity when engaged in a challenge mid-race. (Dirt)
+All I've Got
+Slightly increase velocity when well-positioned on a straight in the last spurt. (Medium)
+Feature Act
+Slightly increase velocity when positioned toward the front upon approaching late-race. (Long)
+Early Start
+Very slightly increase velocity for a medium duration when positioned toward the back mid-race. (End Closer)
+Risky Business
+Moderately increase velocity in the second half of the race, but also greatly increase fatigue sometimes.
+Light as a Feather
+Slightly increase velocity when positioned toward the front upon approaching late-race. (Sprint)
+Fighting Spirit
+When engaged in a challenge midpack mid-race, very slightly recover endurance and slightly increase velocity. (Medium)
+Eager
+When positioned toward the back mid-race, slightly increase velocity. (Medium)
+Pumped
+When positioned toward the back on the final corner, slightly increase velocity. (Mile)
+Fearless
+When positioned in the midpack during the second half of the race, slightly increase velocity and very minimally increase acceleration. (Late Surger)
+With All My Soul
+When positioned toward the front mid-race, slightly increase velocity and minimally decrease the velocity of runners behind the skill user. (Medium)
+Full Throttle
+Greatly consume endurance mid-race and moderately increase velocity. (Late Surger)
+Downhill Speedster
+Slightly increase velocity on downhills.
+Professor of Curvature
+Increase velocity on a corner with skilled turning.
+Beeline Burst
+Increase velocity on a straight.
+It's On!
+Increase velocity when passing another runner mid-race.
+In Body and Mind
+Increase velocity in the last spurt.
+Escape Artist
+Increase ability to go to the front mid-race. (Front Runner)
+Speed Star
+Increase ability to break out of the pack on the final corner. (Pace Chaser)
+Fast & Furious
+Increase velocity mid-race. (Late Surger)
+Rising Dragon
+Increase velocity when passing another runner on the outside on the final corner. (Late Surger)
+Sturm und Drang
+Move up in preparation to close the gap when positioned toward the back late-race. (End Closer)
+Blinding Flash
+Increase spurting ability when positioned toward the back late-race. (Sprint)
+Mile Maven
+Widen the margin when positioned toward the front early-race. (Mile)
+Killer Tunes
+Increase positioning ability when positioned toward the front mid-race. (Medium)
+Unyielding
+Increase ability to fight back when passed by another runner on the final corner. (Medium)
+Innate Experience
+Increase velocity when near the inner rail on the final corner. (Long)
+Staggering Lead
+Increase ability to maintain the lead when leading by a large margin mid-race. (Sprint)
+Changing Gears
+Increase passing ability when positioned toward the front mid-race. (Mile)
+Big-Sisterly
+Increase passing ability. (Mile)
+Vanguard Spirit
+Increase ability to maintain the lead when leading by a fair margin mid-race. (Long)
+Overwhelming Pressure
+Increase velocity when passing another runner late-race. (Long)
+15,000,000 CC
+Increase velocity on an uphill. (Late Surger)
+Trending in the Charts!
+Increase velocity when engaged in a challenge mid-race. (Dirt)
+Superstan
+Increase velocity when close to many runners.
+Come What May
+Increase velocity when well-positioned on a straight in the last spurt. (Medium)
+Tail Nine
+Increase velocity after activating many skills mid-race.
+Dream Run
+Increase velocity on the final straight due to a strong desire to cross the finish line carrying everyone's hopes and dreams.
+Headliner
+Increase velocity when positioned toward the front upon approaching late-race. (Long)
+Daring Strike
+Moderately increase velocity for a medium duration when positioned toward the back mid-race. (End Closer)
+Nothing Ventured
+Greatly increase velocity in the second half of the race, but also greatly increase fatigue sometimes.
+Flash Forward
+Increase velocity on a straight. (Medium)
+In High Spirits
+Increase velocity when positioned toward the front upon approaching late-race. (Sprint)
+Blast Forward
+Increase velocity on a straight. (Long)
+Top Runner
+Increase ability to pass or challenge another runner early-race or mid-race. (Front Runner)
+Burning Soul
+When engaged in a challenge midpack mid-race, moderately recover endurance and moderately increase velocity. (Medium)
+Elated
+When positioned toward the back mid-race, increase velocity. (Medium)
+Full of Vigor
+When positioned toward the back on the final corner, increase velocity. (Mile)
+Dauntless
+When positioned in the midpack during the second half of the race, increase velocity and very slightly increase acceleration. (Late Surger)
+Wild Wind
+When positioned toward the front mid-race, increase velocity and slightly decrease the velocity of runners behind the skill user. (Medium)
+See Ya Later!
+Increase velocity when followed by another runner directly behind for a long time.
+Keep Going!
+Greatly consume endurance mid-race and greatly increase velocity. (Late Surger)
+Moonlit Flash
+Increase velocity on straights. (End Closer)
+Refraction Arc
+Increase velocity on corners. (Medium)
+
+accel:
+Corner Acceleration ○
+Slightly increase acceleration on a corner with masterful turning.
+Straightaway Acceleration
+Slightly increase acceleration on a straight.
+Nimble Navigator
+Slightly increase maneuverability when the way ahead is blocked in the last spurt.
+Early Lead
+Slightly increase ability to go to the front early-race. (Front Runner)
+Final Push
+Slightly increase ability to keep the lead on the final corner. (Front Runner)
+Slick Surge
+Slightly increase acceleration late-race. (Late Surger)
+Straightaway Spurt
+Slightly increase acceleration on a straight in the last spurt. (End Closer)
+Sprinting Gear
+Slightly increase acceleration on a straight. (Sprint)
+Updrafters
+Slightly increase passing ability when positioned toward the back late-race. (Mile)
+Countermeasure
+Slightly increase passing ability when positioned toward the front upon approaching late-race. (Sprint)
+Acceleration
+Slightly increase acceleration when passing another runner mid-race. (Mile)
+Second Wind
+Slightly increase acceleration when not in the lead mid-race. (Front Runner)
+Shrewd Step
+Slightly increase ability to navigate smoothly. (Pace Chaser)
+Straight Descent
+Slightly improve running on a downhill. (Pace Chaser)
+Tactical Tweak
+Slightly increase acceleration when positioned toward the back mid-race. (Pace Chaser)
+Fighter
+Slightly increase acceleration for a medium duration when trying to pass another runner. (Late Surger)
+Highlander
+Slightly improve running on an uphill.
+Groundwork
+Slightly increase acceleration after activating many skills early-race.
+Head-On
+Slightly increase acceleration when positioned toward the front late-race. (Pace Chaser)
+Take the Chance
+If positioned toward the back late-race, slightly increase acceleration. (Medium)
+Corner Connoisseur
+Increase acceleration on a corner with masterful turning.
+Rushing Gale!
+Increase acceleration on a straight.
+No Stopping Me!
+Increase maneuverability when the way ahead is blocked in the last spurt.
+Taking the Lead
+Increase ability to go to the front early-race. (Front Runner)
+Unrestrained
+Increase ability to keep the lead on the final corner. (Front Runner)
+On Your Left!
+Increase acceleration late-race. (Late Surger)
+Encroaching Shadow
+Increase acceleration on a straight in the last spurt. (End Closer)
+Turbo Sprint
+Increase acceleration on a straight. (Sprint)
+Furious Feat
+Increase passing ability when positioned toward the back late-race. (Mile)
+Plan X
+Increase passing ability when positioned toward the front upon approaching late-race. (Sprint)
+Step on the Gas!
+Increase acceleration when passing another runner mid-race. (Mile)
+Reignition
+Increase acceleration when not in the lead mid-race. (Front Runner)
+Technician
+Moderately increase ability to navigate smoothly. (Pace Chaser)
+Determined Descent
+Moderately improve running on a downhill. (Pace Chaser)
+Shatterproof
+Moderately increase acceleration when positioned toward the back mid-race. (Pace Chaser)
+Hard Worker
+Moderately increase acceleration for a medium duration when trying to pass another runner. (Late Surger)
+From the Brink
+If positioned toward the back late-race, increase acceleration. (Medium)
+Neck and Neck
+Increase acceleration when positioned toward the front late-race. (Pace Chaser)
+
+movement:
+Prudent Positioning
+Increase navigation early-race.
+Go with the Flow
+Moderately increase navigation late-race.
+Meticulous Measures
+Moderately prepare to make for the finish line for a medium duration mid-race. (Sprint)
+Thunderbolt Step
+Moderately avoid becoming surrounded for a medium duration when positioned toward the back mid-race. (Medium)
+Dodging Danger
+Moderately avoid becoming surrounded early-race. (Front Runner)
+Forward, March!
+Moderately prepare to aim for the front late-race. (Dirt)
+Center Stage
+Greatly increase navigation early-race.
+Lane Legerdemain
+Increase navigation late-race.
+Perfect Prep!
+Prepare to make for the finish line for a medium duration mid-race. (Sprint)
+Lightning Step
+Avoid becoming surrounded for a medium duration when positioned toward the back mid-race. (Medium)
+Sixth Sense
+Avoid becoming surrounded early-race. (Front Runner)
+Lead the Charge!
+Prepare to aim for the front late-race. (Dirt)
+
+focus:
+Focus
+Slightly decrease time lost to slow starts.
+Concentration
+Decrease time lost to slow starts.
+
