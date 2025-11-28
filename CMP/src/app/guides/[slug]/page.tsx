@@ -1,6 +1,7 @@
 import SharePost from "@/components/Blog/SharePost";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import UnderConstruction from "@/components/Common/UnderConstruction";
+import LibraGuideContent from "@/components/Guides/LibraGuideContent";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -112,9 +113,13 @@ const GuidePage = async ({ params }: Props) => {
                 </div>
               </div>
               <div>
-                <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  Guide content coming soon...
-                </p>
+                {guide.slug === "cm-libra-2025" ? (
+                  <LibraGuideContent />
+                ) : (
+                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Guide content coming soon...
+                  </p>
+                )}
               </div>
               <div className="items-center justify-between sm:flex">
                 <div className="mb-5">
@@ -151,4 +156,3 @@ const GuidePage = async ({ params }: Props) => {
 };
 
 export default GuidePage;
-

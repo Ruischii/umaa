@@ -27,7 +27,7 @@ const UnderConstruction = () => {
           <p className="max-w-2xl text-base text-body-color dark:text-body-color-dark sm:text-lg pb-14">
             Check my{" "}
             <a
-              href="https://x.com/t_2ddy"
+              href="https://x.com/_t2ddy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:underline dark:text-primary"

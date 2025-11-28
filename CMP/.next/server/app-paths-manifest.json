@@ -1,7 +1,5 @@
 {
-  "/contact/page": "app/contact/page.js",
   "/guides/page": "app/guides/page.js",
-  "/team-trials/page": "app/team-trials/page.js",
-  "/page": "app/page.js",
-  "/guides/[slug]/page": "app/guides/[slug]/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/team-trials/page": "app/team-trials/page.js"
 }
