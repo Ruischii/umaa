@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const LibraGuideContent = () => {
   const [openPosition, setOpenPosition] = useState<string | null>("front-runner");
@@ -7,6 +8,98 @@ const LibraGuideContent = () => {
   const togglePosition = (position: string) => {
     setOpenPosition(openPosition === position ? null : position);
   };
+
+  // Comprehensive mapping of skill names to their image files
+  const skillImages: { [key: string]: string } = {
+    // Green Skills
+    "Right-Handed": "speed.png",
+    "Fall Runner": "speed.png",
+    "Firm Conditions": "strength.png",
+    "Outer Post Proficiency (RNG)": "speed.png",
+    "Long Shot (RNG)": "speed.png",
+    "Target in Sight (RNG)": "guts.png",
+    "Non-Standard Distance": "stam.png",
+    "Kyoto Racecourse": "stam.png",
+    "Sunny Days": "guts.png",
+    "Maverick (RNG)": "speed.png",
+    "Lone Wolf (RNG)": "speed.png",
+    "Inner Post Proficiency (RNG)": "wit.png",
+    "Lucky Seven (RNG)": "luck.png",
+    
+    // Acceleration Skills
+    "Groundwork": "accel.png",
+    "Early lead": "accel.png",
+    "Highlander": "accel.png",
+    "Nimble Navigator": "accel.png",
+    "Slick Surge": "accel.png",
+    "Straightaway Spurt": "accel.png",
+    "Head On": "accel.png",
+    
+    // Recovery Skills
+    "Swinging Maestro": "recovery.png",
+    "Restless": "recovery.png",
+    "Cooldown": "recovery.png",
+    "Breath of Fresh Air": "recovery.png",
+    "Race Planner": "recovery.png",
+    "Gourmand": "recovery.png",
+    "Calm and Collected": "recovery.png",
+    "Lie in Wait": "recovery.png",
+    "Go-Home Specialist": "recovery.png",
+    "Sleeping Lion": "recovery.png",
+    
+    // Velocity/Speed Skills
+    "Front Runner Corners": "velocity.png",
+    "Long Corners": "velocity.png",
+    "Corner Adept": "velocity.png",
+    "Slipstream": "velocity.png",
+    "Ramp Up": "velocity.png",
+    "Leader's Pride": "velocity.png",
+    "Playtime's Over!": "velocity.png",
+    "Fast-Paced": "velocity.png",
+    "Tail Held High": "velocity.png",
+    "Straightaway Adept": "velocity.png",
+    "Long Straightaways": "velocity.png",
+    "Front Runner Straights": "velocity.png",
+    "Pace Chaser Corners": "velocity.png",
+    "Pace Chaser Straights": "velocity.png",
+    "Prepared to Pass": "velocity.png",
+    "Late Surger Corners": "velocity.png",
+    "Late Surger Straightaways": "velocity.png",
+    "Position Pilfer": "velocity.png",
+    "End Closer Corners": "velocity.png",
+    "End Closer Straightaways": "velocity.png",
+    "Early Start": "velocity.png",
+    "Uma Stan": "velocity.png",
+    
+    // Special Skills
+    "Ignited Spirit PWR": "strength.png",
+    "Ignited Spirit SPD": "speed.png",
+    "Let's Pump Some Iron!": "strength.png",
+    "1,500,000 CC": "velocity.png",
+    "Stamina Siphon": "recovery.png",
+    
+    // Special text (non-skills)
+    "3 Greens": "accel.png",
+  };
+  
+  // Helper component to render skills with icons
+  const SkillsList = ({ skills }: { skills: string[] }) => (
+    <div className="flex flex-wrap gap-2">
+      {skills.map((skill, index) => (
+        <div key={index} className="flex items-center gap-1.5 rounded-md bg-body-color/5 dark:bg-white/5 px-2.5 py-1.5 text-sm text-body-color dark:text-white">
+          <div className="relative h-5 w-5 flex-shrink-0">
+            <Image
+              src={`/images/skills/${skillImages[skill] || "speed.png"}`}
+              alt={skill}
+              fill
+              className="object-contain"
+            />
+          </div>
+          <span>{skill}</span>
+        </div>
+      ))}
+    </div>
+  );
 
   return (
     <div className="space-y-10">
@@ -27,15 +120,23 @@ const LibraGuideContent = () => {
         <h4 className="mb-4 text-xl font-bold text-black dark:text-white">
           Green Skills
         </h4>
-        <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
           {[
             "Right-Handed", "Fall Runner", "Firm Conditions", "Outer Post Proficiency (RNG)",
             "Long Shot (RNG)", "Target in Sight (RNG)", "Non-Standard Distance",
             "Kyoto Racecourse", "Sunny Days", "Maverick (RNG)", "Lone Wolf (RNG)",
             "Inner Post Proficiency (RNG)", "Lucky Seven (RNG)"
           ].map((skill, index) => (
-            <div key={index} className="rounded-md bg-primary/10 px-3 py-2 text-sm font-medium text-body-color dark:text-white">
-              {skill}
+            <div key={index} className="flex items-center gap-2 rounded-md bg-primary/10 px-3 py-2 text-sm font-medium text-body-color dark:text-white">
+              <div className="relative h-6 w-6 flex-shrink-0">
+                <Image
+                  src={`/images/skills/${skillImages[skill]}`}
+                  alt={skill}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="flex-1">{skill}</span>
             </div>
           ))}
         </div>
@@ -187,27 +288,27 @@ const LibraGuideContent = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Core Skills</h5>
-                  <p className="text-body-color text-base">Groundwork, Early lead, Highlander</p>
+                  <SkillsList skills={["Groundwork", "Early lead", "Highlander"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Accelerations</h5>
-                  <p className="text-body-color text-base">3 Greens</p>
+                  <SkillsList skills={["3 Greens"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Recovery Skills</h5>
-                  <p className="text-body-color text-base">Swinging Maestro, Restless, Cooldown, Breath of Fresh Air</p>
+                  <SkillsList skills={["Swinging Maestro", "Restless", "Cooldown", "Breath of Fresh Air"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good to Fight for 1st</h5>
-                  <p className="text-body-color text-base">Front Runner Corners, Long Corners, Corner Adept, Slipstream, Ramp Up, Leader's Pride</p>
+                  <SkillsList skills={["Front Runner Corners", "Long Corners", "Corner Adept", "Slipstream", "Ramp Up", "Leader's Pride"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Speed Skills</h5>
-                  <p className="text-body-color text-base">Playtime's Over!, Fast-Paced, Tail Held High</p>
+                  <SkillsList skills={["Playtime's Over!", "Fast-Paced", "Tail Held High"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
-                  <p className="text-body-color text-base">Straightaway Adept, Long Straightaways, Front Runner Straights, Ignited Spirit SPD</p>
+                  <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Front Runner Straights", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Deck Recommendations</h5>
@@ -247,23 +348,23 @@ const LibraGuideContent = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Core Skills</h5>
-                  <p className="text-body-color text-base">Ignited Spirit PWR, Head On, Highlander</p>
+                  <SkillsList skills={["Ignited Spirit PWR", "Head On", "Highlander"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Accelerations</h5>
-                  <p className="text-body-color text-base">Nimble Navigator, Uma Stan</p>
+                  <SkillsList skills={["Nimble Navigator", "Uma Stan"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Recovery Skills</h5>
-                  <p className="text-body-color text-base">Swinging Maestro, Race Planner, Cooldown, Breath of Fresh Air, Gourmand, Calm and Collected</p>
+                  <SkillsList skills={["Swinging Maestro", "Race Planner", "Cooldown", "Breath of Fresh Air", "Gourmand", "Calm and Collected"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Speed Skills</h5>
-                  <p className="text-body-color text-base">Playtime's Over!, Tail Held High, Pace Chaser Corners, Long Corners, Corner Adept, Slipstream, Prepared to Pass, Ramp Up</p>
+                  <SkillsList skills={["Playtime's Over!", "Tail Held High", "Pace Chaser Corners", "Long Corners", "Corner Adept", "Slipstream", "Prepared to Pass", "Ramp Up"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
-                  <p className="text-body-color text-base">Straightaway Adept, Long Straightaways, Pace Chaser Straights, Ignited Spirit SPD</p>
+                  <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Pace Chaser Straights", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Deck Recommendations</h5>
@@ -303,27 +404,27 @@ const LibraGuideContent = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Core Skills</h5>
-                  <p className="text-body-color text-base">Let's Pump Some Iron!, Ignited Spirit PWR</p>
+                  <SkillsList skills={["Let's Pump Some Iron!", "Ignited Spirit PWR"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Accelerations</h5>
-                  <p className="text-body-color text-base">Slick Surge, Nimble Navigator</p>
+                  <SkillsList skills={["Slick Surge", "Nimble Navigator"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Recovery Skills</h5>
-                  <p className="text-body-color text-base">Swinging Maestro, Lie in Wait, Cooldown, Breath of Fresh Air</p>
+                  <SkillsList skills={["Swinging Maestro", "Lie in Wait", "Cooldown", "Breath of Fresh Air"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Speed Skills</h5>
-                  <p className="text-body-color text-base">Playtime's Over!, Tail Held High, Late Surger Corners, Long Corners, Corner Adept, Slipstream, Ramp Up</p>
+                  <SkillsList skills={["Playtime's Over!", "Tail Held High", "Late Surger Corners", "Long Corners", "Corner Adept", "Slipstream", "Ramp Up"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Special Notes</h5>
-                  <p className="text-body-color text-base">Position Pilfer, 1,500,000 CC</p>
+                  <SkillsList skills={["Position Pilfer", "1,500,000 CC"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
-                  <p className="text-body-color text-base">Long Straightaways, Late Surger Straightaways, Ignited Spirit SPD</p>
+                  <SkillsList skills={["Long Straightaways", "Late Surger Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Deck Recommendations</h5>
@@ -363,27 +464,28 @@ const LibraGuideContent = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Core Skills</h5>
-                  <p className="text-body-color text-base">Let's Pump Some Iron!, Nimble Navigator</p>
+                  <SkillsList skills={["Let's Pump Some Iron!", "Nimble Navigator"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Accelerations</h5>
-                  <p className="text-body-color text-base">Straightaway Spurt, Uma Stan</p>
+                  <SkillsList skills={["Straightaway Spurt", "Uma Stan"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Special Notes</h5>
-                  <p className="text-body-color text-base">Get an extra 50 stamina for Manhattan Cafe | Stamina Siphon</p>
+                  <p className="text-body-color text-sm">Get an extra 50 stamina for Manhattan Cafe</p>
+                  <SkillsList skills={["Stamina Siphon"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Recovery Skills</h5>
-                  <p className="text-body-color text-base">Swinging Maestro, Go-Home Specialist, Sleeping Lion, Breath of Fresh Air</p>
+                  <SkillsList skills={["Swinging Maestro", "Go-Home Specialist", "Sleeping Lion", "Breath of Fresh Air"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Speed Skills</h5>
-                  <p className="text-body-color text-base">Corner Adept, Tail Held High, End Closer Corners, Long Corners, Ramp Up, Slipstream, Early Start</p>
+                  <SkillsList skills={["Corner Adept", "Tail Held High", "End Closer Corners", "Long Corners", "Ramp Up", "Slipstream", "Early Start"]} />
                 </div>
                 <div>
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
-                  <p className="text-body-color text-base">Long Straightaways, End Closer Straightaways, Ignited Spirit SPD</p>
+                  <SkillsList skills={["Long Straightaways", "End Closer Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
                   <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Deck Recommendations</h5>

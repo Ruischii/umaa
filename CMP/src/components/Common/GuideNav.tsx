@@ -110,7 +110,7 @@ const GuideNav = ({ items }: GuideNavProps) => {
           </button>
         ) : (
           /* Expanded nav state */
-          <nav className="bg-white dark:bg-dark border border-body-color/10 dark:border-white/10 rounded-md shadow-md p-2 max-h-[80vh] overflow-y-auto w-36">
+        <nav className="bg-white dark:bg-dark border border-body-color/10 dark:border-white/10 rounded-md shadow-md p-2 max-h-[80vh] overflow-y-auto w-36">
             {/* Collapse button */}
             <button
               onClick={() => setIsCollapsed(true)}
@@ -118,8 +118,8 @@ const GuideNav = ({ items }: GuideNavProps) => {
               aria-label="Collapse navigation"
             >
               <h4 className="text-xs font-semibold text-black dark:text-white">
-                Contents
-              </h4>
+            Contents
+          </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 text-body-color dark:text-white/70 group-hover:text-primary transition-colors"
@@ -131,23 +131,23 @@ const GuideNav = ({ items }: GuideNavProps) => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <ul className="space-y-0.5">
-              {items.map((item) => (
-                <li key={item.id}>
-                  <button
-                    onClick={() => scrollToSection(item.id)}
-                    className={`text-left w-full px-2 py-1 text-xs rounded transition-colors ${
-                      activeId === item.id
-                        ? "bg-primary text-white dark:bg-primary dark:text-white font-medium"
-                        : "text-body-color hover:bg-body-color/10 dark:text-white/70 dark:hover:bg-white/10"
-                    }`}
-                  >
-                    {item.title}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <ul className="space-y-0.5">
+            {items.map((item) => (
+              <li key={item.id}>
+                <button
+                  onClick={() => scrollToSection(item.id)}
+                  className={`text-left w-full px-2 py-1 text-xs rounded transition-colors ${
+                    activeId === item.id
+                      ? "bg-primary text-white dark:bg-primary dark:text-white font-medium"
+                      : "text-body-color hover:bg-body-color/10 dark:text-white/70 dark:hover:bg-white/10"
+                  }`}
+                >
+                  {item.title}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
         )}
       </div>
 
