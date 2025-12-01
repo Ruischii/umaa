@@ -1,6 +1,10 @@
 import Link from "next/link";
+import { getCurrentCMGuide } from "@/lib/guides";
 
 const Hero = () => {
+  const currentGuide = getCurrentCMGuide();
+  const currentGuideUrl = currentGuide ? `/guides/${currentGuide.slug}` : "/guides";
+  
   return (
     <>
       <section
@@ -26,7 +30,7 @@ const Hero = () => {
                     CM Guides
                   </Link>
                   <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    href={currentGuideUrl}
                     className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Current Champions Meeting

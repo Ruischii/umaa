@@ -10,7 +10,7 @@ export type CMGuide = {
     designation: string;
   };
   tags: string[];
-  publishDate: string;
+  publishDate: string; // mm/dd/yy format
   isCurrent: boolean;
   underConstruction?: boolean;
   content?: string;
@@ -30,7 +30,7 @@ export const guidesData: CMGuide[] = [
       designation: "Guide Writer",
     },
     tags: ["champions-meeting"],
-    publishDate: "2025",
+    publishDate: "12/08/25",
     isCurrent: false,
   },
   {
@@ -46,7 +46,7 @@ export const guidesData: CMGuide[] = [
       designation: "Guide Writer",
     },
     tags: ["champions-meeting"],
-    publishDate: "2025",
+    publishDate: "10/15/25",
     isCurrent: false,
     underConstruction: true,
   },
@@ -63,9 +63,26 @@ export const guidesData: CMGuide[] = [
       designation: "Guide Writer",
     },
     tags: ["champions-meeting"],
-    publishDate: "2025",
-    isCurrent: true,
+    publishDate: "08/20/25",
+    isCurrent: false,
     underConstruction: true,
   },
 ];
+
+// Helper function to parse mm/dd/yy date format
+function parseDateMMDDYY(dateStr: string): Date {
+  const [month, day, year] = dateStr.split('/').map(Number);
+  // Assuming 20xx for year
+  const fullYear = year + 2000;
+  return new Date(fullYear, month - 1, day);
+}
+
+// Automatically set isCurrent based on the newest publishDate
+const sortedByDate = [...guidesData].sort((a, b) => {
+  return parseDateMMDDYY(b.publishDate).getTime() - parseDateMMDDYY(a.publishDate).getTime();
+});
+
+if (sortedByDate.length > 0) {
+  sortedByDate[0].isCurrent = true;
+}
 
