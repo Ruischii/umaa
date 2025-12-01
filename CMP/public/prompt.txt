@@ -1,5 +1,5 @@
 help me write a json file that contains a skill name and the image that it is related to, for the purpose of this file ignore duplicate skill names and treat them as the same without any symbol at the end
-the skill should be documented with the skill name, image type, and skill description (if there are 2 of the same skill use the first stated description
+the skill should be documented with the skill name, image type, and skill description (if there are 2 of the same skill use the first stated description)
 
 speed:
 Right-Handed ◎
