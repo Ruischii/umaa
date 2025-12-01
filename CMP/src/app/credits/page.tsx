@@ -18,7 +18,7 @@ const CreditsSection = () => {
             <div className="flex flex-col mx-auto max-w-4xl">
               <div className="relative aspect-video p-4 sm:p-2 sm:pb-0 select-none">
                 <Image
-                  src="/images/teamtrials/teamtrials_header 1.webp"
+                  src="/images/footer/credit_banner.webp"
                   alt="Credits Header"
                   fill
                   priority

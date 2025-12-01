@@ -146,7 +146,7 @@ const TeamTrialsPage = () => {
                   </h3>
 
                   <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
-                    Run Front (逃げ/Nige) for Career Mode
+                    Front Runner works for the debut race to avoid losing.
                   </h4>
                   <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Even if your Uma is normally Mid/Chaser:
@@ -245,9 +245,12 @@ const TeamTrialsPage = () => {
                   </p>
 
                   <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
-                    Always Prioritize
+                    Always Prioritize Gold Skills
                   </h4>
                   <ul className="text-body-color mb-8 list-inside list-disc">
+                    <h3 className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                      1 Gold skill is worth more than 2 Silver skills in terms of point gains, and will usually cost the same or less.
+                    </h3>
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
                       Good passive skills (green) → Adaptations, corner skills, straight skills.
                     </li>
@@ -308,7 +311,7 @@ const TeamTrialsPage = () => {
                     8. Parent Selection Rules
                   </h3>
                   <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Always use <span className="text-primary underline dark:text-white">UMADB</span> or <span className="text-primary underline dark:text-white">Run Genesis</span> to:
+                    Always use <a href="https://uma-global.pure-db.com/#/search" target="_blank" rel="noopener noreferrer" className="text-primary underline dark:text-white hover:text-primary/80 hover:scale-105 inline-block transition-all duration-200">UMADB</a> or <a href="https://uma.moe" target="_blank" rel="noopener noreferrer" className="text-primary underline dark:text-white hover:text-primary/80 hover:scale-105 inline-block transition-all duration-200">uma.moe</a> to:
                   </p>
                   <ul className="text-body-color mb-8 list-inside list-disc">
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">

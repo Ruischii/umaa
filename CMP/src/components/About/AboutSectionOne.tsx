@@ -25,8 +25,8 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Built for the Uma Musume Community."
-                paragraph="The main goal is to provide players with organized, searchable race information and strategies that are always up to date for the next Chmaptions Meetings and current Team Trials environment."
-                mb="44px"
+                paragraph="The main goal is to provide players with organized, searchable race information and strategies that are always up to date for the next Chmaptions Meetings and current Team Trials environment.
+                            Remember, this is a game and its supposed to be fun, prepare with the time you can and enjoy the game!"
               />
 
               <div
