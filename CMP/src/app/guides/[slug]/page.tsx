@@ -102,7 +102,7 @@ const GuidePage = async ({ params }: Props) => {
       <section className="pb-[120px]">
       <div className="container">
         <div className="-mx-4 flex flex-wrap justify-center">
-          <div className="w-full px-4 lg:w-8/12">
+          <div className="w-full px-4 md:w-11/12 lg:w-10/12 xl:w-8/12">
             <div>
               <h2 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white">
                 {guide.title}

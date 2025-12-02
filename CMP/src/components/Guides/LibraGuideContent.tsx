@@ -86,7 +86,7 @@ const LibraGuideContent = () => {
   const SkillsList = ({ skills }: { skills: string[] }) => (
     <div className="flex flex-wrap gap-2">
       {skills.map((skill, index) => (
-        <div key={index} className="flex items-center gap-1.5 rounded-md bg-body-color/5 dark:bg-white/5 px-2.5 py-1.5 text-sm text-body-color dark:text-white">
+        <div key={index} className="flex items-center gap-1.5 rounded-md bg-body-color/5 dark:bg-white/5 px-2.5 py-1.5 text-base text-body-color dark:text-white">
           <div className="relative h-5 w-5 flex-shrink-0">
             <Image
               src={`/images/skills/${skillImages[skill] || "speed.png"}`}
@@ -105,12 +105,12 @@ const LibraGuideContent = () => {
     <div className="space-y-10">
       {/* Quickstart Section */}
       <div className="rounded-lg border-2 border-primary/30 bg-primary/5 p-6 dark:bg-primary/10">
-        <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">
+        <h3 className="mb-4 text-3xl font-bold text-black dark:text-white">
           ⚡ Quickstart Guide
         </h3>
         <div className="space-y-4">
           <div>
-            <h4 className="mb-2 text-lg font-semibold text-black dark:text-white">
+            <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
               Skill Building Strategy
             </h4>
             <ul className="space-y-2 text-body-color dark:text-white/90">
@@ -126,7 +126,7 @@ const LibraGuideContent = () => {
           </div>
 
           <div>
-            <h4 className="mb-2 text-lg font-semibold text-black dark:text-white">
+            <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
               Skill Priority Order
             </h4>
             <ol className="space-y-2 text-body-color dark:text-white/90">
@@ -146,7 +146,7 @@ const LibraGuideContent = () => {
           </div>
 
           <div>
-            <h4 className="mb-2 text-lg font-semibold text-black dark:text-white">
+            <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
               Pro Tips
             </h4>
             <ul className="space-y-2 text-body-color dark:text-white/90">
@@ -165,29 +165,29 @@ const LibraGuideContent = () => {
 
       {/* General Info */}
       <div>
-        <h3 className="mb-6 text-2xl font-bold text-black dark:text-white">
+        <h3 className="mb-6 text-3xl font-bold text-black dark:text-white">
           Race Information
         </h3>
         <div className="mb-6">
-          <p className="text-body-color mb-2 text-base font-medium">
+          <p className="text-body-color mb-2 text-lg font-medium">
             <strong className="text-black dark:text-white">Track:</strong> Kyoto 3000m (outer) (clockwise)
           </p>
-          <p className="text-body-color mb-2 text-base font-medium">
+          <p className="text-body-color mb-2 text-lg font-medium">
             <strong className="text-black dark:text-white">Distance:</strong> Long
           </p>
         </div>
 
-        <h4 className="mb-4 text-xl font-bold text-black dark:text-white">
+        <h4 className="mb-4 text-2xl font-bold text-black dark:text-white">
           Green Skills
         </h4>
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
           {[
             "Right-Handed", "Fall Runner", "Firm Conditions", "Outer Post Proficiency (RNG)",
             "Long Shot (RNG)", "Target in Sight (RNG)", "Non-Standard Distance",
             "Kyoto Racecourse", "Sunny Days", "Maverick (RNG)", "Lone Wolf (RNG)",
             "Inner Post Proficiency (RNG)", "Lucky Seven (RNG)"
           ].map((skill, index) => (
-            <div key={index} className="flex items-center gap-2 rounded-md bg-primary/10 px-3 py-2 text-sm font-medium text-body-color dark:text-white">
+            <div key={index} className="flex items-center gap-2 rounded-md bg-primary/10 px-2 py-2 text-base font-medium text-body-color dark:text-white md:px-3">
               <div className="relative h-6 w-6 flex-shrink-0">
                 <Image
                   src={`/images/skills/${skillImages[skill]}`}
@@ -204,54 +204,54 @@ const LibraGuideContent = () => {
 
       {/* Stat Requirements */}
       <div>
-        <h3 className="mb-6 text-2xl font-bold text-black dark:text-white">
+        <h3 className="mb-6 text-3xl font-bold text-black dark:text-white">
           Stat Requirements by Position
         </h3>
         
         {/* Ideal Stats Table */}
-        <h4 className="mb-4 text-lg font-semibold text-black dark:text-white">
+        <h4 className="mb-4 text-xl font-semibold text-black dark:text-white">
           Ideal Stats
         </h4>
         <div className="mb-8 overflow-x-auto">
-          <table className="w-full border-collapse border border-body-color/10 dark:border-white/10">
+          <table className="w-full border-collapse border border-body-color/10 text-base lg:text-lg dark:border-white/10">
             <thead className="bg-primary/10">
               <tr>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Position</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Position</th>
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/speedStat.png" alt="Speed" fill className="object-contain" />
                     </div>
                     <span>Speed</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/staminaStat.png" alt="Stamina" fill className="object-contain" />
                     </div>
                     <span>Stamina</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/strengthStat.png" alt="Power" fill className="object-contain" />
                     </div>
                     <span>Power</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/gutsStat.png" alt="Guts" fill className="object-contain" />
                     </div>
                     <span>Guts</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/witStat.png" alt="Wit" fill className="object-contain" />
                     </div>
                     <span>Wit</span>
@@ -261,85 +261,85 @@ const LibraGuideContent = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">Front Runner</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1200</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1200</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">901</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">500</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">400</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Front Runner</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">901</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">500</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
               </tr>
               <tr className="bg-body-color/5">
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">Pace Chaser</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1200</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1150</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">901</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">500</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">400</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Pace Chaser</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1150</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">901</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">500</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
               </tr>
               <tr>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">Late Surger</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1200</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1050</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">901</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">450</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">400</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Late Surger</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1050</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">901</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">450</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
               </tr>
               <tr className="bg-body-color/5">
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">End Closer</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1200</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1050</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">601</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">400</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">301</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">End Closer</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1050</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         {/* Minimum Stats Table */}
-        <h4 className="mb-4 text-lg font-semibold text-black dark:text-white">
+        <h4 className="mb-4 text-xl font-semibold text-black dark:text-white">
           Minimum Stats
         </h4>
         <div className="mb-8 overflow-x-auto">
-          <table className="w-full border-collapse border border-body-color/10 dark:border-white/10">
+          <table className="w-full border-collapse border border-body-color/10 text-base lg:text-lg dark:border-white/10">
             <thead className="bg-primary/10">
               <tr>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Position</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Position</th>
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/speedStat.png" alt="Speed" fill className="object-contain" />
                     </div>
                     <span>Speed</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/staminaStat.png" alt="Stamina" fill className="object-contain" />
                     </div>
                     <span>Stamina</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/strengthStat.png" alt="Power" fill className="object-contain" />
                     </div>
                     <span>Power</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/gutsStat.png" alt="Guts" fill className="object-contain" />
                     </div>
                     <span>Guts</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-6 w-6 flex-shrink-0">
+                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                  <div className="flex items-center gap-1.5 lg:gap-2">
+                    <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/witStat.png" alt="Wit" fill className="object-contain" />
                     </div>
                     <span>Wit</span>
@@ -349,36 +349,36 @@ const LibraGuideContent = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">Front Runner</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1200</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1100</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">601</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">500</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">301</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Front Runner</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1100</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">500</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
               </tr>
               <tr className="bg-body-color/5">
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">Pace Chaser</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1200</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1150</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">601</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">500</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">301</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Pace Chaser</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1150</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">500</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
               </tr>
               <tr>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">Late Surger</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1200</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1050</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">601</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">450</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">301</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Late Surger</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1050</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">450</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
               </tr>
               <tr className="bg-body-color/5">
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">End Closer</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1200</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">1050</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">601</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">400</td>
-                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10">301</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">End Closer</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1050</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
+                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
               </tr>
             </tbody>
           </table>
@@ -387,7 +387,7 @@ const LibraGuideContent = () => {
 
       {/* Position Strategies */}
       <div>
-        <h3 className="mb-6 text-2xl font-bold text-black dark:text-white">
+        <h3 className="mb-6 text-3xl font-bold text-black dark:text-white">
           Position Strategies
         </h3>
 
@@ -398,7 +398,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-lg font-semibold text-black dark:text-white">
+              <h4 className="text-xl font-semibold text-black dark:text-white">
                 Front Runner
               </h4>
               <svg
@@ -417,34 +417,34 @@ const LibraGuideContent = () => {
             <div className="mt-2 rounded-lg border border-body-color/20 bg-white p-6 dark:border-white/20 dark:bg-gray-dark">
               <div className="space-y-4">
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Core Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Core Skills</h5>
                   <SkillsList skills={["Groundwork", "Early lead", "Highlander"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Accelerations</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Accelerations</h5>
                   <SkillsList skills={["3 Greens"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Recovery Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Recovery Skills</h5>
                   <SkillsList skills={["Swinging Maestro", "Restless", "Cooldown", "Breath of Fresh Air"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good to Fight for 1st</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good to Fight for 1st</h5>
                   <SkillsList skills={["Front Runner Corners", "Long Corners", "Corner Adept", "Slipstream", "Ramp Up", "Leader's Pride"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Speed Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Speed Skills</h5>
                   <SkillsList skills={["Playtime's Over!", "Fast-Paced", "Tail Held High"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
                   <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Front Runner Straights", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Deck Recommendations</h5>
-                  <p className="text-body-color mb-2 text-sm"><strong>Parent Deck:</strong> 30% total race bonus - Use balanced speed and stamina cards</p>
-                  <p className="text-body-color mb-2 text-sm"><strong>Ace (Budget):</strong> 30% race bonus - Budget-friendly core stats focus</p>
-                  <p className="text-body-color text-sm"><strong>Ace (Whale):</strong> 45% race bonus - Premium support cards</p>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
+                  <p className="text-body-color mb-2 text-base"><strong>Parent Deck:</strong> 30% total race bonus - Use balanced speed and stamina cards</p>
+                  <p className="text-body-color mb-2 text-base"><strong>Ace (Budget):</strong> 30% race bonus - Budget-friendly core stats focus</p>
+                  <p className="text-body-color text-base"><strong>Ace (Whale):</strong> 45% race bonus - Premium support cards</p>
                 </div>
               </div>
             </div>
@@ -458,7 +458,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-lg font-semibold text-black dark:text-white">
+              <h4 className="text-xl font-semibold text-black dark:text-white">
                 Pace Chaser
               </h4>
               <svg
@@ -477,30 +477,30 @@ const LibraGuideContent = () => {
             <div className="mt-2 rounded-lg border border-body-color/20 bg-white p-6 dark:border-white/20 dark:bg-gray-dark">
               <div className="space-y-4">
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Core Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Core Skills</h5>
                   <SkillsList skills={["Ignited Spirit PWR", "Head On", "Highlander"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Accelerations</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Accelerations</h5>
                   <SkillsList skills={["Nimble Navigator", "Uma Stan"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Recovery Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Recovery Skills</h5>
                   <SkillsList skills={["Swinging Maestro", "Race Planner", "Cooldown", "Breath of Fresh Air", "Gourmand", "Calm and Collected"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Speed Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Speed Skills</h5>
                   <SkillsList skills={["Playtime's Over!", "Tail Held High", "Pace Chaser Corners", "Long Corners", "Corner Adept", "Slipstream", "Prepared to Pass", "Ramp Up"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
                   <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Pace Chaser Straights", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Deck Recommendations</h5>
-                  <p className="text-body-color mb-2 text-sm"><strong>Parent Deck:</strong> 50% total race bonus - Recovery and speed emphasis</p>
-                  <p className="text-body-color mb-2 text-sm"><strong>Ace (Budget):</strong> 30% race bonus - Cost-effective position control</p>
-                  <p className="text-body-color text-sm"><strong>Ace (Whale):</strong> 50% race bonus - Consistent pace chasing dominance</p>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
+                  <p className="text-body-color mb-2 text-base"><strong>Parent Deck:</strong> 50% total race bonus - Recovery and speed emphasis</p>
+                  <p className="text-body-color mb-2 text-base"><strong>Ace (Budget):</strong> 30% race bonus - Cost-effective position control</p>
+                  <p className="text-body-color text-base"><strong>Ace (Whale):</strong> 50% race bonus - Consistent pace chasing dominance</p>
                 </div>
               </div>
             </div>
@@ -514,7 +514,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-lg font-semibold text-black dark:text-white">
+              <h4 className="text-xl font-semibold text-black dark:text-white">
                 Late Surger
               </h4>
               <svg
@@ -533,34 +533,34 @@ const LibraGuideContent = () => {
             <div className="mt-2 rounded-lg border border-body-color/20 bg-white p-6 dark:border-white/20 dark:bg-gray-dark">
               <div className="space-y-4">
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Core Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Core Skills</h5>
                   <SkillsList skills={["Let's Pump Some Iron!", "Ignited Spirit PWR"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Accelerations</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Accelerations</h5>
                   <SkillsList skills={["Slick Surge", "Nimble Navigator"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Recovery Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Recovery Skills</h5>
                   <SkillsList skills={["Swinging Maestro", "Lie in Wait", "Cooldown", "Breath of Fresh Air"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Speed Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Speed Skills</h5>
                   <SkillsList skills={["Playtime's Over!", "Tail Held High", "Late Surger Corners", "Long Corners", "Corner Adept", "Slipstream", "Ramp Up"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Special Notes</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Special Notes</h5>
                   <SkillsList skills={["Position Pilfer", "1,500,000 CC"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
                   <SkillsList skills={["Long Straightaways", "Late Surger Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Deck Recommendations</h5>
-                  <p className="text-body-color mb-2 text-sm"><strong>Parent Deck:</strong> 30% total race bonus - Stamina and late game acceleration focus</p>
-                  <p className="text-body-color mb-2 text-sm"><strong>Ace (Budget):</strong> 35% race bonus - Core late surge setup</p>
-                  <p className="text-body-color text-sm"><strong>Ace (Whale):</strong> 40% race bonus - Optimized for 2000m+ races</p>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
+                  <p className="text-body-color mb-2 text-base"><strong>Parent Deck:</strong> 30% total race bonus - Stamina and late game acceleration focus</p>
+                  <p className="text-body-color mb-2 text-base"><strong>Ace (Budget):</strong> 35% race bonus - Core late surge setup</p>
+                  <p className="text-body-color text-base"><strong>Ace (Whale):</strong> 40% race bonus - Optimized for 2000m+ races</p>
                 </div>
               </div>
             </div>
@@ -574,7 +574,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-lg font-semibold text-black dark:text-white">
+              <h4 className="text-xl font-semibold text-black dark:text-white">
                 End Closer
               </h4>
               <svg
@@ -593,35 +593,35 @@ const LibraGuideContent = () => {
             <div className="mt-2 rounded-lg border border-body-color/20 bg-white p-6 dark:border-white/20 dark:bg-gray-dark">
               <div className="space-y-4">
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Core Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Core Skills</h5>
                   <SkillsList skills={["Let's Pump Some Iron!", "Nimble Navigator"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Accelerations</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Accelerations</h5>
                   <SkillsList skills={["Straightaway Spurt", "Uma Stan"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Special Notes</h5>
-                  <p className="text-body-color text-sm">Get an extra 50 stamina for Manhattan Cafe</p>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Special Notes</h5>
+                  <p className="text-body-color text-base">Get an extra 50 stamina for Manhattan Cafe</p>
                   <SkillsList skills={["Stamina Siphon"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Recovery Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Recovery Skills</h5>
                   <SkillsList skills={["Swinging Maestro", "Go-Home Specialist", "Sleeping Lion", "Breath of Fresh Air"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Speed Skills</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Speed Skills</h5>
                   <SkillsList skills={["Corner Adept", "Tail Held High", "End Closer Corners", "Long Corners", "Ramp Up", "Slipstream", "Early Start"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
                   <SkillsList skills={["Long Straightaways", "End Closer Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
-                  <h5 className="mb-2 text-base font-semibold text-black dark:text-white">Deck Recommendations</h5>
-                  <p className="text-body-color mb-2 text-sm"><strong>Parent Deck:</strong> 45% total race bonus - Stamina inheritance and finishing power</p>
-                  <p className="text-body-color mb-2 text-sm"><strong>Ace (Budget):</strong> 35% race bonus - Budget-friendly end closer setup</p>
-                  <p className="text-body-color text-sm"><strong>Ace (Whale):</strong> 50% race bonus - Max stat investment</p>
+                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
+                  <p className="text-body-color mb-2 text-base"><strong>Parent Deck:</strong> 45% total race bonus - Stamina inheritance and finishing power</p>
+                  <p className="text-body-color mb-2 text-base"><strong>Ace (Budget):</strong> 35% race bonus - Budget-friendly end closer setup</p>
+                  <p className="text-body-color text-base"><strong>Ace (Whale):</strong> 50% race bonus - Max stat investment</p>
                 </div>
               </div>
             </div>
