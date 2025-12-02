@@ -23,7 +23,7 @@ export const guidesData: CMGuide[] = [
     title: "Champions Meeting Libra Guide",
     paragraph:
       "Complete guide for Champions Meeting Libra. Learn the best strategies and tips.",
-    image: "/images/blog/libra-cm.jpg",
+    image: "/images/cm/libra2025/libra-cm.jpg",
     author: {
       name: "umaa Team",
       image: "/images/blog/author-03.png",
@@ -39,7 +39,7 @@ export const guidesData: CMGuide[] = [
     title: "Champions Meeting Virgo Guide",
     paragraph:
       "Complete guide for Champions Meeting Virgo. Learn the best strategies and tips.",
-    image: "/images/blog/virgo-cm.jpg",
+    image: "/images/cm/Virgo2025/virgo-cm.jpg",
     author: {
       name: "umaa Team",
       image: "/images/blog/author-02.png",
@@ -56,7 +56,7 @@ export const guidesData: CMGuide[] = [
     title: "Champions Meeting Leo Guide",
     paragraph:
       "Complete guide for Champions Meeting Leo. Learn the best strategies and tips.",
-    image: "/images/blog/leo-cm.jpg",
+    image: "/images/cm/Leo2025/leo-cm.jpg",
     author: {
       name: "umaa Team",
       image: "/images/blog/author-03.png",

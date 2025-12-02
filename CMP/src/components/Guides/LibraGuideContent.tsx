@@ -103,6 +103,66 @@ const LibraGuideContent = () => {
 
   return (
     <div className="space-y-10">
+      {/* Quickstart Section */}
+      <div className="rounded-lg border-2 border-primary/30 bg-primary/5 p-6 dark:bg-primary/10">
+        <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">
+          ⚡ Quickstart Guide
+        </h3>
+        <div className="space-y-4">
+          <div>
+            <h4 className="mb-2 text-lg font-semibold text-black dark:text-white">
+              Skill Building Strategy
+            </h4>
+            <ul className="space-y-2 text-body-color dark:text-white/90">
+              <li className="flex gap-2">
+                <span className="text-primary">•</span>
+                <span><strong>More skills but white &gt; less skills but gold</strong> (excluding gold recovery skills)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-primary">•</span>
+                <span>Other than gold recovery skills, buying the same skill twice gives less value - get first stage of multiple skills instead of maxing a few</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="mb-2 text-lg font-semibold text-black dark:text-white">
+              Skill Priority Order
+            </h4>
+            <ol className="space-y-2 text-body-color dark:text-white/90">
+              <li className="flex gap-2">
+                <span className="font-bold text-primary">1.</span>
+                <span><strong>Gold recovery x2</strong> / First stage green skills</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-bold text-primary">2.</span>
+                <span><strong>Late race accels</strong> / Unique skills / Movement skills</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-bold text-primary">3.</span>
+                <span><strong>Standard mid race velocity skills</strong>, like Corner skills</span>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h4 className="mb-2 text-lg font-semibold text-black dark:text-white">
+              Pro Tips
+            </h4>
+            <ul className="space-y-2 text-body-color dark:text-white/90">
+              <li className="flex gap-2">
+                <span className="text-primary">💡</span>
+                <span>Try to use parents with <strong>Long pink sparks</strong> for Long S = ~100 speed for free</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-primary">⚠️</span>
+                <span><strong className="text-red-500">Long races require meeting stamina minimum</strong> to even get to the finish line</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       {/* General Info */}
       <div>
         <h3 className="mb-6 text-2xl font-bold text-black dark:text-white">
@@ -113,7 +173,7 @@ const LibraGuideContent = () => {
             <strong className="text-black dark:text-white">Track:</strong> Kyoto 3000m (outer) (clockwise)
           </p>
           <p className="text-body-color mb-2 text-base font-medium">
-            <strong className="text-black dark:text-white">Race Type:</strong> Championship Cup
+            <strong className="text-black dark:text-white">Distance:</strong> Long
           </p>
         </div>
 
@@ -157,11 +217,46 @@ const LibraGuideContent = () => {
             <thead className="bg-primary/10">
               <tr>
                 <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Position</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Speed</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Stamina</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Power</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Guts</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Wisdom</th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/speedStat.png" alt="Speed" fill className="object-contain" />
+                    </div>
+                    <span>Speed</span>
+                  </div>
+                </th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/staminaStat.png" alt="Stamina" fill className="object-contain" />
+                    </div>
+                    <span>Stamina</span>
+                  </div>
+                </th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/strengthStat.png" alt="Power" fill className="object-contain" />
+                    </div>
+                    <span>Power</span>
+                  </div>
+                </th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/gutsStat.png" alt="Guts" fill className="object-contain" />
+                    </div>
+                    <span>Guts</span>
+                  </div>
+                </th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/witStat.png" alt="Wit" fill className="object-contain" />
+                    </div>
+                    <span>Wit</span>
+                  </div>
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -210,11 +305,46 @@ const LibraGuideContent = () => {
             <thead className="bg-primary/10">
               <tr>
                 <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Position</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Speed</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Stamina</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Power</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Guts</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">Wisdom</th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/speedStat.png" alt="Speed" fill className="object-contain" />
+                    </div>
+                    <span>Speed</span>
+                  </div>
+                </th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/staminaStat.png" alt="Stamina" fill className="object-contain" />
+                    </div>
+                    <span>Stamina</span>
+                  </div>
+                </th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/strengthStat.png" alt="Power" fill className="object-contain" />
+                    </div>
+                    <span>Power</span>
+                  </div>
+                </th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/gutsStat.png" alt="Guts" fill className="object-contain" />
+                    </div>
+                    <span>Guts</span>
+                  </div>
+                </th>
+                <th className="border border-body-color/10 px-4 py-3 text-left font-bold dark:border-white/10">
+                  <div className="flex items-center gap-2">
+                    <div className="relative h-6 w-6 flex-shrink-0">
+                      <Image src="/images/statImage/witStat.png" alt="Wit" fill className="object-contain" />
+                    </div>
+                    <span>Wit</span>
+                  </div>
+                </th>
               </tr>
             </thead>
             <tbody>

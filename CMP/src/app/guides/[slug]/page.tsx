@@ -1,4 +1,3 @@
-import SharePost from "@/components/Blog/SharePost";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import UnderConstruction from "@/components/Common/UnderConstruction";
 import LibraGuideContent from "@/components/Guides/LibraGuideContent";
@@ -149,31 +148,6 @@ const GuidePage = async ({ params }: Props) => {
                     Guide content coming soon...
                   </p>
                 )}
-              </div>
-              <div className="items-center justify-between sm:flex">
-                <div className="mb-5">
-                  <h5 className="text-body-color mb-3 text-sm font-medium">
-                    Popular Tags:
-                  </h5>
-                  <div className="flex items-center">
-                    {guide.tags.map((tag, index) => (
-                      <span
-                        key={index}
-                        className="bg-gray-light text-body-color dark:bg-dark-2 mr-3 inline-flex cursor-pointer items-center justify-center rounded-xs px-4 py-2 text-sm font-semibold capitalize hover:bg-primary hover:text-white"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="mb-5">
-                  <h5 className="text-body-color mb-3 text-sm font-medium sm:text-right">
-                    Share this guide:
-                  </h5>
-                  <div className="flex items-center sm:justify-end">
-                    <SharePost />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
