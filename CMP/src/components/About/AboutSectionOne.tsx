@@ -50,21 +50,29 @@ const AboutSectionOne = () => {
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-25/24 max-w-[500px] lg:mr-0">
-                <Image
-                  src="/images/about/aboutImg.svg"
-                  alt="about-image"
-                  fill
-                  loading="eager"
-                  className="mx-auto max-w-full dark:hidden lg:mr-0"
-                />
-                <Image
-                  src="/images/about/aboutImg.svg"
-                  alt="about-image"
-                  fill
-                  loading="eager"
-                  className="mx-auto hidden max-w-full dark:block lg:mr-0"
-                />
+              <div className="relative mx-auto aspect-25/24 max-w-[500px] lg:mr-0 pointer-events-none">
+                {/* Bottom image - OperaS */}
+                <div className="absolute left-1/4 top-8 z-30 sm:left-4 lg:-translate-x-20 pointer-events-auto">
+                  <Image
+                    src="/images/about/takiS.svg"
+                    alt="Taki character"
+                    width={250}
+                    height={300}
+                    loading="eager"
+                    className="w-[180px] sm:w-[230px] md:w-[220px] lg:w-[250px] rounded-lg object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-110 -rotate-8 lg:translate-x-20"
+                  />
+                </div>
+                {/* Top image - TakiS overlapping OperaS */}
+                <div className="absolute left-1/3 top-0 z-20 sm:left-16 lg:translate-x-0 pointer-events-auto -z-10">
+                  <Image
+                    src="/images/about/OperaS.svg"
+                    alt="Opera character"
+                    width={250}
+                    height={300}
+                    loading="eager"
+                    className="w-[180px] sm:w-[230px] md:w-[220px] lg:w-[250px] rounded-lg object-contain drop-shadow-2xl duration-300 hover:scale-110 rotate-12 translate-x-30 lg:translate-x-40"
+                  />
+                </div>
               </div>
             </div>
           </div>

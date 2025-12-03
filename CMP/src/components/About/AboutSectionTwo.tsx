@@ -10,20 +10,28 @@ const AboutSectionTwo = () => {
               className="relative mx-auto mb-12 aspect-25/24 max-w-[600px] text-center lg:m-0"
               data-wow-delay=".15s"
             >
-              <Image
-                src="/images/about/aboutImg2.svg"
-                alt="about image"
-                fill
-                loading="eager"
-                className="dark:hidden"
-              />
-              <Image
-                src="/images/about/aboutImg2.svg"
-                alt="about image"
-                fill
-                loading="eager"
-                className="hidden dark:block"
-              />
+              {/* Left image - offset up */}
+              <div className="absolute left-0 top-0 -translate-y-6">
+                <Image
+                  src="/images/about/Agroup.svg"
+                  alt="Team group"
+                  width={250}
+                  height={300}
+                  loading="eager"
+                  className="w-[180px] sm:w-[230px] md:w-[220px] lg:w-[250px] rounded-lg object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-110"
+                />
+              </div>
+              {/* Right image - offset down */}
+              <div className="absolute right-0 bottom-0 translate-y-6">
+                <Image
+                  src="/images/about/ttHighScore.svg"
+                  alt="High score"
+                  width={250}
+                  height={200}
+                  loading="eager"
+                  className="w-[180px] sm:w-[230px] md:w-[220px] lg:w-[250px] rounded-lg object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-110"
+                />
+              </div>
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
