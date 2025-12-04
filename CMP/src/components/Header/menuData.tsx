@@ -60,12 +60,6 @@ const menuData: Menu[] = [
         path: "/guides-details",
         newTab: false,
       },
-      {
-        id: 48,
-        title: "404 Page",
-        path: "/page-not-found",
-        newTab: false,
-      },
     ],
   },
 ];
