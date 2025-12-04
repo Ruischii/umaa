@@ -31,10 +31,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/contact/page.js"
     ],
-    "/guides/[slug]/page": [
+    "/guides-details/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/guides/[slug]/page.js"
+      "static/chunks/app/guides-details/page.js"
     ]
   }
 }

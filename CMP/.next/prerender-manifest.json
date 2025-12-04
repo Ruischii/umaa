@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/guides/cm-libra-2025":{},"/guides/cm-virgo-2025":{},"/guides/cm-leo-2025":{}},"dynamicRoutes":{"/guides/[slug]":{"fallback":null}},"notFoundRoutes":[],"preview":{"previewModeId":"89cd1bab9606546d52dc0d50c7e756b0","previewModeSigningKey":"05ac3147ca6128521ae6bdf820b0c9fb9e900fa3d67f7086dc4127e67516d2a2","previewModeEncryptionKey":"22794f83687102c691b252bd0ba4d68aad5dc902a5e30abf7474260b05bc6a72"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "8542b08dc7d7dadfe771cd7bf418b08c",
+    "previewModeSigningKey": "e3d9a0961c8829b3d9a27807457311a7e596a6b59a5b163dd7f5c0fee9e6658b",
+    "previewModeEncryptionKey": "743c7e34e813897b4fe906533a4be601a5ccb2a8ab24932e7a667ef379f762d0"
+  }
+}

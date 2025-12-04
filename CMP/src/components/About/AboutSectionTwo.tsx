@@ -18,7 +18,7 @@ const AboutSectionTwo = () => {
                   width={250}
                   height={300}
                   loading="eager"
-                  className="w-[180px] sm:w-[230px] md:w-[220px] lg:w-[250px] rounded-lg object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-110"
+                  className="w-[180px] sm:w-[230px] md:w-[220px] lg:w-[220px] xl:w-[250px] rounded-lg object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-110"
                 />
               </div>
               {/* Right image - offset down */}
@@ -29,7 +29,7 @@ const AboutSectionTwo = () => {
                   width={250}
                   height={200}
                   loading="eager"
-                  className="w-[180px] sm:w-[230px] md:w-[220px] lg:w-[250px] rounded-lg object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-110"
+                  className="w-[180px] sm:w-[230px] md:w-[220px] lg:w-[220px] xl:w-[250px] rounded-lg object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-110"
                 />
               </div>
             </div>
@@ -58,7 +58,7 @@ const AboutSectionTwo = () => {
                   Overview
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Every guide is written to be understandable at a glance with the info you need to train and race right away.
+                  You do not need to beat the best players and the people who spend the most, you just need to beat the rest.
                 </p>
               </div>
             </div>
