@@ -2,11 +2,38 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { getCurrentCMGuide } from "@/lib/guides";
 
 const Header = () => {
+  // Get current CM guide and create dynamic menu data
+  const dynamicMenuData = useMemo(() => {
+    const currentGuide = getCurrentCMGuide();
+    const currentGuideUrl = currentGuide ? `/guides/${currentGuide.slug}` : "/guides";
+    
+    // Clone menuData and update the CM Guides Details Page path
+    return menuData.map(item => {
+      if (item.submenu) {
+        return {
+          ...item,
+          submenu: item.submenu.map(subItem => {
+            if (subItem.id === 45) { // CM Guides Details Page
+              return {
+                ...subItem,
+                title: "Current Champions Meeting",
+                path: currentGuideUrl
+              };
+            }
+            return subItem;
+          })
+        };
+      }
+      return item;
+    });
+  }, []);
+
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -102,7 +129,7 @@ const Header = () => {
                   }`}
                 >
                   <ul className="block lg:flex lg:space-x-12">
-                    {menuData.map((menuItem, index) => {
+                    {dynamicMenuData.map((menuItem, index) => {
                       // Debug log
                       if (process.env.NODE_ENV === 'development') {
                         console.log('Menu item:', menuItem.title, menuItem.path);

@@ -36,7 +36,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
               src={image} 
               alt="image" 
               fill 
-              className="transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:rotate-1"
+              className="transition-transform duration-500 ease-in-out group-hover:scale-110"
             />
           </div>
           <div className="p-6 sm:p-8 md:px-6 md:py-8 lg:p-8 xl:px-5 xl:py-8 2xl:p-8">

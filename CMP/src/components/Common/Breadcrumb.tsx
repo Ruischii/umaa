@@ -1,13 +1,16 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
 const Breadcrumb = ({
   pageName,
   description,
   parent,
+  children,
 }: {
   pageName: string;
   description: string;
   parent?: { name: string; href: string };
+  children?: ReactNode;
 }) => {
   return (
     <>
@@ -22,6 +25,11 @@ const Breadcrumb = ({
                 <p className="text-base font-medium leading-relaxed text-body-color">
                   {description}
                 </p>
+                {children && (
+                  <div className="mt-4">
+                    {children}
+                  </div>
+                )}
               </div>
             </div>
             <div className="w-full px-4 lg:w-5/12">

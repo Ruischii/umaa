@@ -1,8 +1,6 @@
 {
-  "/team-trials/page": "app/team-trials/page.js",
-  "/guides/page": "app/guides/page.js",
-  "/about/page": "app/about/page.js",
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/guides-details/page": "app/guides-details/page.js"
+  "/about/page": "app/about/page.js",
+  "/guides/page": "app/guides/page.js",
+  "/team-trials/page": "app/team-trials/page.js"
 }
