@@ -96,7 +96,7 @@ const CreditsPage = () => {
                         gubuos
                       </h3>
                       <p className="text-body-color text-base font-medium mb-2 dark:text-body-color-dark">
-                        Page under construction gif
+                        404 page artwork and page under construction gif
                       </p>
                       <a
                         href="https://x.com/gubuos"
