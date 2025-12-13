@@ -276,9 +276,9 @@
       "description": "Moderately good things may happen when in bracket 7."
     },
     {
-      "name": "Introduction to Physiology",
+      "name": "Pure Heart",
       "image": "recovery.png",
-      "description": "Moderately recover endurance and slightly increase velocity for a moderate duration when sitting off the pace on a corner in the second half of the race."
+      "description": "Greatly recover endurance when well-positioned mid-race."
     },
     {
       "name": "Clear Heart",
@@ -286,9 +286,9 @@
       "description": "Recover endurance when well-positioned mid-race."
     },
     {
-      "name": "Super-Duper Stoked",
+      "name": "Super-Duper Climax",
       "image": "recovery.png",
-      "description": "Moderately recover endurance with a glance at nearby runners when positioned toward the back on the final corner."
+      "description": "Recover endurance with a glance at nearby runners when positioned toward the back on the final corner."
     },
     {
       "name": "U=ma2",
@@ -296,18 +296,8 @@
       "description": "Recover endurance and moderately increase velocity for a moderate duration when sitting off the pace on a corner in the second half of the race."
     },
     {
-      "name": "Pure Heart",
-      "image": "recovery.png",
-      "description": "Greatly recover endurance when well-positioned mid-race."
-    },
-    {
-      "name": "Super-Duper Climax",
-      "image": "recovery.png",
-      "description": "Recover endurance with a glance at nearby runners when positioned toward the back on the final corner."
-    },
-    {
       "name": "Swinging Maestro",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover endurance on a corner with efficient turning."
     },
     {
@@ -317,7 +307,7 @@
     },
     {
       "name": "Breath of Fresh Air",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover endurance on a straight."
     },
     {
@@ -327,7 +317,7 @@
     },
     {
       "name": "Iron Will",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover endurance when the way ahead is jammed early-race or mid-race."
     },
     {
@@ -337,7 +327,7 @@
     },
     {
       "name": "Indomitable",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover endurance when passed by another runner mid-race."
     },
     {
@@ -347,7 +337,7 @@
     },
     {
       "name": "Unruffled",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover endurance when surrounded mid-race."
     },
     {
@@ -357,7 +347,7 @@
     },
     {
       "name": "Calm and Collected",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Decrease fatigue upon approaching mid-race. (Pace Chaser)"
     },
     {
@@ -367,7 +357,7 @@
     },
     {
       "name": "Race Planner",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Decrease fatigue mid-race. (Pace Chaser)"
     },
     {
@@ -377,7 +367,7 @@
     },
     {
       "name": "Sleeping Lion",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Decrease fatigue mid-race. (End Closer)"
     },
     {
@@ -392,7 +382,7 @@
     },
     {
       "name": "Keen Eye",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Decrease fatigue, then moderately decrease velocity of runners ahead when positioned toward the back upon approaching mid-race. (Mile)"
     },
     {
@@ -402,7 +392,7 @@
     },
     {
       "name": "Trackblazer",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Decrease fatigue when positioned toward the front mid-race. (Medium)"
     },
     {
@@ -412,7 +402,7 @@
     },
     {
       "name": "Cooldown",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Decrease fatigue by taking a breather upon entering a straight. (Long)"
     },
     {
@@ -422,7 +412,7 @@
     },
     {
       "name": "Adrenaline Rush",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Regain the energy to run when close to exhausting strength. (Long)"
     },
     {
@@ -432,7 +422,7 @@
     },
     {
       "name": "Miraculous Step",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Decrease fatigue when moving sideways. (Medium)"
     },
     {
@@ -447,7 +437,7 @@
     },
     {
       "name": "Restless",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Reduce fatigue on an uphill. (Front Runner)"
     },
     {
@@ -457,7 +447,7 @@
     },
     {
       "name": "Gourmand",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover endurance mid-race. (Pace Chaser)"
     },
     {
@@ -467,7 +457,7 @@
     },
     {
       "name": "Relax",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover endurance late-race. (Late Surger)"
     },
     {
@@ -477,7 +467,7 @@
     },
     {
       "name": "Go-Home Specialist",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Reduce fatigue on a downhill. (End Closer)"
     },
     {
@@ -487,7 +477,7 @@
     },
     {
       "name": "Serenity",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Regain composure by calming down when the way ahead is jammed. (End Closer)"
     },
     {
@@ -522,7 +512,7 @@
     },
     {
       "name": "Lie in Wait",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover endurance when positioned toward the back upon approaching mid-race. (Late Surger)"
     },
     {
@@ -532,7 +522,7 @@
     },
     {
       "name": "VIP Pass",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Decrease fatigue when determined to pass another runner. (Long)"
     },
     {
@@ -542,7 +532,7 @@
     },
     {
       "name": "Cheers of a Fellow Dreamer",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover Silence Suzuka's endurance on a corner in the second half of the race through a friend's cheers of support."
     },
     {
@@ -557,7 +547,7 @@
     },
     {
       "name": "Of Calm Mind",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "If positioned in the midpack around when the mid-race starts, slightly decrease velocity and greatly recover endurance. (Long)"
     },
     {
@@ -572,7 +562,7 @@
     },
     {
       "name": "Master of the Sands",
-      "image": "recovery.png",
+      "image": "recovery_gold.png",
       "description": "Recover endurance and increase velocity when positioned toward the back mid-race. (Dirt)"
     },
     {
@@ -847,207 +837,207 @@
     },
     {
       "name": "Professor of Curvature",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity on a corner with skilled turning."
     },
     {
       "name": "Beeline Burst",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity on a straight."
     },
     {
       "name": "It's On!",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when passing another runner mid-race."
     },
     {
       "name": "In Body and Mind",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity in the last spurt."
     },
     {
       "name": "Escape Artist",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase ability to go to the front mid-race. (Front Runner)"
     },
     {
       "name": "Speed Star",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase ability to break out of the pack on the final corner. (Pace Chaser)"
     },
     {
       "name": "Fast & Furious",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity mid-race. (Late Surger)"
     },
     {
       "name": "Rising Dragon",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when passing another runner on the outside on the final corner. (Late Surger)"
     },
     {
       "name": "Sturm und Drang",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Move up in preparation to close the gap when positioned toward the back late-race. (End Closer)"
     },
     {
       "name": "Blinding Flash",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase spurting ability when positioned toward the back late-race. (Sprint)"
     },
     {
       "name": "Mile Maven",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Widen the margin when positioned toward the front early-race. (Mile)"
     },
     {
       "name": "Killer Tunes",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase positioning ability when positioned toward the front mid-race. (Medium)"
     },
     {
       "name": "Unyielding",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase ability to fight back when passed by another runner on the final corner. (Medium)"
     },
     {
       "name": "Innate Experience",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when near the inner rail on the final corner. (Long)"
     },
     {
       "name": "Staggering Lead",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase ability to maintain the lead when leading by a large margin mid-race. (Sprint)"
     },
     {
       "name": "Changing Gears",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase passing ability when positioned toward the front mid-race. (Mile)"
     },
     {
       "name": "Big-Sisterly",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase passing ability. (Mile)"
     },
     {
       "name": "Vanguard Spirit",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase ability to maintain the lead when leading by a fair margin mid-race. (Long)"
     },
     {
       "name": "Overwhelming Pressure",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when passing another runner late-race. (Long)"
     },
     {
       "name": "15,000,000 CC",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity on an uphill. (Late Surger)"
     },
     {
       "name": "Trending in the Charts!",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when engaged in a challenge mid-race. (Dirt)"
     },
     {
       "name": "Superstan",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when close to many runners."
     },
     {
       "name": "Come What May",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when well-positioned on a straight in the last spurt. (Medium)"
     },
     {
       "name": "Tail Nine",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity after activating many skills mid-race."
     },
     {
       "name": "Dream Run",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity on the final straight due to a strong desire to cross the finish line carrying everyone's hopes and dreams."
     },
     {
       "name": "Headliner",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when positioned toward the front upon approaching late-race. (Long)"
     },
     {
       "name": "Daring Strike",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Moderately increase velocity for a medium duration when positioned toward the back mid-race. (End Closer)"
     },
     {
       "name": "Nothing Ventured",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Greatly increase velocity in the second half of the race, but also greatly increase fatigue sometimes."
     },
     {
       "name": "Flash Forward",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity on a straight. (Medium)"
     },
     {
       "name": "In High Spirits",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when positioned toward the front upon approaching late-race. (Sprint)"
     },
     {
       "name": "Blast Forward",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity on a straight. (Long)"
     },
     {
       "name": "Top Runner",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase ability to pass or challenge another runner early-race or mid-race. (Front Runner)"
     },
     {
       "name": "Burning Soul",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "When engaged in a challenge midpack mid-race, moderately recover endurance and moderately increase velocity. (Medium)"
     },
     {
       "name": "Elated",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "When positioned toward the back mid-race, increase velocity. (Medium)"
     },
     {
       "name": "Full of Vigor",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "When positioned toward the back on the final corner, increase velocity. (Mile)"
     },
     {
       "name": "Dauntless",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "When positioned in the midpack during the second half of the race, increase velocity and very slightly increase acceleration. (Late Surger)"
     },
     {
       "name": "Wild Wind",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "When positioned toward the front mid-race, increase velocity and slightly decrease the velocity of runners behind the skill user. (Medium)"
     },
     {
       "name": "See Ya Later!",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity when followed by another runner directly behind for a long time."
     },
     {
       "name": "Keep Going!",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Greatly consume endurance mid-race and greatly increase velocity. (Late Surger)"
     },
     {
       "name": "Moonlit Flash",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity on straights. (End Closer)"
     },
     {
       "name": "Refraction Arc",
-      "image": "velocity.png",
+      "image": "velocity_gold.png",
       "description": "Increase velocity on corners. (Medium)"
     },
     {
@@ -1272,32 +1262,32 @@
     },
     {
       "name": "Center Stage",
-      "image": "movement.png",
+      "image": "movement_gold.png",
       "description": "Greatly increase navigation early-race."
     },
     {
       "name": "Lane Legerdemain",
-      "image": "movement.png",
+      "image": "movement_gold.png",
       "description": "Increase navigation late-race."
     },
     {
       "name": "Perfect Prep!",
-      "image": "movement.png",
+      "image": "movement_gold.png",
       "description": "Prepare to make for the finish line for a medium duration mid-race. (Sprint)"
     },
     {
       "name": "Lightning Step",
-      "image": "movement.png",
+      "image": "movement_gold.png",
       "description": "Avoid becoming surrounded for a medium duration when positioned toward the back mid-race. (Medium)"
     },
     {
       "name": "Sixth Sense",
-      "image": "movement.png",
+      "image": "movement_gold.png",
       "description": "Avoid becoming surrounded early-race. (Front Runner)"
     },
     {
       "name": "Lead the Charge!",
-      "image": "movement.png",
+      "image": "movement_gold.png",
       "description": "Prepare to aim for the front late-race. (Dirt)"
     },
     {
@@ -1309,6 +1299,496 @@
       "name": "Concentration",
       "image": "focus.png",
       "description": "Decrease time lost to slow starts."
+    },
+    {
+      "name": "Certain Victory",
+      "image": "velocity_spec.png",
+      "description": "Greatly increase velocity with an indomitable fighting spirit on the final straight after being on the heels of another runner toward the front on the final corner or later."
+    },
+    {
+      "name": "Legacy of the Strong",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity continuously when pressured by another runner and running out of energy toward the front on the final corner or later."
+    },
+    {
+      "name": "Warning Shot!",
+      "image": "velocity_spec.png",
+      "description": "Slightly increase velocity with a long spurt starting halfway through the race."
+    },
+    {
+      "name": "Xceleration",
+      "image": "velocity_spec.png",
+      "description": "Become stronger at challenging rivals and moderately increase velocity when positioned toward the front with 200m or less remaining."
+    },
+    {
+      "name": "Red Ace",
+      "image": "velocity_spec.png",
+      "description": "Slightly swell with the determination to be number one when positioned toward the front in the second half of the race."
+    },
+    {
+      "name": "Focused Mind",
+      "image": "velocity_spec.png",
+      "description": "Moderately increase velocity with a strong turn of foot when passing another runner toward the back on the final straight."
+    },
+    {
+      "name": "Corazón ☆ Ardiente",
+      "image": "velocity_spec.png",
+      "description": "Slightly hang on to the advantage when positioned toward the front with energy to spare on the final straight."
+    },
+    {
+      "name": "Empress's Pride",
+      "image": "velocity_spec.png",
+      "description": "Moderately increase velocity with the stride of an empress when passing another runner from midpack or further back on the final corner."
+    },
+    {
+      "name": "1st Place Kiss☆",
+      "image": "velocity_spec.png",
+      "description": "Slightly increase ability to break out of the pack on the straight after engaging in a challenge toward the front on the final corner or later."
+    },
+    {
+      "name": "V Is for Victory!",
+      "image": "velocity_spec.png",
+      "description": "Moderately increase velocity with winning ambition when positioned toward the front on the final straight after engaging in a challenge on the final corner or later."
+    },
+    {
+      "name": "Class Rep + Speed = Bakushin",
+      "image": "velocity_spec.png",
+      "description": "Moderately increase velocity with BAKUSHIN power when engaged in a challenge toward the front in the second half of the race."
+    },
+    {
+      "name": "Luck Be with Me!",
+      "image": "velocity_spec.png",
+      "description": "Moderately clear a path forward with the power of divination when the way ahead is jammed late-race."
+    },
+    {
+      "name": "I Can Win Sometimes, Right?",
+      "image": "velocity_spec.png",
+      "description": "Moderately increase velocity with an arousal of fighting spirit when positioned 3rd and about to lose late-race."
+    },
+    {
+      "name": "Call Me King",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity in a true display of skill with 200m remaining after racing calmly."
+    },
+    {
+      "name": "Shooting Star",
+      "image": "velocity_spec.png",
+      "description": "Ride the momentum to increase velocity and very slightly increase acceleration after passing another runner toward the front late-race."
+    },
+    {
+      "name": "The View from the Lead Is Mine!",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity by drawing on all remaining strength when in the lead by a fair margin in the second half of the race."
+    },
+    {
+      "name": "Sky-High Teio Step",
+      "image": "velocity_spec.png",
+      "description": "Greatly increase velocity with flashy footwork when closing the gap to runners ahead on the final straight."
+    },
+    {
+      "name": "Triumphant Pulse",
+      "image": "velocity_spec.png",
+      "description": "Greatly increase ability to break out of the pack by opening up a path when positioned toward the front with 200m remaining."
+    },
+    {
+      "name": "Anchors Aweigh!",
+      "image": "velocity_spec.png",
+      "description": "Moderately increase velocity steadily with a long spurt starting halfway through the race."
+    },
+    {
+      "name": "Cut and Drive!",
+      "image": "velocity_spec.png",
+      "description": "Become stronger at challenging rivals and increase velocity when positioned toward the front with 200m or less remaining."
+    },
+    {
+      "name": "Resplendent Red Ace",
+      "image": "velocity_spec.png",
+      "description": "Swell with the determination to be number one when positioned toward the front in the second half of the race."
+    },
+    {
+      "name": "Where There's a Will, There's a Way",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with a strong turn of foot when passing another runner toward the back on the final straight."
+    },
+    {
+      "name": "The Duty of Dignity Calls",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with the determination to not be overtaken when positioned toward the front on the final corner."
+    },
+    {
+      "name": "Victoria por plancha ☆",
+      "image": "velocity_spec.png",
+      "description": "Hang onto the advantage when positioned toward the front with energy to spare on the final straight."
+    },
+    {
+      "name": "This Dance Is for Vittoria!",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with royal brilliance when positioned toward the front and close to the runner ahead or behind on the final corner or later."
+    },
+    {
+      "name": "Behold Thine Emperor's Divine Might",
+      "image": "velocity_spec.png",
+      "description": "Greatly increase velocity on the final straight after passing another runner 3 times late-race."
+    },
+    {
+      "name": "Blazing Pride",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with the stride of an empress when passing another runner from midpack or further back on the final corner."
+    },
+    {
+      "name": "∴win Q.E.D.",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity by deriving the winning equation when passing another runner toward the front on the final corner or later."
+    },
+    {
+      "name": "Flashy☆Landing",
+      "image": "velocity_spec.png",
+      "description": "Increase ability to break out of the pack on the straight after engaging in a challenge toward the front on the final corner or later."
+    },
+    {
+      "name": "G00 1st. F∞;",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity when positioned toward the front after making it to the final straight without faltering."
+    },
+    {
+      "name": "Blue Rose Closer",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with strong willpower on the final straight after passing another runner in the front part of the pack on the final corner or later."
+    },
+    {
+      "name": "Our Ticket to Win!",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with winning ambition when positioned toward the front on the final straight after engaging in a challenge on the final corner or later."
+    },
+    {
+      "name": "Genius x Bakushin = Victory",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with BAKUSHIN power when engaged in a challenge toward the front in the second half of the race."
+    },
+    {
+      "name": "I See Victory in My Future!",
+      "image": "velocity_spec.png",
+      "description": "Clear a path forward with the power of divination when the way ahead is jammed late-race."
+    },
+    {
+      "name": "Just a Little Farther!",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with flaring fighting spirit when positioned 3rd and about to lose late-race."
+    },
+    {
+      "name": "Prideful King",
+      "image": "velocity_spec.png",
+      "description": "Greatly increase velocity in a true display of skill with 200m remaining after racing calmly."
+    },
+    {
+      "name": "#LookatCurren",
+      "image": "velocity_spec.png",
+      "description": "Gain momentum and begin to advance when passing another runner while well-positioned around halfway through the race."
+    },
+    {
+      "name": "Nemesis",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with smoldering ambition when moving up from midpack on the final corner or later."
+    },
+    {
+      "name": "SPARKLY☆STARDOM",
+      "image": "velocity_spec.png",
+      "description": "Become empowered to keep the spotlight when positioned toward the front and close to the runner behind on a straight mid-race."
+    },
+    {
+      "name": "Shadow Break",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with beastly strength when passing another runner on the outside on the final corner or later. If the skill user engaged in a challenge mid-race, greatly increase velocity instead."
+    },
+    {
+      "name": "Eternal Moments",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity when starting to make a move from a position toward the front mid-race."
+    },
+    {
+      "name": "Flowery☆Maneuver",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity when passing another runner toward the front on the final corner. If passing toward the back, increase acceleration instead."
+    },
+    {
+      "name": "You and Me! One-on-One!",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity on the final straight after passing another runner on the outside toward the back on the final corner or later."
+    },
+    {
+      "name": "Lights of Vaudeville",
+      "image": "velocity_spec.png",
+      "description": "Greatly increase velocity with a dazzling display when just breaking out of the pack toward the front on the final straight."
+    },
+    {
+      "name": "KEEP IT REAL.",
+      "image": "velocity_spec.png",
+      "description": "Moderately increase acceleration steadily with a wink when starting to make a move from midpack in the second half of the race."
+    },
+    {
+      "name": "A Kiss for Courage",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity enthusiastically when positioned toward the front in the second half of the race after recovering endurance with a skill."
+    },
+    {
+      "name": "I Never Goof Up!",
+      "image": "velocity_spec.png",
+      "description": "Aim for the front with unwavering determination when passing another runner from midpack or further back on a corner late-race."
+    },
+    {
+      "name": "Schwarzes Schwert",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity in a dash for the lead after running calmly and according to plan up until the final straight."
+    },
+    {
+      "name": "Bountiful Harvest",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with a surge of great fortune when pressured by another runner toward the back in the second half of the race."
+    },
+    {
+      "name": "YUMMY☆SPEED!",
+      "image": "velocity_spec.png",
+      "description": "Kick forward hard with renewed vigor when starting to get tired while well-positioned halfway through the race."
+    },
+    {
+      "name": "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity and navigation with the pure euphoria of being within breathing distance of precious waifus after passing another runner 2 times late-race."
+    },
+    {
+      "name": "Give Mummy a Hug ♡",
+      "image": "velocity_spec.png",
+      "description": "Increase ability to break out of the pack when well-positioned and close to the runner ahead on the final straight."
+    },
+    {
+      "name": "A Princess Must Seize Victory!",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with pretty princess power when engaged in a challenge on the final straight."
+    },
+    {
+      "name": "Chasing After You",
+      "image": "velocity_spec.png",
+      "description": "Chase after an unseen friend when in midpack in the second half of the race, moderately increasing velocity steadily and very slightly intimidating runners ahead."
+    },
+    {
+      "name": "Arrows Whistle, Shadows Disperse",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with a blazing spirit when pressured by another runner in the front part of the pack on the final corner or later."
+    },
+    {
+      "name": "Dancing in the Leaves",
+      "image": "velocity_spec.png",
+      "description": "Increase ability to break out of the pack when engaged in a challenge in midpack on the final corner."
+    },
+    {
+      "name": "Pop & Polish",
+      "image": "velocity_spec.png",
+      "description": "Get hyped and increase velocity when pressured by or passing another runner while well-positioned on the final straight."
+    },
+    {
+      "name": "Festive Miracle",
+      "image": "velocity_spec.png",
+      "description": "Control breathing and kick forward hard toward victory in the second half of the race after recovering endurance with skills at least 3 times."
+    },
+    {
+      "name": "Presents from X",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity by deriving a path to victory mid-race after staying well-positioned from the start of the race up until the second half."
+    },
+    {
+      "name": "Fairy Tale",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with the excitement of running when engaged in a challenge while well-positioned in the second half of the race."
+    },
+    {
+      "name": "White Lightning Comin' Through!",
+      "image": "velocity_spec.png",
+      "description": "Bolt down the track like lightning when well-positioned or aiming for the front from midpack on a straight in the second half of the race."
+    },
+    {
+      "name": "Barcarole of Blessings",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity for a moderate duration when in the front part of the pack with 400m remaining. If at least 7 skills have been activated, greatly increase velocity for a moderate duration instead."
+    },
+    {
+      "name": "114th Time's the Charm",
+      "image": "velocity_spec.png",
+      "description": "Give max effort when far from the lead on the final corner, moderately increasing velocity steadily for a duration proportional to distance from the lead."
+    },
+    {
+      "name": "Ambition to Surpass the Sakura",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with blossoming ambition when well-positioned and close to the runner ahead with 300m or less remaining."
+    },
+    {
+      "name": "A Lifelong Dream, A Moment's Flight",
+      "image": "velocity_spec.png",
+      "description": "Seize the moment when close to the runner behind on the final straight, slightly consuming endurance to greatly increase velocity for a moderate duration."
+    },
+    {
+      "name": "Operation Cacao",
+      "image": "velocity_spec.png",
+      "description": "Take a slight breather and increase velocity when in the front part of the pack and detecting another runner coming from behind on a corner mid-race."
+    },
+    {
+      "name": "Guten Appetit ♪",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity continuously with a patissiere's pride on the final straight after passing another runner 3 times on the final corner or later."
+    },
+    {
+      "name": "Shooting Star of Dioskouroi",
+      "image": "velocity_spec.png",
+      "description": "Increase velocity with guidance from the stars when far from the lead on the final straight. If positioned around the very back, greatly increase velocity instead."
+    },
+    {
+      "name": "Victory Cheer!",
+      "image": "velocity_spec.png",
+      "description": "Moderately increase velocity when positioned toward the front on the third corner in the second half of the race. Or, kick forward hard when toward the front on the backstretch late-race."
+    },
+    {
+      "name": "Eternal Encompassing Shine",
+      "image": "velocity_spec.png",
+      "description": "If well-positioned at the start of the final straight, her strong willpower to win increases velocity. If positioned near the front, greatly increase velocity instead."
+    },
+    {
+      "name": "Lovely Spring Breeze",
+      "image": "velocity_spec.png",
+      "description": "From the midpack in the second half of the race, slightly increase velocity steadily for a duration based on remaining endurance."
+    },
+    {
+      "name": "Ravissant",
+      "image": "velocity_spec.png",
+      "description": "When passing another racer at the front part of the pack on the final corner or later, perform a dazzling display that greatly increases velocity for a moderate duration."
+    },
+    {
+      "name": "Break It Down!",
+      "image": "velocity_spec.png",
+      "description": "If positioned toward the front on a straight late-race, increase velocity with high spirits. If the straight is on the backstretch, also increase acceleration very slightly."
+    },
+    {
+      "name": "Peerless Dance of Flowering Flames",
+      "image": "velocity_spec.png",
+      "description": "If the skill user passes another runner on the final corner or later, increase velocity with fiery fighting spirit when in the front part of the pack with 300m remaining."
+    },
+    {
+      "name": "Go☆Go☆Goal!",
+      "image": "velocity_spec.png",
+      "description": "If the skill user passes another runner on the final corner or later, increase velocity from the midpack onward on the final straight. If the skill user isn't one of the top favorites, muster resolve to keep steadily increasing velocity."
+    },
+    {
+      "name": "All Charged! It's Go Time!",
+      "image": "velocity_spec.png",
+      "description": "Moderately increase velocity when positioned toward the front with about 300m remaining. If coming out of an uphill, greatly increase velocity instead."
+    },
+    {
+      "name": "Best Day Ever",
+      "image": "velocity_spec.png",
+      "description": "If well-positioned late-race on the final corner or later, increase velocity. If there's a large distance left to the finish, also increase acceleration very slightly with perfect form."
+    },
+    {
+      "name": "One True Color",
+      "image": "velocity_spec.png",
+      "description": "If positioned toward the front with 350m remaining and there is another Umamusume close behind, the determination to stay ahead makes it easier to break out of the pack."
+    },
+    {
+      "name": "Now We're Cruisin'!",
+      "image": "velocity_spec.png",
+      "description": "When competing for the lead if positioned in the midpack or further for the first half of the race, show off some Edo spirit and greatly increase velocity."
+    },
+    {
+      "name": "Victory belongs to me—Strelitzia! ☆",
+      "image": "velocity_spec.png",
+      "description": "If positioned toward the back until the start of the final corner, when there are 300m remaining, cast a magic spell to increase velocity continuously."
+    },
+    {
+      "name": "Joyful Voyage!",
+      "image": "velocity_spec.png",
+      "description": "If positioned toward the front with 200m remaining, increase velocity. Then, if also positioned near the leading Umamusume, gather strength to move slightly forward."
+    },
+    {
+      "name": "Wherever This Wonder Leads",
+      "image": "velocity_spec.png",
+      "description": "If positioned midpack on a downhill just before late-race and there's a large distance left to the finish, enjoy the race to the fullest, increasing velocity."
+    },
+    {
+      "name": "trigger:BEAT",
+      "image": "velocity_spec.png",
+      "description": "When near the inner rail midpack on the final corner or later, calculate the path to victory, increasing velocity and ability to navigate smoothly on the final straight."
+    },
+    {
+      "name": "Dreams Donned with Pride!",
+      "image": "velocity_spec.png",
+      "description": "If the skill user activates another skill on the final corner late-race, take the crowd's cheers to heart and moderately increase velocity. If racing at Nakayama Racecourse, greatly increase velocity instead."
+    },
+    {
+      "name": "Clairvoyance",
+      "image": "view_gold.png",
+      "description": "Widen field of view with heightened observation early-race. (Medium)"
+    },
+    {
+      "name": "The Bigger Picture",
+      "image": "view_gold.png",
+      "description": "Widen field of view with heightened observation mid-race. (Late Surger)"
+    },
+    {
+      "name": "The Coast Is Clear!",
+      "image": "view_gold.png",
+      "description": "Moderately widen field of view with situational awareness when moving sideways. (End Closer)"
+    },
+    {
+      "name": "Crusader",
+      "image": "view_gold.png",
+      "description": "Widen field of view."
+    },
+    {
+      "name": "Ignited Spirit SPD",
+      "image": "speedBomb.png",
+      "description": "Burn bright with team spirit, slightly increasing velocity in proportion to the total Speed of racing team members mid-race."
+    },
+    {
+      "name": "Ignited Spirit GUTS",
+      "image": "speedBomb.png",
+      "description": "Burn bright with team spirit, slightly increasing velocity in proportion to the total Guts of racing team members mid-race."
+    },
+    {
+      "name": "Burning Spirit SPD",
+      "image": "speedBomb_gold.png",
+      "description": "Burn bright with team spirit, increasing velocity in proportion to the total Speed of racing team members mid-race."
+    },
+    {
+      "name": "Burning Spirit GUTS",
+      "image": "speedBomb_gold.png",
+      "description": "Burn bright with team spirit, increasing velocity in proportion to the total Guts of racing team members mid-race."
+    },
+    {
+      "name": "Ignited Spirit STA",
+      "image": "recoveryBomb.png",
+      "description": "Burn bright with team spirit, slightly recovering endurance in proportion to the total Stamina of racing team members mid-race."
+    },
+    {
+      "name": "Burning Spirit STA",
+      "image": "recoveryBomb_gold.png",
+      "description": "Burn bright with team spirit, recovering endurance in proportion to the total Stamina of racing team members mid-race."
+    },
+    {
+      "name": "Ignited Spirit PWR",
+      "image": "powerBomb.png",
+      "description": "Burn bright with team spirit, slightly increasing acceleration in proportion to the total Power of racing team members late-race."
+    },
+    {
+      "name": "Burning Spirit PWR",
+      "image": "powerBomb_gold.png",
+      "description": "Burn bright with team spirit, increasing acceleration in proportion to the total Power of racing team members late-race."
+    },
+    {
+      "name": "Ignited Spirit WIT",
+      "image": "witBomb.png",
+      "description": "Burn bright with team spirit, slightly increasing strategic navigation for a medium duration in proportion to the total Wit of racing team members early-race."
+    },
+    {
+      "name": "Burning Spirit WIT",
+      "image": "witBomb_gold.png",
+      "description": "Burn bright with team spirit, increasing strategic navigation for a medium duration in proportion to the total Wit of racing team members early-race."
     }
   ]
 }

@@ -122,7 +122,7 @@ const TeamTrialsPage = () => {
                       <strong className="text-primary dark:text-white">Stamina / Power / Support</strong> flex spot depending on distance requirement
                     </li>
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      Borrow the strongest Speed support you can (Kitasan Black is the universal go-to for a reason)
+                      Borrow MLB Kitasan Black if you don't have it before everything else.
                     </li>
                   </ul>
 
@@ -146,7 +146,7 @@ const TeamTrialsPage = () => {
                   </h3>
 
                   <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
-                    Front Runner works for the debut race to avoid losing.
+                    Front Runner works for the debut race to avoid getting blocked and losing.
                   </h4>
                   <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Even if your Uma is normally Mid/Chaser:
@@ -164,14 +164,14 @@ const TeamTrialsPage = () => {
                   </ul>
 
                   <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
-                    Always Check Race UI for Weird Meta Picks
+                    Always Check Race UI in Unity Cup for Weird Meta Picks
                   </h4>
                   <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Sometimes enemy teams put an Uma in a bizarre strategy or distance. Always check once before each Unity Cup race to avoid surprise losses.
                   </p>
 
                   <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
-                    Getting Top 3 Matters
+                    Getting Top 3 Matters in all other career races
                   </h4>
                   <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Getting Top 3 in optional races gives the SP you need. Even 2nd or 3rd is totally fine — SP matters way more than +1 stat.
@@ -189,45 +189,105 @@ const TeamTrialsPage = () => {
                       <thead>
                         <tr className="bg-primary/10">
                           <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Distance</th>
-                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Speed</th>
-                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Stamina</th>
-                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Power</th>
-                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Guts</th>
-                          <th className="border border-gray-300 px-4 py-3 text-left font-bold dark:border-gray-700">Wit</th>
+                          <th className="border border-gray-300 px-4 py-3 text-center font-bold dark:border-gray-700">
+                            <div className="flex items-center justify-center gap-2">
+                              <div className="relative w-6 h-6">
+                                <Image
+                                  src="/images/statImage/speedStat.png"
+                                  alt="Speed"
+                                  fill
+                                  className="object-contain"
+                                />
+                              </div>
+                              <span>Speed</span>
+                            </div>
+                          </th>
+                          <th className="border border-gray-300 px-4 py-3 text-center font-bold dark:border-gray-700">
+                            <div className="flex items-center justify-center gap-2">
+                              <div className="relative w-6 h-6">
+                                <Image
+                                  src="/images/statImage/staminaStat.png"
+                                  alt="Stamina"
+                                  fill
+                                  className="object-contain"
+                                />
+                              </div>
+                              <span>Stamina</span>
+                            </div>
+                          </th>
+                          <th className="border border-gray-300 px-4 py-3 text-center font-bold dark:border-gray-700">
+                            <div className="flex items-center justify-center gap-2">
+                              <div className="relative w-6 h-6">
+                                <Image
+                                  src="/images/statImage/strengthStat.png"
+                                  alt="Power"
+                                  fill
+                                  className="object-contain"
+                                />
+                              </div>
+                              <span>Power</span>
+                            </div>
+                          </th>
+                          <th className="border border-gray-300 px-4 py-3 text-center font-bold dark:border-gray-700">
+                            <div className="flex items-center justify-center gap-2">
+                              <div className="relative w-6 h-6">
+                                <Image
+                                  src="/images/statImage/gutsStat.png"
+                                  alt="Guts"
+                                  fill
+                                  className="object-contain"
+                                />
+                              </div>
+                              <span>Guts</span>
+                            </div>
+                          </th>
+                          <th className="border border-gray-300 px-4 py-3 text-center font-bold dark:border-gray-700">
+                            <div className="flex items-center justify-center gap-2">
+                              <div className="relative w-6 h-6">
+                                <Image
+                                  src="/images/statImage/witStat.png"
+                                  alt="Wit"
+                                  fill
+                                  className="object-contain"
+                                />
+                              </div>
+                              <span>Wit</span>
+                            </div>
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">Short</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1200</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">300–400</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">800+</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">300</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–500</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">1200</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">300–400</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">800+</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">300</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">400–500</td>
                         </tr>
                         <tr className="bg-body-color/5">
                           <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">Mile</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1200</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">600+</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">800+</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">300</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–500</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">1200</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">600+</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">800+</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">300</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">400–500</td>
                         </tr>
                         <tr>
                           <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">Medium</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1200</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">800–900</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">900+</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–500</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">1200</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">800–900</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">900+</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">400</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">400–500</td>
                         </tr>
                         <tr className="bg-body-color/5">
                           <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">Long</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1000+</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">1000+</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">900+</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–600</td>
-                          <td className="border border-gray-300 px-4 py-3 dark:border-gray-700">400–500</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">1000+</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">1000+</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">900+</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">400–600</td>
+                          <td className="border border-gray-300 px-4 py-3 text-center dark:border-gray-700">400–500</td>
                         </tr>
                       </tbody>
                     </table>
@@ -240,8 +300,8 @@ const TeamTrialsPage = () => {
                   <h3 id="skill-buying" className="font-xl mb-6 mt-12 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white scroll-mt-24">
                     5. Skill Buying Logic
                   </h3>
-                  <p className="text-body-color mb-6 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Universal rules that never change:
+                  <p className="text-body-color mb-6 text-base leading-relaxed font-bold sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    *Disclaimer* If you need skills to win career races and/or have skills at max discount or close, buying is ok
                   </p>
 
                   <h4 className="text-body-color mb-4 mt-8 text-lg font-bold text-black dark:text-white">
@@ -348,7 +408,7 @@ const TeamTrialsPage = () => {
                       Reliable skill packages
                     </li>
                     <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
-                      No-brainer adapt skills and corner skills
+                      Gold skills and No-brainer adapt skills and corner skills
                     </li>
                   </ul>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
@@ -366,7 +426,7 @@ const TeamTrialsPage = () => {
                         </p>
                         <ul className="text-body-color list-inside list-disc space-y-4 text-base font-medium">
                           <li>Chase friendship early, white bubbles early.</li>
-                          <li>Borrow the best speed support you can.</li>
+                          <li>Borrow the best support card/uma you can.</li>
                           <li>Run 2–3 Speed, 1–2 Wit, 1 Flex.</li>
                           <li>Run Front in most career races to avoid blocking.</li>
                           <li>Hit stamina minimums early.</li>

@@ -35,17 +35,17 @@ const LibraGuideContent = () => {
     "Straightaway Spurt": "accel.png",
     "Head On": "accel.png",
     
-    // Recovery Skills
-    "Swinging Maestro": "recovery.png",
-    "Restless": "recovery.png",
-    "Cooldown": "recovery.png",
-    "Breath of Fresh Air": "recovery.png",
-    "Race Planner": "recovery.png",
-    "Gourmand": "recovery.png",
-    "Calm and Collected": "recovery.png",
-    "Lie in Wait": "recovery.png",
-    "Go-Home Specialist": "recovery.png",
-    "Sleeping Lion": "recovery.png",
+    // Recovery Skills (Gold)
+    "Swinging Maestro": "recovery_gold.png",
+    "Restless": "recovery_gold.png",
+    "Cooldown": "recovery_gold.png",
+    "Breath of Fresh Air": "recovery_gold.png",
+    "Race Planner": "recovery_gold.png",
+    "Gourmand": "recovery_gold.png",
+    "Calm and Collected": "recovery_gold.png",
+    "Lie in Wait": "recovery_gold.png",
+    "Go-Home Specialist": "recovery_gold.png",
+    "Sleeping Lion": "recovery_gold.png",
     
     // Velocity/Speed Skills
     "Front Runner Corners": "velocity.png",
@@ -59,9 +59,9 @@ const LibraGuideContent = () => {
     "Tail Held High": "velocity.png",
     "Straightaway Adept": "velocity.png",
     "Long Straightaways": "velocity.png",
-    "Front Runner Straights": "velocity.png",
+    "Front Runner Straightaways": "velocity.png",
     "Pace Chaser Corners": "velocity.png",
-    "Pace Chaser Straights": "velocity.png",
+    "Pace Chaser Straightaways": "velocity.png",
     "Prepared to Pass": "velocity.png",
     "Late Surger Corners": "velocity.png",
     "Late Surger Straightaways": "velocity.png",
@@ -71,10 +71,10 @@ const LibraGuideContent = () => {
     "Early Start": "velocity.png",
     "Uma Stan": "velocity.png",
     
-    // Special Skills
-    "Ignited Spirit PWR": "strength.png",
-    "Ignited Spirit SPD": "speed.png",
-    "Let's Pump Some Iron!": "strength.png",
+    // Special Skills (Team Bombs)
+    "Ignited Spirit PWR": "powerBomb.png",
+    "Ignited Spirit SPD": "speedBomb.png",
+    "Let's Pump Some Iron!": "powerBomb_gold.png",
     "1,500,000 CC": "velocity.png",
     "Stamina Siphon": "recovery.png",
     
@@ -438,7 +438,7 @@ const LibraGuideContent = () => {
                 </div>
                 <div>
                   <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
-                  <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Front Runner Straights", "Ignited Spirit SPD"]} />
+                  <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Front Runner Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
                   <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
@@ -494,7 +494,7 @@ const LibraGuideContent = () => {
                 </div>
                 <div>
                   <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
-                  <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Pace Chaser Straights", "Ignited Spirit SPD"]} />
+                  <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Pace Chaser Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
                   <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>

@@ -38,19 +38,18 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Top Player Influenced Findings
+                  Consise
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  All guide information is documented from global server's top players testing and performance, 
-                  ensuring the accuracy and reliability of the information provided.
+                  The guides are a hub of usefull info consise for quick and easy refrences.
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Universal CM Guides
+                  Universal
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  From casual players, non-spenders, to whales, you will find the things you needfor building your competitive umas.
+                  From casual players, non-spenders, to whales, the info is relevant far all trainers.
                 </p>
               </div>
               <div className="mb-1">

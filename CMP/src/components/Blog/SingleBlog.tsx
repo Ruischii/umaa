@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SingleBlog = ({ blog }: { blog: Blog }) => {
-  const { slug, title, image, paragraph, tags, isCurrent } = blog;
+  const { slug, title, image, paragraph, tags, isCurrent, timeline } = blog;
   const guideLink = `/guides/${slug}`;
   
   // Extract race name from title (e.g., "Champions Meeting Libra Guide" -> "Libra")
@@ -44,9 +44,11 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
               <span className="block">Champions Meeting</span>
               <span className="block">{raceName}</span>
             </h3>
-            <p className="text-body-color text-base font-medium dark:text-body-color-dark">
-              {paragraph}
-            </p>
+            {timeline && (
+              <p className="text-primary dark:text-primary text-lg font-semibold">
+                Timeline: {timeline}
+              </p>
+            )}
           </div>
         </div>
       </Link>

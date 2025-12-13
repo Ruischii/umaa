@@ -40,7 +40,7 @@ const GuidesPage = () => {
             {guides.map((guide) => (
               <div
                 key={guide.id}
-                className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
+                className="w-full px-4 mb-10 md:mb-8 lg:mb-10 md:w-2/3 lg:w-1/2 xl:w-1/3"
               >
                 <SingleBlog blog={guide} />
               </div>
