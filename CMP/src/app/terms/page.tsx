@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const TermsSection = () => {
   return (
-    <section className="pb-12">
+    <section>
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
           {/* Banner at top */}
