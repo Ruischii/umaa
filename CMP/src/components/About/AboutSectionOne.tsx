@@ -10,7 +10,7 @@ const doubleCircleIcon = (
 
 const AboutSectionOne = () => {
   const List = ({ text, icon }: { text: string; icon: string | "double-circle" }) => (
-    <p className="text-body-color mb-5 flex items-center text-lg font-medium">
+    <p className="text-body-color mb-5 flex items-center text-2xl font-medium">
       <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md overflow-hidden cursor-pointer transition-all duration-300 hover:scale-110 hover:bg-primary/20 hover:shadow-lg">
         {icon === "double-circle" ? (
           doubleCircleIcon

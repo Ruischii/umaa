@@ -141,16 +141,16 @@ const ErrorPage = () => {
                     </defs>
                   </svg>
                 </div>
-                <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
+                <h3 className="mb-4 text-5xl font-bold text-black dark:text-white sm:text-6xl">
                   Sorry, the page can’t be found
                 </h3>
-                <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                <p className="mb-10 text-xl font-medium leading-relaxed text-body-color sm:text-2xl sm:leading-relaxed">
                   The page you were looking for appears to have been moved,
                   deleted or does not exist.
                 </p>
                 <Link
                   href="/"
-                  className="px-8 py-3 text-base font-bold text-white duration-300 rounded-md bg-primary shadow-signUp hover:bg-white hover:text-primary md:px-9 lg:px-8 xl:px-9"
+                  className="px-8 py-3 text-xl font-bold text-white duration-300 rounded-md bg-primary shadow-signUp hover:bg-white hover:text-primary md:px-9 lg:px-8 xl:px-9"
                 >
                   Back to Homepage
                 </Link>

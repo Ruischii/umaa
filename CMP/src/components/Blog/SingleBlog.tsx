@@ -29,7 +29,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
       <Link href={guideLink} className="block">
         <div className="group shadow-one hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark relative overflow-hidden rounded-xs bg-white duration-300 hover:-translate-y-2 transition-all cursor-pointer">
           <div className="relative block aspect-37/22 w-full overflow-hidden">
-            <span className={`${tagColorClass} absolute top-6 right-6 z-20 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold text-white capitalize transition-transform duration-300 group-hover:scale-110`}>
+            <span className={`${tagColorClass} absolute top-6 right-6 z-20 inline-flex items-center justify-center rounded-full px-4 py-2 text-lg font-semibold text-white capitalize transition-transform duration-300 group-hover:scale-110`}>
               {displayTag}
             </span>
             <Image 
@@ -40,12 +40,12 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             />
           </div>
           <div className="p-6 sm:p-8 md:px-6 md:py-8 lg:p-8 xl:px-5 xl:py-8 2xl:p-8">
-            <h3 className="hover:text-primary dark:hover:text-primary mb-4 block text-xl font-bold text-black sm:text-2xl dark:text-white">
+            <h3 className="hover:text-primary dark:hover:text-primary mb-4 block text-3xl font-bold text-black sm:text-4xl dark:text-white">
               <span className="block">Champions Meeting</span>
               <span className="block">{raceName}</span>
             </h3>
             {timeline && (
-              <p className="text-primary dark:text-primary text-lg font-semibold">
+              <p className="text-primary dark:text-primary text-2xl font-semibold">
                 Timeline: {timeline}
               </p>
             )}

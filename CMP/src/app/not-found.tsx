@@ -33,7 +33,7 @@ const NotFoundPage = () => {
                     />
                     {/* Speech bubble */}
                     <div className="absolute -top-12 sm:-top-16 md:-top-20 -right-4 sm:-right-8 md:-right-12 bg-white dark:bg-gray-800 rounded-2xl px-4 py-3 shadow-lg border-2 border-primary max-w-[200px] sm:max-w-[220px] z-10">
-                      <p className="text-sm font-medium text-gray-800 dark:text-white leading-relaxed">
+                      <p className="text-lg font-medium text-gray-800 dark:text-white leading-relaxed">
                         Sorry I ate the page . . . <span className="text-primary font-bold">burp!</span>
                       </p>
                       {/* Speech bubble tail */}
@@ -55,21 +55,21 @@ const NotFoundPage = () => {
                         href="https://x.com/gubuos"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs md:text-sm text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary transition-colors"
+                        className="text-xl md:text-2xl text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary transition-colors"
                       >
                         @gubuos
                       </a>
                     </div>
-                <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
+                <h3 className="mb-4 text-5xl font-bold text-black dark:text-white sm:text-6xl">
                   Sorry, the page can't be found
                 </h3>
-                <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                <p className="mb-10 text-xl font-medium leading-relaxed text-body-color sm:text-2xl sm:leading-relaxed">
                   The page you were looking for appears to have been moved,
                   deleted or does not exist.
                 </p>
                 <Link
                   href="/"
-                  className="px-8 py-3 text-base font-bold text-white duration-300 rounded-md bg-primary shadow-signUp hover:bg-white hover:text-primary md:px-9 lg:px-8 xl:px-9"
+                  className="px-8 py-3 text-xl font-bold text-white duration-300 rounded-md bg-primary shadow-signUp hover:bg-white hover:text-primary md:px-9 lg:px-8 xl:px-9"
                 >
                   Back to Homepage
                 </Link>

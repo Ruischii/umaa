@@ -20,7 +20,7 @@ const Breadcrumb = ({
             <div className="w-full px-4">
               <div className="mb-8 lg:mb-12">
                 <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                  <h1 className="text-2xl font-bold text-black dark:text-white sm:text-3xl">
+                  <h1 className="text-4xl font-bold text-black dark:text-white sm:text-5xl">
                     {pageName}
                   </h1>
                   <div className="flex items-center">
@@ -28,7 +28,7 @@ const Breadcrumb = ({
                       <li className="flex items-center">
                         <Link
                           href="/"
-                          className="pr-1 text-base font-medium text-body-color hover:text-primary"
+                          className="pr-1 text-xl font-medium text-body-color hover:text-primary"
                         >
                           Home
                         </Link>
@@ -38,21 +38,21 @@ const Breadcrumb = ({
                         <li className="flex items-center">
                           <Link
                             href={parent.href}
-                            className="pr-1 text-base font-medium text-body-color hover:text-primary"
+                            className="pr-1 text-xl font-medium text-body-color hover:text-primary"
                           >
                             {parent.name}
                           </Link>
                           <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
                         </li>
                       )}
-                      <li className="text-base font-medium text-primary">
+                      <li className="text-xl font-medium text-primary">
                         {pageName}
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="max-w-[570px]">
-                  <p className="text-lg font-medium leading-relaxed text-body-color sm:text-xl sm:leading-relaxed lg:text-lg lg:leading-relaxed xl:text-xl xl:leading-relaxed">
+                  <p className="text-xl font-medium leading-relaxed text-body-color sm:text-2xl sm:leading-relaxed lg:text-xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
                     {description}
                   </p>
                   {children && (

@@ -37,26 +37,26 @@ const AboutSectionTwo = () => {
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-[470px]">
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl lg:text-3xl xl:text-4xl">
                   Consise
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                <p className="text-xl font-medium leading-relaxed text-body-color sm:text-2xl sm:leading-relaxed">
                   The guides are a hub of usefull info consise for quick and easy refrences.
                 </p>
               </div>
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl lg:text-3xl xl:text-4xl">
                   Universal
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                <p className="text-xl font-medium leading-relaxed text-body-color sm:text-2xl sm:leading-relaxed">
                   From casual players, non-spenders, to whales, the info is relevant far all trainers.
                 </p>
               </div>
               <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl lg:text-3xl xl:text-4xl">
                   Overview
                 </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                <p className="text-xl font-medium leading-relaxed text-body-color sm:text-2xl sm:leading-relaxed">
                   You do not need to beat the best players and the people who spend the most, you just need to beat the rest.
                 </p>
               </div>

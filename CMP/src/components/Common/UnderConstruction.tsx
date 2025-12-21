@@ -17,14 +17,14 @@ const UnderConstruction = () => {
               href="https://x.com/gubuos "
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute bottom-2 right-2 text-xs md:text-sm text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary pointer-events-auto">
+              className="absolute bottom-2 right-2 text-xl md:text-2xl text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary pointer-events-auto">
               @gubuos
             </a>
           </div>
-          <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
+          <h2 className="mb-4 text-5xl font-bold text-black dark:text-white sm:text-6xl">
             Under Construction . . .
           </h2>
-          <p className="max-w-2xl text-base text-body-color dark:text-body-color-dark sm:text-lg pb-14">
+          <p className="max-w-2xl text-xl text-body-color dark:text-body-color-dark sm:text-2xl pb-14">
             Check my{" "}
             <a
               href="https://x.com/_t2ddy"

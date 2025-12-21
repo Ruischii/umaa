@@ -19,7 +19,7 @@ const Footer = () => {
                     height={40}
                   />
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                <p className="mb-9 text-xl leading-relaxed text-body-color dark:text-body-color-dark">
                   My socials if you want to reach out below!
                 </p>
                 <div className="flex items-center">
@@ -109,14 +109,14 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-3xl font-bold text-black dark:text-white">
                   Useful Links
                 </h2>
                 <ul>
                   <li>
                     <Link
                       href="/guides"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-xl text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       CM Guides
                     </Link>
@@ -124,7 +124,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/team-trials"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-xl text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Team Trials
                     </Link>
@@ -132,7 +132,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-xl text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       About
                     </Link>
@@ -143,14 +143,14 @@ const Footer = () => {
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-10 text-3xl font-bold text-black dark:text-white">
                   Support & Help
                 </h2>
                 <ul>
                   <li>
                     <Link
                       href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-xl text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Open Support Ticket
                     </Link>
@@ -158,7 +158,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/credits"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-xl text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Credits
                     </Link>
@@ -166,7 +166,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/terms"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="mb-4 inline-block text-xl text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Terms of Use
                     </Link>
@@ -178,7 +178,7 @@ const Footer = () => {
 
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
+            <p className="text-center text-xl text-body-color dark:text-white">
               If you want to learn more about me check out my{" "}
               <a
                 href="https://t2ddy-personal.vercel.app/"

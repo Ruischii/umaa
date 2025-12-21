@@ -44,7 +44,7 @@ const menuData: Menu[] = [
       },
       {
         id: 43,
-        title: "CM Guides Grid Page",
+        title: "CM guides",
         path: "/guides",
         newTab: false,
       },

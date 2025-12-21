@@ -18,17 +18,17 @@ const GuidesPage = () => {
         pageName="Champions Meeting Guides"
         description="If you meet the requirements below, you will make it to the CM finals. See the specific guide for your race for more details."
       >
-        <ul className="space-y-2 text-base font-medium leading-relaxed text-body-color">
+        <ul className="space-y-2 text-xl font-medium leading-relaxed text-body-color">
           <li className="flex items-start">
-            <span className="mr-3 text-primary text-xl">◎</span>
+            <span className="mr-3 text-primary text-3xl">◎</span>
             <span>Race course length s</span>
           </li>
           <li className="flex items-start">
-            <span className="mr-3 text-primary text-xl">◎</span>
+            <span className="mr-3 text-primary text-3xl">◎</span>
             <span>Max speed</span>
           </li>
           <li className="flex items-start">
-            <span className="mr-3 text-primary text-xl">◎</span>
+            <span className="mr-3 text-primary text-3xl">◎</span>
             <span>Stam requirement for position and race length</span>
           </li>
         </ul>

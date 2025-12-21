@@ -22,7 +22,7 @@ const Header = () => {
             if (subItem.id === 45) { // CM Guides Details Page
               return {
                 ...subItem,
-                title: "Current Champions Meeting",
+                title: "current CM",
                 path: currentGuideUrl
               };
             }
@@ -91,7 +91,7 @@ const Header = () => {
                   priority
                   className="h-10 w-10"
                 />
-                <span className="text-2xl font-bold text-black dark:text-white">
+                <span className="text-4xl font-bold text-black dark:text-white">
                   umaa
                 </span>
               </Link>
@@ -139,7 +139,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex py-2 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
@@ -151,7 +151,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 dark:text-white/70 dark:group-hover:text-white"
+                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 dark:text-white/70 dark:group-hover:text-white"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -174,7 +174,7 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
-                                  className="text-dark hover:text-primary block rounded-sm py-2.5 text-sm lg:px-3 dark:text-white/70 dark:hover:text-white"
+                                  className="text-dark hover:text-primary block rounded-sm py-2.5 text-lg lg:px-3 dark:text-white/70 dark:hover:text-white"
                                 >
                                   {submenuItem.title}
                                 </Link>

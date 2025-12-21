@@ -107,7 +107,7 @@ const GuidePage = async ({ params }: Props) => {
               <div className="border-body-color/10 mb-10 flex flex-wrap items-center justify-between border-b pb-4 dark:border-white/10">
                 <div className="flex flex-wrap items-center">
                   <div className="mb-5 flex items-center">
-                    <p className="text-body-color mr-5 flex items-center text-base font-medium">
+                    <p className="text-body-color mr-5 flex items-center text-xl font-medium">
                       <span className="mr-3">
                         <svg
                           width="15"
@@ -132,7 +132,7 @@ const GuidePage = async ({ params }: Props) => {
                   </div>
                 </div>
                 <div className="mb-5">
-                  <span className="bg-primary inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold text-white">
+                  <span className="bg-primary inline-flex items-center justify-center rounded-full px-4 py-2 text-lg font-semibold text-white">
                     Champions Meeting
                   </span>
                 </div>
@@ -141,7 +141,7 @@ const GuidePage = async ({ params }: Props) => {
                 {guide.slug === "cm-libra-2025" ? (
                   <LibraGuideContent />
                 ) : (
-                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                  <p className="text-body-color mb-10 text-xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
                     Guide content coming soon...
                   </p>
                 )}

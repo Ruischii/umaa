@@ -24,7 +24,7 @@ const BlogDetailsPage = () => {
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4 lg:w-8/12">
               <div>
-                <h2 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white">
+                <h2 className="mb-8 text-5xl leading-tight font-bold text-black sm:text-6xl sm:leading-tight dark:text-white">
                   10 amazing sites to download stock photos & digital assets for
                   free
                 </h2>
@@ -41,13 +41,13 @@ const BlogDetailsPage = () => {
                         </div>
                       </div>
                       <div className="w-full">
-                        <span className="text-body-color mb-1 text-base font-medium">
+                        <span className="text-body-color mb-1 text-xl font-medium">
                           By <span>Musharof Chy</span>
                         </span>
                       </div>
                     </div>
                     <div className="mb-5 flex items-center">
-                      <p className="text-body-color mr-5 flex items-center text-base font-medium">
+                      <p className="text-body-color mr-5 flex items-center text-xl font-medium">
                         <span className="mr-3">
                           <svg
                             width="15"
@@ -68,7 +68,7 @@ const BlogDetailsPage = () => {
                         </span>
                         12 Jan 2024
                       </p>
-                      <p className="text-body-color mr-5 flex items-center text-base font-medium">
+                      <p className="text-body-color mr-5 flex items-center text-xl font-medium">
                         <span className="mr-3">
                           <svg
                             width="18"
@@ -83,7 +83,7 @@ const BlogDetailsPage = () => {
                         </span>
                         50
                       </p>
-                      <p className="text-body-color flex items-center text-base font-medium">
+                      <p className="text-body-color flex items-center text-xl font-medium">
                         <span className="mr-3">
                           <svg
                             width="20"
@@ -102,14 +102,14 @@ const BlogDetailsPage = () => {
                   <div className="mb-5">
                     <a
                       href="#0"
-                      className="bg-primary inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold text-white"
+                      className="bg-primary inline-flex items-center justify-center rounded-full px-4 py-2 text-lg font-semibold text-white"
                     >
                       Design
                     </a>
                   </div>
                 </div>
                 <div>
-                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                  <p className="text-body-color mb-10 text-xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat.
@@ -124,7 +124,7 @@ const BlogDetailsPage = () => {
                       />
                     </div>
                   </div>
-                  <p className="text-body-color mb-8 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                  <p className="text-body-color mb-8 text-xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis enim lobortis scelerisque fermentum. Neque
@@ -136,7 +136,7 @@ const BlogDetailsPage = () => {
                     pellentesque nec nam aliquam sem et tortor consequat.
                     Pellentesque adipiscing commodo elit at imperdiet.
                   </p>
-                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                  <p className="text-body-color mb-10 text-xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
                     Semper auctor neque vitae tempus quam pellentesque nec.
                     <span className="text-primary underline dark:text-white">
                       Amet dictum sit amet justo
@@ -145,30 +145,30 @@ const BlogDetailsPage = () => {
                     aliquet porttitor. Odio pellentesque diam volutpat commodo
                     sed.
                   </p>
-                  <h3 className="font-xl mb-10 leading-tight font-bold text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight dark:text-white">
+                  <h3 className="font-xl mb-10 leading-tight font-bold text-black sm:text-4xl sm:leading-tight lg:text-3xl lg:leading-tight xl:text-4xl xl:leading-tight dark:text-white">
                     Digital marketplace for Ui/Ux designers.
                   </h3>
-                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                  <p className="text-body-color mb-10 text-xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
                     consectetur adipiscing elit in voluptate velit esse cillum
                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                     mattis vulputate cupidatat.
                   </p>
                   <ul className="text-body-color mb-10 list-inside list-disc">
-                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                    <li className="text-body-color mb-2 text-xl font-medium sm:text-2xl lg:text-xl xl:text-2xl">
                       Consectetur adipiscing elit in voluptate velit.
                     </li>
-                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                    <li className="text-body-color mb-2 text-xl font-medium sm:text-2xl lg:text-xl xl:text-2xl">
                       Mattis vulputate cupidatat.
                     </li>
-                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                    <li className="text-body-color mb-2 text-xl font-medium sm:text-2xl lg:text-xl xl:text-2xl">
                       Vulputate enim nulla aliquet porttitor odio pellentesque
                     </li>
-                    <li className="text-body-color mb-2 text-base font-medium sm:text-lg lg:text-base xl:text-lg">
+                    <li className="text-body-color mb-2 text-xl font-medium sm:text-2xl lg:text-xl xl:text-2xl">
                       Ligula ullamcorper malesuada proin
                     </li>
                   </ul>
                   <div className="bg-primary/10 relative z-10 mb-10 overflow-hidden rounded-md p-8 md:p-9 lg:p-8 xl:p-9">
-                    <p className="text-body-color text-center text-base font-medium italic">
+                    <p className="text-body-color text-center text-xl font-medium italic">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod incididunt utionals labore et dolore magna
                       aliqua. Quis lobortis scelerisque fermentum, The Neque ut
@@ -315,14 +315,14 @@ const BlogDetailsPage = () => {
                       </svg>
                     </span>
                   </div>
-                  <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                  <p className="text-body-color mb-10 text-xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
                     consectetur adipiscing elit in voluptate velit esse cillum
                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                     mattis vulputate cupidatat.
                   </p>
                   <div className="items-center justify-between sm:flex">
                     <div className="mb-5">
-                      <h4 className="text-body-color mb-3 text-sm font-medium">
+                      <h4 className="text-body-color mb-3 text-lg font-medium">
                         Popular Tags :
                       </h4>
                       <div className="flex items-center">
@@ -332,7 +332,7 @@ const BlogDetailsPage = () => {
                       </div>
                     </div>
                     <div className="mb-5">
-                      <h5 className="text-body-color mb-3 text-sm font-medium sm:text-right">
+                      <h5 className="text-body-color mb-3 text-lg font-medium sm:text-right">
                         Share this post :
                       </h5>
                       <div className="flex items-center sm:justify-end">

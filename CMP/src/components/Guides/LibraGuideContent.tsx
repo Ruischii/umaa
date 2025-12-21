@@ -86,7 +86,7 @@ const LibraGuideContent = () => {
   const SkillsList = ({ skills }: { skills: string[] }) => (
     <div className="flex flex-wrap gap-2">
       {skills.map((skill, index) => (
-        <div key={index} className="flex items-center gap-1.5 rounded-md bg-body-color/5 dark:bg-white/5 px-2.5 py-1.5 text-base text-body-color dark:text-white">
+        <div key={index} className="flex items-center gap-1.5 rounded-md bg-body-color/5 dark:bg-white/5 px-2.5 py-1.5 text-xl text-body-color dark:text-white">
           <div className="relative h-5 w-5 flex-shrink-0">
             <Image
               src={`/images/skills/${skillImages[skill] || "speed.png"}`}
@@ -105,15 +105,15 @@ const LibraGuideContent = () => {
     <div className="space-y-10">
       {/* Quickstart Section */}
       <div className="rounded-lg border-2 border-primary/30 bg-primary/5 p-6 dark:bg-primary/10">
-        <h3 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
+        <h3 className="mb-5 text-4xl font-bold text-black dark:text-white sm:text-5xl">
           ⚡ Quickstart Guide
         </h3>
         <div className="space-y-5">
           <div>
-            <h4 className="mb-3 text-xl font-semibold text-black dark:text-white sm:text-2xl">
+            <h4 className="mb-3 text-3xl font-semibold text-black dark:text-white sm:text-4xl">
               Skill Building Strategy
             </h4>
-            <ul className="space-y-2 text-lg font-medium text-body-color dark:text-white/90 sm:text-xl">
+            <ul className="space-y-2 text-2xl font-medium text-body-color dark:text-white/90 sm:text-3xl">
               <li className="flex gap-2">
                 <span className="text-primary">•</span>
                 <span><strong>More skills but white &gt; less skills but gold</strong> (excluding gold recovery skills)</span>
@@ -126,10 +126,10 @@ const LibraGuideContent = () => {
           </div>
 
           <div>
-            <h4 className="mb-3 text-xl font-semibold text-black dark:text-white sm:text-2xl">
+            <h4 className="mb-3 text-3xl font-semibold text-black dark:text-white sm:text-4xl">
               Skill Priority Order
             </h4>
-            <ol className="space-y-2 text-lg font-medium text-body-color dark:text-white/90 sm:text-xl">
+            <ol className="space-y-2 text-2xl font-medium text-body-color dark:text-white/90 sm:text-3xl">
               <li className="flex gap-2">
                 <span className="font-bold text-primary">1.</span>
                 <span><strong>Gold recovery x2</strong> / First stage green skills</span>
@@ -146,10 +146,10 @@ const LibraGuideContent = () => {
           </div>
 
           <div>
-            <h4 className="mb-3 text-xl font-semibold text-black dark:text-white sm:text-2xl">
+            <h4 className="mb-3 text-3xl font-semibold text-black dark:text-white sm:text-4xl">
               Pro Tips
             </h4>
-            <ul className="space-y-2 text-lg font-medium text-body-color dark:text-white/90 sm:text-xl">
+            <ul className="space-y-2 text-2xl font-medium text-body-color dark:text-white/90 sm:text-3xl">
               <li className="flex gap-2">
                 <span className="text-primary">💡</span>
                 <span>Try to use parents with <strong>Long pink sparks</strong> for Long S = ~100 speed for free</span>
@@ -165,19 +165,19 @@ const LibraGuideContent = () => {
 
       {/* General Info */}
       <div>
-        <h3 className="mb-8 text-2xl font-bold text-black dark:text-white sm:text-3xl">
+        <h3 className="mb-8 text-4xl font-bold text-black dark:text-white sm:text-5xl">
           Race Information
         </h3>
         <div className="mb-8">
-          <p className="text-body-color mb-3 text-lg font-medium sm:text-xl">
+          <p className="text-body-color mb-3 text-2xl font-medium sm:text-3xl">
             <strong className="text-black dark:text-white">Track:</strong> Kyoto 3000m (outer) (clockwise)
           </p>
-          <p className="text-body-color mb-3 text-lg font-medium sm:text-xl">
+          <p className="text-body-color mb-3 text-2xl font-medium sm:text-3xl">
             <strong className="text-black dark:text-white">Distance:</strong> Long
           </p>
         </div>
 
-        <h4 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl">
+        <h4 className="mb-5 text-3xl font-bold text-black dark:text-white sm:text-4xl">
           Green Skills
         </h4>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
@@ -187,7 +187,7 @@ const LibraGuideContent = () => {
             "Kyoto Racecourse", "Sunny Days", "Maverick (RNG)", "Lone Wolf (RNG)",
             "Inner Post Proficiency (RNG)", "Lucky Seven (RNG)"
           ].map((skill, index) => (
-            <div key={index} className="flex items-center gap-2 rounded-md bg-primary/10 px-3 py-2.5 text-lg font-medium text-body-color dark:text-white md:px-4 sm:text-xl">
+            <div key={index} className="flex items-center gap-2 rounded-md bg-primary/10 px-3 py-2.5 text-2xl font-medium text-body-color dark:text-white md:px-4 sm:text-3xl">
               <div className="relative h-6 w-6 flex-shrink-0">
                 <Image
                   src={`/images/skills/${skillImages[skill]}`}
@@ -204,16 +204,16 @@ const LibraGuideContent = () => {
 
       {/* Stat Requirements */}
       <div>
-        <h3 className="mb-8 text-2xl font-bold text-black dark:text-white sm:text-3xl">
+        <h3 className="mb-8 text-4xl font-bold text-black dark:text-white sm:text-5xl">
           Stat Requirements by Position
         </h3>
         
         {/* Ideal Stats Table */}
-        <h4 className="mb-5 text-xl font-semibold text-black dark:text-white sm:text-2xl">
+        <h4 className="mb-5 text-3xl font-semibold text-black dark:text-white sm:text-4xl">
           Ideal Stats
         </h4>
         <div className="mb-10 overflow-x-auto">
-          <table className="w-full border-collapse border border-body-color/10 text-base sm:text-lg dark:border-white/10">
+          <table className="w-full border-collapse border border-body-color/10 text-xl sm:text-2xl dark:border-white/10">
             <thead className="bg-primary/10">
               <tr>
                 <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Position</th>
@@ -297,15 +297,15 @@ const LibraGuideContent = () => {
         </div>
 
         {/* Minimum Stats Table */}
-        <h4 className="mb-5 text-xl font-semibold text-black dark:text-white sm:text-2xl">
+        <h4 className="mb-5 text-3xl font-semibold text-black dark:text-white sm:text-4xl">
           Minimum Stats
         </h4>
         <div className="mb-10 overflow-x-auto">
-          <table className="w-full border-collapse border border-body-color/10 text-base sm:text-lg dark:border-white/10">
+          <table className="w-full border-collapse border border-body-color/10 text-xl sm:text-2xl dark:border-white/10">
             <thead className="bg-primary/10">
               <tr>
-                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">Position</th>
-                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-2xl font-bold dark:border-white/10 sm:text-3xl md:px-5 md:py-4">Position</th>
+                <th className="border border-body-color/10 px-4 py-3 text-left text-2xl font-bold dark:border-white/10 sm:text-3xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/speedStat.png" alt="Speed" fill className="object-contain" />
@@ -313,7 +313,7 @@ const LibraGuideContent = () => {
                     <span>Speed</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-2xl font-bold dark:border-white/10 sm:text-3xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/staminaStat.png" alt="Stamina" fill className="object-contain" />
@@ -321,7 +321,7 @@ const LibraGuideContent = () => {
                     <span>Stamina</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-2xl font-bold dark:border-white/10 sm:text-3xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/strengthStat.png" alt="Power" fill className="object-contain" />
@@ -329,7 +329,7 @@ const LibraGuideContent = () => {
                     <span>Power</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-2xl font-bold dark:border-white/10 sm:text-3xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/gutsStat.png" alt="Guts" fill className="object-contain" />
@@ -337,7 +337,7 @@ const LibraGuideContent = () => {
                     <span>Guts</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-2xl font-bold dark:border-white/10 sm:text-3xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/witStat.png" alt="Wit" fill className="object-contain" />
@@ -387,7 +387,7 @@ const LibraGuideContent = () => {
 
       {/* Position Strategies */}
       <div>
-        <h3 className="mb-8 text-2xl font-bold text-black dark:text-white sm:text-3xl">
+        <h3 className="mb-8 text-4xl font-bold text-black dark:text-white sm:text-5xl">
           Position Strategies
         </h3>
 
@@ -398,7 +398,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-xl font-semibold text-black dark:text-white sm:text-2xl">
+              <h4 className="text-3xl font-semibold text-black dark:text-white sm:text-4xl">
                 Front Runner
               </h4>
               <svg
@@ -417,34 +417,34 @@ const LibraGuideContent = () => {
             <div className="mt-2 rounded-lg border border-body-color/20 bg-white p-6 dark:border-white/20 dark:bg-gray-dark">
               <div className="space-y-4">
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Core Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Core Skills</h5>
                   <SkillsList skills={["Groundwork", "Early lead", "Highlander"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Accelerations</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Accelerations</h5>
                   <SkillsList skills={["3 Greens"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Recovery Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Recovery Skills</h5>
                   <SkillsList skills={["Swinging Maestro", "Restless", "Cooldown", "Breath of Fresh Air"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good to Fight for 1st</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Good to Fight for 1st</h5>
                   <SkillsList skills={["Front Runner Corners", "Long Corners", "Corner Adept", "Slipstream", "Ramp Up", "Leader's Pride"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Speed Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Speed Skills</h5>
                   <SkillsList skills={["Playtime's Over!", "Fast-Paced", "Tail Held High"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
                   <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Front Runner Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
-                  <p className="text-body-color mb-2 text-lg font-medium sm:text-xl"><strong>Parent Deck:</strong> 30% total race bonus - Use balanced speed and stamina cards</p>
-                  <p className="text-body-color mb-2 text-lg font-medium sm:text-xl"><strong>Ace (Budget):</strong> 30% race bonus - Budget-friendly core stats focus</p>
-                  <p className="text-body-color text-lg font-medium sm:text-xl"><strong>Ace (Whale):</strong> 45% race bonus - Premium support cards</p>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Deck Recommendations</h5>
+                  <p className="text-body-color mb-2 text-2xl font-medium sm:text-3xl"><strong>Parent Deck:</strong> 30% total race bonus - Use balanced speed and stamina cards</p>
+                  <p className="text-body-color mb-2 text-2xl font-medium sm:text-3xl"><strong>Ace (Budget):</strong> 30% race bonus - Budget-friendly core stats focus</p>
+                  <p className="text-body-color text-2xl font-medium sm:text-3xl"><strong>Ace (Whale):</strong> 45% race bonus - Premium support cards</p>
                 </div>
               </div>
             </div>
@@ -458,7 +458,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-xl font-semibold text-black dark:text-white sm:text-2xl">
+              <h4 className="text-3xl font-semibold text-black dark:text-white sm:text-4xl">
                 Pace Chaser
               </h4>
               <svg
@@ -477,30 +477,30 @@ const LibraGuideContent = () => {
             <div className="mt-2 rounded-lg border border-body-color/20 bg-white p-6 dark:border-white/20 dark:bg-gray-dark">
               <div className="space-y-4">
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Core Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Core Skills</h5>
                   <SkillsList skills={["Ignited Spirit PWR", "Head On", "Highlander"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Accelerations</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Accelerations</h5>
                   <SkillsList skills={["Nimble Navigator", "Uma Stan"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Recovery Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Recovery Skills</h5>
                   <SkillsList skills={["Swinging Maestro", "Race Planner", "Cooldown", "Breath of Fresh Air", "Gourmand", "Calm and Collected"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Speed Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Speed Skills</h5>
                   <SkillsList skills={["Playtime's Over!", "Tail Held High", "Pace Chaser Corners", "Long Corners", "Corner Adept", "Slipstream", "Prepared to Pass", "Ramp Up"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
                   <SkillsList skills={["Straightaway Adept", "Long Straightaways", "Pace Chaser Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
-                  <p className="text-body-color mb-2 text-base"><strong>Parent Deck:</strong> 50% total race bonus - Recovery and speed emphasis</p>
-                  <p className="text-body-color mb-2 text-base"><strong>Ace (Budget):</strong> 30% race bonus - Cost-effective position control</p>
-                  <p className="text-body-color text-base"><strong>Ace (Whale):</strong> 50% race bonus - Consistent pace chasing dominance</p>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Deck Recommendations</h5>
+                  <p className="text-body-color mb-2 text-xl"><strong>Parent Deck:</strong> 50% total race bonus - Recovery and speed emphasis</p>
+                  <p className="text-body-color mb-2 text-xl"><strong>Ace (Budget):</strong> 30% race bonus - Cost-effective position control</p>
+                  <p className="text-body-color text-xl"><strong>Ace (Whale):</strong> 50% race bonus - Consistent pace chasing dominance</p>
                 </div>
               </div>
             </div>
@@ -514,7 +514,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-xl font-semibold text-black dark:text-white sm:text-2xl">
+              <h4 className="text-3xl font-semibold text-black dark:text-white sm:text-4xl">
                 Late Surger
               </h4>
               <svg
@@ -533,34 +533,34 @@ const LibraGuideContent = () => {
             <div className="mt-2 rounded-lg border border-body-color/20 bg-white p-6 dark:border-white/20 dark:bg-gray-dark">
               <div className="space-y-4">
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Core Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Core Skills</h5>
                   <SkillsList skills={["Let's Pump Some Iron!", "Ignited Spirit PWR"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Accelerations</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Accelerations</h5>
                   <SkillsList skills={["Slick Surge", "Nimble Navigator"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Recovery Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Recovery Skills</h5>
                   <SkillsList skills={["Swinging Maestro", "Lie in Wait", "Cooldown", "Breath of Fresh Air"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Speed Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Speed Skills</h5>
                   <SkillsList skills={["Playtime's Over!", "Tail Held High", "Late Surger Corners", "Long Corners", "Corner Adept", "Slipstream", "Ramp Up"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Special Notes</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Special Notes</h5>
                   <SkillsList skills={["Position Pilfer", "1,500,000 CC"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
                   <SkillsList skills={["Long Straightaways", "Late Surger Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
-                  <p className="text-body-color mb-2 text-base"><strong>Parent Deck:</strong> 30% total race bonus - Stamina and late game acceleration focus</p>
-                  <p className="text-body-color mb-2 text-base"><strong>Ace (Budget):</strong> 35% race bonus - Core late surge setup</p>
-                  <p className="text-body-color text-base"><strong>Ace (Whale):</strong> 40% race bonus - Optimized for 2000m+ races</p>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Deck Recommendations</h5>
+                  <p className="text-body-color mb-2 text-xl"><strong>Parent Deck:</strong> 30% total race bonus - Stamina and late game acceleration focus</p>
+                  <p className="text-body-color mb-2 text-xl"><strong>Ace (Budget):</strong> 35% race bonus - Core late surge setup</p>
+                  <p className="text-body-color text-xl"><strong>Ace (Whale):</strong> 40% race bonus - Optimized for 2000m+ races</p>
                 </div>
               </div>
             </div>
@@ -574,7 +574,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-xl font-semibold text-black dark:text-white sm:text-2xl">
+              <h4 className="text-3xl font-semibold text-black dark:text-white sm:text-4xl">
                 End Closer
               </h4>
               <svg
@@ -593,35 +593,35 @@ const LibraGuideContent = () => {
             <div className="mt-2 rounded-lg border border-body-color/20 bg-white p-6 dark:border-white/20 dark:bg-gray-dark">
               <div className="space-y-4">
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Core Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Core Skills</h5>
                   <SkillsList skills={["Let's Pump Some Iron!", "Nimble Navigator"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Accelerations</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Accelerations</h5>
                   <SkillsList skills={["Straightaway Spurt", "Uma Stan"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Special Notes</h5>
-                  <p className="text-body-color text-base">Get an extra 50 stamina for Manhattan Cafe</p>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Special Notes</h5>
+                  <p className="text-body-color text-xl">Get an extra 50 stamina for Manhattan Cafe</p>
                   <SkillsList skills={["Stamina Siphon"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Recovery Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Recovery Skills</h5>
                   <SkillsList skills={["Swinging Maestro", "Go-Home Specialist", "Sleeping Lion", "Breath of Fresh Air"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Speed Skills</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Speed Skills</h5>
                   <SkillsList skills={["Corner Adept", "Tail Held High", "End Closer Corners", "Long Corners", "Ramp Up", "Slipstream", "Early Start"]} />
                 </div>
                 <div>
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Good but RNG/Expensive</h5>
                   <SkillsList skills={["Long Straightaways", "End Closer Straightaways", "Ignited Spirit SPD"]} />
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
-                  <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
-                  <p className="text-body-color mb-2 text-base"><strong>Parent Deck:</strong> 45% total race bonus - Stamina inheritance and finishing power</p>
-                  <p className="text-body-color mb-2 text-base"><strong>Ace (Budget):</strong> 35% race bonus - Budget-friendly end closer setup</p>
-                  <p className="text-body-color text-base"><strong>Ace (Whale):</strong> 50% race bonus - Max stat investment</p>
+                  <h5 className="mb-2 text-2xl font-semibold text-black dark:text-white">Deck Recommendations</h5>
+                  <p className="text-body-color mb-2 text-xl"><strong>Parent Deck:</strong> 45% total race bonus - Stamina inheritance and finishing power</p>
+                  <p className="text-body-color mb-2 text-xl"><strong>Ace (Budget):</strong> 35% race bonus - Budget-friendly end closer setup</p>
+                  <p className="text-body-color text-xl"><strong>Ace (Whale):</strong> 50% race bonus - Max stat investment</p>
                 </div>
               </div>
             </div>

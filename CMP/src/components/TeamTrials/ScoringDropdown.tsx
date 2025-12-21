@@ -11,7 +11,7 @@ const ScoringDropdown = () => {
         className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
       >
         <div className="flex items-center justify-between">
-          <h3 className="text-lg font-semibold text-black dark:text-white">
+          <h3 className="text-2xl font-semibold text-black dark:text-white">
             Team Trials Scoring Guide
           </h3>
           <svg
@@ -33,10 +33,10 @@ const ScoringDropdown = () => {
       </button>
       {isOpen && (
         <div className="mt-2 rounded-lg border border-body-color/20 bg-white p-6 dark:border-white/20 dark:bg-gray-dark">
-          <div className="text-body-color space-y-6 text-base dark:text-body-color-dark">
+          <div className="text-body-color space-y-6 text-xl dark:text-body-color-dark">
             {/* Score Modifiers */}
             <div>
-              <h4 className="mb-3 text-lg font-semibold text-black dark:text-white">
+              <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
                 Score Modifiers (Additive)
               </h4>
               <ul className="ml-6 list-disc space-y-2">
@@ -57,7 +57,7 @@ const ScoringDropdown = () => {
 
             {/* Team Points */}
             <div>
-              <h4 className="mb-3 text-lg font-semibold text-black dark:text-white">
+              <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
                 Team Points
               </h4>
               <ul className="ml-6 list-disc space-y-2">
@@ -78,7 +78,7 @@ const ScoringDropdown = () => {
 
             {/* Race Results */}
             <div>
-              <h4 className="mb-3 text-lg font-semibold text-black dark:text-white">
+              <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
                 Race Results
               </h4>
               
@@ -138,7 +138,7 @@ const ScoringDropdown = () => {
                 <h5 className="mb-2 font-semibold text-black dark:text-white">
                   1st Place Margin
                 </h5>
-                <p className="text-body-color text-sm dark:text-body-color-dark">
+                <p className="text-body-color text-lg dark:text-body-color-dark">
                   Varies 1,000-5,000 based on distance (extremely close or dominant wins score highest)
                 </p>
               </div>
@@ -146,7 +146,7 @@ const ScoringDropdown = () => {
 
             {/* Skills */}
             <div>
-              <h4 className="mb-3 text-lg font-semibold text-black dark:text-white">
+              <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
                 Skills
               </h4>
               <ul className="ml-6 list-disc space-y-2">
@@ -167,7 +167,7 @@ const ScoringDropdown = () => {
 
             {/* Other Bonuses */}
             <div>
-              <h4 className="mb-3 text-lg font-semibold text-black dark:text-white">
+              <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
                 Other Bonuses
               </h4>
               <ul className="ml-6 list-disc space-y-2">
@@ -191,7 +191,7 @@ const ScoringDropdown = () => {
 
             {/* Key Strategy */}
             <div>
-              <h4 className="mb-3 text-lg font-semibold text-black dark:text-white">
+              <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
                 Key Strategy
               </h4>
               <ul className="ml-6 list-disc space-y-2">

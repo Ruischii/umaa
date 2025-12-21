@@ -77,22 +77,22 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-5xl font-bold leading-tight text-black dark:text-white sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight">
+                <h1 className="mb-5 text-7xl font-bold leading-tight text-black dark:text-white sm:text-7xl sm:leading-tight md:text-8xl md:leading-tight">
                 Uma Assists
                 </h1>
-                <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                <p className="mb-12 text-xl leading-relaxed! text-body-color dark:text-body-color-dark sm:text-2xl md:text-3xl">
                 Uma Global Server Guides for Team Trials and Champions Meetings
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="/guides"
-                    className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 hover:scale-110"
+                    className="rounded-xs bg-primary px-8 py-4 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 hover:scale-110"
                   >
                     CM Guides
                   </Link>
                   <Link
                     href={currentGuideUrl}
-                    className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5 hover:scale-110"
+                    className="inline-block rounded-xs bg-black px-8 py-4 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5 hover:scale-110"
                   >
                     Current Champions Meeting
                   </Link>

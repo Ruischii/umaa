@@ -23,7 +23,7 @@ const TeamTrialsSection = () => {
                   href="https://x.com/Spindrift_illus"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs md:text-sm text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary relative z-10"
+                  className="text-xl md:text-2xl text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary relative z-10"
                 >
                   @Spindrift_illus
                 </a>

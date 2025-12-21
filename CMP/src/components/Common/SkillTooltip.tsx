@@ -57,10 +57,10 @@ const SkillTooltip = ({ skillName, imagePath, children }: SkillTooltipProps) => 
                 />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="font-bold text-sm text-black dark:text-white mb-1 leading-tight">
+                <p className="font-bold text-lg text-black dark:text-white mb-1 leading-tight">
                   {cleanSkillName(skillName)}
                 </p>
-                <p className="text-xs text-body-color dark:text-white/90 leading-relaxed">
+                <p className="text-xl text-body-color dark:text-white/90 leading-relaxed">
                   {description}
                 </p>
               </div>

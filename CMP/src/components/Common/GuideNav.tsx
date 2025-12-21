@@ -117,7 +117,7 @@ const GuideNav = ({ items }: GuideNavProps) => {
               className="w-full flex items-center justify-between mb-3 px-2 py-2 rounded-md hover:bg-body-color/10 dark:hover:bg-white/10 transition-colors group"
               aria-label="Collapse navigation"
             >
-              <h4 className="text-sm font-bold text-black dark:text-white">
+              <h4 className="text-lg font-bold text-black dark:text-white">
             Contents
           </h4>
               <svg
@@ -136,7 +136,7 @@ const GuideNav = ({ items }: GuideNavProps) => {
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-left w-full px-3 py-2.5 text-sm rounded-md transition-all duration-200 ${
+                  className={`text-left w-full px-3 py-2.5 text-lg rounded-md transition-all duration-200 ${
                     activeId === item.id
                       ? "bg-primary text-white dark:bg-primary dark:text-white font-semibold shadow-sm"
                       : "text-body-color hover:bg-primary/10 dark:text-white/80 dark:hover:bg-white/10 hover:text-primary dark:hover:text-primary font-medium"
@@ -159,7 +159,7 @@ const GuideNav = ({ items }: GuideNavProps) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`whitespace-nowrap px-3 py-1.5 text-xs rounded transition-colors flex-shrink-0 ${
+                className={`whitespace-nowrap px-3 py-1.5 text-xl rounded transition-colors flex-shrink-0 ${
                   activeId === item.id
                     ? "bg-primary text-white dark:bg-primary dark:text-white font-medium"
                     : "bg-white dark:bg-dark text-body-color hover:bg-body-color/10 dark:text-white/70 dark:hover:bg-white/10"
