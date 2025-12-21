@@ -83,8 +83,8 @@ const GuidePage = async ({ params }: Props) => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4">
-              <div className="flex flex-col mx-auto max-w-4xl">
-                <div className="relative aspect-video p-4 sm:p-2 sm:pb-0 select-none">
+              <div className="flex flex-col w-full">
+                <div className="relative w-full aspect-video select-none">
                   <Image
                     src={guide.image}
                     alt={guide.title}
@@ -101,12 +101,9 @@ const GuidePage = async ({ params }: Props) => {
       </section>
       <section className="pb-[120px]">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap justify-center">
-          <div className="w-full px-4 md:w-11/12 lg:w-10/12 xl:w-8/12">
+        <div className="-mx-4 flex flex-wrap">
+          <div className="w-full px-4">
             <div>
-              <h2 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white">
-                {guide.title}
-              </h2>
               <div className="border-body-color/10 mb-10 flex flex-wrap items-center justify-between border-b pb-4 dark:border-white/10">
                 <div className="flex flex-wrap items-center">
                   <div className="mb-5 flex items-center">

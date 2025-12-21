@@ -17,48 +17,50 @@ const Breadcrumb = ({
       <section className="relative z-10 overflow-hidden pt-28 lg:pt-[150px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-7/12">
-              <div className="mb-8 max-w-[570px] lg:mb-12">
-                <h1 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  {pageName}
-                </h1>
-                <p className="text-base font-medium leading-relaxed text-body-color">
-                  {description}
-                </p>
-                {children && (
-                  <div className="mt-4">
-                    {children}
-                  </div>
-                )}
-              </div>
-            </div>
-            <div className="w-full px-4 lg:w-5/12">
-              <div className="lg:text-end">
-                <ul className="flex items-center lg:justify-end">
-                  <li className="flex items-center">
-                    <Link
-                      href="/"
-                      className="pr-1 text-base font-medium text-body-color hover:text-primary"
-                    >
-                      Home
-                    </Link>
-                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
-                  </li>
-                  {parent && (
-                    <li className="flex items-center">
-                      <Link
-                        href={parent.href}
-                        className="pr-1 text-base font-medium text-body-color hover:text-primary"
-                      >
-                        {parent.name}
-                      </Link>
-                      <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
-                    </li>
-                  )}
-                  <li className="text-base font-medium text-primary">
+            <div className="w-full px-4">
+              <div className="mb-8 lg:mb-12">
+                <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                  <h1 className="text-2xl font-bold text-black dark:text-white sm:text-3xl">
                     {pageName}
-                  </li>
-                </ul>
+                  </h1>
+                  <div className="flex items-center">
+                    <ul className="flex items-center">
+                      <li className="flex items-center">
+                        <Link
+                          href="/"
+                          className="pr-1 text-base font-medium text-body-color hover:text-primary"
+                        >
+                          Home
+                        </Link>
+                        <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
+                      </li>
+                      {parent && (
+                        <li className="flex items-center">
+                          <Link
+                            href={parent.href}
+                            className="pr-1 text-base font-medium text-body-color hover:text-primary"
+                          >
+                            {parent.name}
+                          </Link>
+                          <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
+                        </li>
+                      )}
+                      <li className="text-base font-medium text-primary">
+                        {pageName}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="max-w-[570px]">
+                  <p className="text-lg font-medium leading-relaxed text-body-color sm:text-xl sm:leading-relaxed lg:text-lg lg:leading-relaxed xl:text-xl xl:leading-relaxed">
+                    {description}
+                  </p>
+                  {children && (
+                    <div className="mt-4">
+                      {children}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>

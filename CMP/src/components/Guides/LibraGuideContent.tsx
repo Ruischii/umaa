@@ -105,15 +105,15 @@ const LibraGuideContent = () => {
     <div className="space-y-10">
       {/* Quickstart Section */}
       <div className="rounded-lg border-2 border-primary/30 bg-primary/5 p-6 dark:bg-primary/10">
-        <h3 className="mb-4 text-3xl font-bold text-black dark:text-white">
+        <h3 className="mb-5 text-2xl font-bold text-black dark:text-white sm:text-3xl">
           ⚡ Quickstart Guide
         </h3>
-        <div className="space-y-4">
+        <div className="space-y-5">
           <div>
-            <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
+            <h4 className="mb-3 text-xl font-semibold text-black dark:text-white sm:text-2xl">
               Skill Building Strategy
             </h4>
-            <ul className="space-y-2 text-body-color dark:text-white/90">
+            <ul className="space-y-2 text-lg font-medium text-body-color dark:text-white/90 sm:text-xl">
               <li className="flex gap-2">
                 <span className="text-primary">•</span>
                 <span><strong>More skills but white &gt; less skills but gold</strong> (excluding gold recovery skills)</span>
@@ -126,10 +126,10 @@ const LibraGuideContent = () => {
           </div>
 
           <div>
-            <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
+            <h4 className="mb-3 text-xl font-semibold text-black dark:text-white sm:text-2xl">
               Skill Priority Order
             </h4>
-            <ol className="space-y-2 text-body-color dark:text-white/90">
+            <ol className="space-y-2 text-lg font-medium text-body-color dark:text-white/90 sm:text-xl">
               <li className="flex gap-2">
                 <span className="font-bold text-primary">1.</span>
                 <span><strong>Gold recovery x2</strong> / First stage green skills</span>
@@ -146,10 +146,10 @@ const LibraGuideContent = () => {
           </div>
 
           <div>
-            <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
+            <h4 className="mb-3 text-xl font-semibold text-black dark:text-white sm:text-2xl">
               Pro Tips
             </h4>
-            <ul className="space-y-2 text-body-color dark:text-white/90">
+            <ul className="space-y-2 text-lg font-medium text-body-color dark:text-white/90 sm:text-xl">
               <li className="flex gap-2">
                 <span className="text-primary">💡</span>
                 <span>Try to use parents with <strong>Long pink sparks</strong> for Long S = ~100 speed for free</span>
@@ -165,19 +165,19 @@ const LibraGuideContent = () => {
 
       {/* General Info */}
       <div>
-        <h3 className="mb-6 text-3xl font-bold text-black dark:text-white">
+        <h3 className="mb-8 text-2xl font-bold text-black dark:text-white sm:text-3xl">
           Race Information
         </h3>
-        <div className="mb-6">
-          <p className="text-body-color mb-2 text-lg font-medium">
+        <div className="mb-8">
+          <p className="text-body-color mb-3 text-lg font-medium sm:text-xl">
             <strong className="text-black dark:text-white">Track:</strong> Kyoto 3000m (outer) (clockwise)
           </p>
-          <p className="text-body-color mb-2 text-lg font-medium">
+          <p className="text-body-color mb-3 text-lg font-medium sm:text-xl">
             <strong className="text-black dark:text-white">Distance:</strong> Long
           </p>
         </div>
 
-        <h4 className="mb-4 text-2xl font-bold text-black dark:text-white">
+        <h4 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl">
           Green Skills
         </h4>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
@@ -187,7 +187,7 @@ const LibraGuideContent = () => {
             "Kyoto Racecourse", "Sunny Days", "Maverick (RNG)", "Lone Wolf (RNG)",
             "Inner Post Proficiency (RNG)", "Lucky Seven (RNG)"
           ].map((skill, index) => (
-            <div key={index} className="flex items-center gap-2 rounded-md bg-primary/10 px-2 py-2 text-base font-medium text-body-color dark:text-white md:px-3">
+            <div key={index} className="flex items-center gap-2 rounded-md bg-primary/10 px-3 py-2.5 text-lg font-medium text-body-color dark:text-white md:px-4 sm:text-xl">
               <div className="relative h-6 w-6 flex-shrink-0">
                 <Image
                   src={`/images/skills/${skillImages[skill]}`}
@@ -204,16 +204,16 @@ const LibraGuideContent = () => {
 
       {/* Stat Requirements */}
       <div>
-        <h3 className="mb-6 text-3xl font-bold text-black dark:text-white">
+        <h3 className="mb-8 text-2xl font-bold text-black dark:text-white sm:text-3xl">
           Stat Requirements by Position
         </h3>
         
         {/* Ideal Stats Table */}
-        <h4 className="mb-4 text-xl font-semibold text-black dark:text-white">
+        <h4 className="mb-5 text-xl font-semibold text-black dark:text-white sm:text-2xl">
           Ideal Stats
         </h4>
-        <div className="mb-8 overflow-x-auto">
-          <table className="w-full border-collapse border border-body-color/10 text-base lg:text-lg dark:border-white/10">
+        <div className="mb-10 overflow-x-auto">
+          <table className="w-full border-collapse border border-body-color/10 text-base sm:text-lg dark:border-white/10">
             <thead className="bg-primary/10">
               <tr>
                 <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Position</th>
@@ -261,51 +261,51 @@ const LibraGuideContent = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Front Runner</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">901</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">500</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">Front Runner</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1200</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1200</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">901</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">500</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">400</td>
               </tr>
               <tr className="bg-body-color/5">
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Pace Chaser</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1150</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">901</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">500</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">Pace Chaser</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1200</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1150</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">901</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">500</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">400</td>
               </tr>
               <tr>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Late Surger</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1050</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">901</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">450</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">Late Surger</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1200</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1050</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">901</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">450</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">400</td>
               </tr>
               <tr className="bg-body-color/5">
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">End Closer</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1050</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">End Closer</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1200</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1050</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">601</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">400</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">301</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         {/* Minimum Stats Table */}
-        <h4 className="mb-4 text-xl font-semibold text-black dark:text-white">
+        <h4 className="mb-5 text-xl font-semibold text-black dark:text-white sm:text-2xl">
           Minimum Stats
         </h4>
-        <div className="mb-8 overflow-x-auto">
-          <table className="w-full border-collapse border border-body-color/10 text-base lg:text-lg dark:border-white/10">
+        <div className="mb-10 overflow-x-auto">
+          <table className="w-full border-collapse border border-body-color/10 text-base sm:text-lg dark:border-white/10">
             <thead className="bg-primary/10">
               <tr>
-                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Position</th>
-                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">Position</th>
+                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/speedStat.png" alt="Speed" fill className="object-contain" />
@@ -313,7 +313,7 @@ const LibraGuideContent = () => {
                     <span>Speed</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/staminaStat.png" alt="Stamina" fill className="object-contain" />
@@ -321,7 +321,7 @@ const LibraGuideContent = () => {
                     <span>Stamina</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/strengthStat.png" alt="Power" fill className="object-contain" />
@@ -329,7 +329,7 @@ const LibraGuideContent = () => {
                     <span>Power</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/gutsStat.png" alt="Guts" fill className="object-contain" />
@@ -337,7 +337,7 @@ const LibraGuideContent = () => {
                     <span>Guts</span>
                   </div>
                 </th>
-                <th className="border border-body-color/10 px-2 py-2 text-left font-bold dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">
+                <th className="border border-body-color/10 px-4 py-3 text-left text-lg font-bold dark:border-white/10 sm:text-xl md:px-5 md:py-4">
                   <div className="flex items-center gap-1.5 lg:gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0 lg:h-6 lg:w-6">
                       <Image src="/images/statImage/witStat.png" alt="Wit" fill className="object-contain" />
@@ -349,36 +349,36 @@ const LibraGuideContent = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Front Runner</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1100</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">500</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">Front Runner</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1200</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1100</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">601</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">500</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">301</td>
               </tr>
               <tr className="bg-body-color/5">
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Pace Chaser</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1150</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">500</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">Pace Chaser</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1200</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1150</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">601</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">500</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">301</td>
               </tr>
               <tr>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">Late Surger</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1050</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">450</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">Late Surger</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1200</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1050</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">601</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">450</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">301</td>
               </tr>
               <tr className="bg-body-color/5">
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">End Closer</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1200</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">1050</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">601</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">400</td>
-                <td className="border border-body-color/10 px-2 py-2 dark:border-white/10 md:px-3 md:py-2.5 lg:px-4 lg:py-3">301</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">End Closer</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1200</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">1050</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">601</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">400</td>
+                <td className="border border-body-color/10 px-4 py-3 dark:border-white/10 md:px-5 md:py-4">301</td>
               </tr>
             </tbody>
           </table>
@@ -387,7 +387,7 @@ const LibraGuideContent = () => {
 
       {/* Position Strategies */}
       <div>
-        <h3 className="mb-6 text-3xl font-bold text-black dark:text-white">
+        <h3 className="mb-8 text-2xl font-bold text-black dark:text-white sm:text-3xl">
           Position Strategies
         </h3>
 
@@ -398,7 +398,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-xl font-semibold text-black dark:text-white">
+              <h4 className="text-xl font-semibold text-black dark:text-white sm:text-2xl">
                 Front Runner
               </h4>
               <svg
@@ -442,9 +442,9 @@ const LibraGuideContent = () => {
                 </div>
                 <div className="bg-primary/5 rounded-md p-4">
                   <h5 className="mb-2 text-lg font-semibold text-black dark:text-white">Deck Recommendations</h5>
-                  <p className="text-body-color mb-2 text-base"><strong>Parent Deck:</strong> 30% total race bonus - Use balanced speed and stamina cards</p>
-                  <p className="text-body-color mb-2 text-base"><strong>Ace (Budget):</strong> 30% race bonus - Budget-friendly core stats focus</p>
-                  <p className="text-body-color text-base"><strong>Ace (Whale):</strong> 45% race bonus - Premium support cards</p>
+                  <p className="text-body-color mb-2 text-lg font-medium sm:text-xl"><strong>Parent Deck:</strong> 30% total race bonus - Use balanced speed and stamina cards</p>
+                  <p className="text-body-color mb-2 text-lg font-medium sm:text-xl"><strong>Ace (Budget):</strong> 30% race bonus - Budget-friendly core stats focus</p>
+                  <p className="text-body-color text-lg font-medium sm:text-xl"><strong>Ace (Whale):</strong> 45% race bonus - Premium support cards</p>
                 </div>
               </div>
             </div>
@@ -458,7 +458,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-xl font-semibold text-black dark:text-white">
+              <h4 className="text-xl font-semibold text-black dark:text-white sm:text-2xl">
                 Pace Chaser
               </h4>
               <svg
@@ -514,7 +514,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-xl font-semibold text-black dark:text-white">
+              <h4 className="text-xl font-semibold text-black dark:text-white sm:text-2xl">
                 Late Surger
               </h4>
               <svg
@@ -574,7 +574,7 @@ const LibraGuideContent = () => {
             className="w-full rounded-lg border border-body-color/20 bg-white px-6 py-4 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-primary/5 hover:border-primary/30 hover:shadow-md dark:border-white/20 dark:bg-gray-dark dark:hover:bg-primary/10"
           >
             <div className="flex items-center justify-between">
-              <h4 className="text-xl font-semibold text-black dark:text-white">
+              <h4 className="text-xl font-semibold text-black dark:text-white sm:text-2xl">
                 End Closer
               </h4>
               <svg

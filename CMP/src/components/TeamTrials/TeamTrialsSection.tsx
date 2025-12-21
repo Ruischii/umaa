@@ -7,8 +7,8 @@ const TeamTrialsSection = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           {/* Banner at top */}
           <div className="w-full px-4">
-            <div className="flex flex-col mx-auto max-w-4xl">
-              <div className="relative aspect-video p-4 sm:p-2 sm:pb-0 select-none">
+            <div className="flex flex-col w-full">
+              <div className="relative w-full aspect-video select-none">
                 <Image
                   src="/images/teamtrials/teamtrials_header 1.webp"
                   alt="Team Trials Header"
@@ -18,7 +18,7 @@ const TeamTrialsSection = () => {
                   loading="eager"
                 />
               </div>
-              <div className="text-right pr-4 sm:pr-2 relative z-10 -mt-8 md:-mt-12">
+              <div className="text-right pr-4 relative z-10 -mt-8 md: mt-2">
                 <a
                   href="https://x.com/Spindrift_illus"
                   target="_blank"

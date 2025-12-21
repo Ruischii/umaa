@@ -86,7 +86,7 @@ const GuideNav = ({ items }: GuideNavProps) => {
     <>
       {/* Desktop Sticky Nav - positioned outside main content */}
       <div
-        className={`hidden xl:block fixed left-2 top-1/2 -translate-y-1/2 z-40 transition-opacity duration-300 ${
+        className={`hidden xl:block fixed right-4 top-1/2 -translate-y-1/2 z-40 transition-opacity duration-300 ${
           isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
@@ -94,52 +94,52 @@ const GuideNav = ({ items }: GuideNavProps) => {
           /* Collapsed bubble state */
           <button
             onClick={() => setIsCollapsed(false)}
-            className="w-10 h-10 bg-primary hover:bg-primary/90 text-white rounded-full shadow-lg flex items-center justify-center origin-left hover:scale-110 transition-transform"
+            className="w-12 h-12 bg-primary hover:bg-primary/90 text-white rounded-full shadow-lg flex items-center justify-center origin-right hover:scale-110 transition-transform"
             aria-label="Expand navigation"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5"
+              className="w-6 h-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
         ) : (
           /* Expanded nav state */
-        <nav className="bg-white dark:bg-dark border border-body-color/10 dark:border-white/10 rounded-md shadow-md p-2 max-h-[80vh] overflow-y-auto w-36">
+        <nav className="bg-white dark:bg-dark border border-body-color/10 dark:border-white/10 rounded-lg shadow-lg p-4 max-h-[80vh] overflow-y-auto w-56">
             {/* Collapse button */}
             <button
               onClick={() => setIsCollapsed(true)}
-              className="w-full flex items-center justify-between mb-2 px-1 py-1 rounded hover:bg-body-color/10 dark:hover:bg-white/10 transition-colors group"
+              className="w-full flex items-center justify-between mb-3 px-2 py-2 rounded-md hover:bg-body-color/10 dark:hover:bg-white/10 transition-colors group"
               aria-label="Collapse navigation"
             >
-              <h4 className="text-xs font-semibold text-black dark:text-white">
+              <h4 className="text-sm font-bold text-black dark:text-white">
             Contents
           </h4>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4 text-body-color dark:text-white/70 group-hover:text-primary transition-colors"
+                className="w-5 h-5 text-body-color dark:text-white/70 group-hover:text-primary transition-colors"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth={2}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
-          <ul className="space-y-0.5">
+          <ul className="space-y-1">
             {items.map((item) => (
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-left w-full px-2 py-1 text-xs rounded transition-colors ${
+                  className={`text-left w-full px-3 py-2.5 text-sm rounded-md transition-all duration-200 ${
                     activeId === item.id
-                      ? "bg-primary text-white dark:bg-primary dark:text-white font-medium"
-                      : "text-body-color hover:bg-body-color/10 dark:text-white/70 dark:hover:bg-white/10"
+                      ? "bg-primary text-white dark:bg-primary dark:text-white font-semibold shadow-sm"
+                      : "text-body-color hover:bg-primary/10 dark:text-white/80 dark:hover:bg-white/10 hover:text-primary dark:hover:text-primary font-medium"
                   }`}
                 >
                   {item.title}
