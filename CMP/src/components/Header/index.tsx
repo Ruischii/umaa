@@ -22,7 +22,7 @@ const Header = () => {
             if (subItem.id === 45) { // CM Guides Details Page
               return {
                 ...subItem,
-                title: "current CM",
+                title: "Current CM",
                 path: currentGuideUrl
               };
             }
