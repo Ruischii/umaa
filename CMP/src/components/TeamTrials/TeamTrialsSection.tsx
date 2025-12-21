@@ -18,7 +18,7 @@ const TeamTrialsSection = () => {
                   loading="eager"
                 />
               </div>
-              <div className="text-right pr-4 relative z-10 -mt-8 md: mt-2">
+              <div className="text-right pr-4 relative z-10 -mt-6 md:-mt-10 lg:-mt-16 xl:-mt-20">
                 <a
                   href="https://x.com/Spindrift_illus"
                   target="_blank"
