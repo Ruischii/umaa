@@ -15,8 +15,8 @@ const CreditsSection = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           {/* Banner at top */}
           <div className="w-full px-4">
-            <div className="flex flex-col mx-auto max-w-4xl">
-              <div className="relative aspect-video p-4 sm:p-2 sm:pb-0 select-none">
+            <div className="flex flex-col w-full">
+              <div className="relative w-full aspect-video select-none">
                 <Image
                   src="/images/footer/credit_banner.webp"
                   alt="Credits Header"
@@ -26,7 +26,7 @@ const CreditsSection = () => {
                   loading="eager"
                 />
               </div>
-              <div className="text-right pr-4 sm:pr-2 relative z-10 -mt-8 md:-mt-12">
+              <div className="text-right pr-4 relative z-10 -mt-6 md:-mt-10 lg:-mt-16 xl:-mt-20">
                 <a
                   href="https://x.com/Spindrift_illus"
                   target="_blank"
@@ -62,47 +62,47 @@ const CreditsPage = () => {
       <CreditsSection />
       <section className="pb-[120px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap justify-center">
-            <div className="w-full px-4 lg:w-8/12">
+          <div className="-mx-4 flex flex-wrap">
+            <div className="w-full px-4">
               <div>
-                <p className="text-body-color mb-12 text-xl leading-relaxed font-medium sm:text-2xl dark:text-body-color-dark">
+                <p className="text-body-color mb-10 text-2xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-3xl xl:leading-relaxed">
                   umaAssist wouldn't exist without the incredible community, talented artists, and amazing developers who share their knowledge and creativity. This page is dedicated to everyone who has contributed to making this resource possible.
                 </p>
 
-                <h2 className="mb-8 text-5xl leading-tight font-bold text-black dark:text-white">
+                <h3 className="mb-8 mt-12 text-4xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white scroll-mt-24">
                   Artists
-                </h2>
+                </h3>
                 <div className="bg-primary/5 dark:bg-gray-dark rounded-lg p-8 mb-12">
                   <div className="space-y-6">
                     <div className="border-l-4 border-primary pl-4">
-                      <h3 className="text-3xl font-bold text-black dark:text-white mb-2">
+                      <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
                         Spindrift
-                      </h3>
-                      <p className="text-body-color text-xl font-medium mb-2 dark:text-body-color-dark">
+                      </h4>
+                      <p className="text-body-color text-2xl font-medium mb-2 sm:text-2xl lg:text-2xl xl:text-3xl">
                         Banner artwork and header illustrations
                       </p>
                       <a
                         href="https://x.com/Spindrift_illus"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:underline text-lg"
+                        className="text-primary hover:underline text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl"
                       >
                         @Spindrift_illus on Twitter
                       </a>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h3 className="text-3xl font-bold text-black dark:text-white mb-2">
+                      <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
                         gubuos
-                      </h3>
-                      <p className="text-body-color text-xl font-medium mb-2 dark:text-body-color-dark">
+                      </h4>
+                      <p className="text-body-color text-2xl font-medium mb-2 sm:text-2xl lg:text-2xl xl:text-3xl">
                         404 page artwork and page under construction gif
                       </p>
                       <a
                         href="https://x.com/gubuos"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:underline text-lg"
+                        className="text-primary hover:underline text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl"
                       >
                         @gubuos on Twitter
                       </a>
@@ -110,112 +110,112 @@ const CreditsPage = () => {
                   </div>
                 </div>
 
-                <h2 className="mb-8 text-5xl leading-tight font-bold text-black dark:text-white">
+                <h3 className="mb-8 mt-12 text-4xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white scroll-mt-24">
                   Game Information
-                </h2>
+                </h3>
                 <div className="bg-primary/5 dark:bg-gray-dark rounded-lg p-8 mb-12">
                   <div className="space-y-6">
                     <div className="border-l-4 border-primary pl-4">
-                      <h3 className="text-3xl font-bold text-black dark:text-white mb-2">
+                      <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
                         Uma Musume Pretty Derby
-                      </h3>
-                      <p className="text-body-color text-xl font-medium mb-2 dark:text-body-color-dark">
+                      </h4>
+                      <p className="text-body-color text-2xl font-medium mb-2 sm:text-2xl lg:text-2xl xl:text-3xl">
                         © Cygames, Inc. All rights reserved.
                       </p>
-                      <p className="text-body-color text-lg font-medium dark:text-body-color-dark">
+                      <p className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                         This is an unofficial fan site and is not affiliated with, endorsed by, or connected to Cygames, Inc.
                       </p>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h3 className="text-3xl font-bold text-black dark:text-white mb-2">
+                      <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
                         Game Resources
-                      </h3>
-                      <p className="text-body-color text-xl font-medium mb-4 dark:text-body-color-dark">
+                      </h4>
+                      <p className="text-body-color text-2xl font-medium mb-4 sm:text-2xl lg:text-2xl xl:text-3xl">
                         All game screenshots, images, character art, and related materials are property of Cygames, Inc. and are used under fair use for educational and informational purposes.
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <h2 className="mb-8 text-5xl leading-tight font-bold text-black dark:text-white">
+                <h3 className="mb-8 mt-12 text-4xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white scroll-mt-24">
                   Other
-                </h2>
+                </h3>
                 <div className="bg-primary/5 dark:bg-gray-dark rounded-lg p-8 mb-12">
                   <div className="space-y-6">
                     <div className="border-l-4 border-primary pl-4">
-                      <h3 className="text-3xl font-bold text-black dark:text-white mb-2">
+                      <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
                         Community Resources
-                      </h3>
-                      <p className="text-body-color text-xl font-medium mb-4 dark:text-body-color-dark">
+                      </h4>
+                      <p className="text-body-color text-2xl font-medium mb-4 sm:text-2xl lg:text-2xl xl:text-3xl">
                         Special thanks to the Uma Musume community for sharing strategies, guides, and knowledge that helped shape this site.
                       </p>
-                      <ul className="text-body-color list-inside list-disc space-y-2">
-                        <li className="text-body-color text-xl font-medium dark:text-body-color-dark">
-                          <a href="https://umamusume.jp/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      <ul className="text-body-color list-inside list-disc space-y-2 mb-10">
+                        <li className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
+                          <a href="https://umamusume.jp/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline dark:text-white">
                             Official Uma Musume Website
                           </a>
                         </li>
-                        <li className="text-body-color text-xl font-medium dark:text-body-color-dark">
+                        <li className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                           Uma Musume Discord Communities
                         </li>
-                        <li className="text-body-color text-xl font-medium dark:text-body-color-dark">
+                        <li className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                           Reddit r/UmaMusume community
                         </li>
                       </ul>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h3 className="text-3xl font-bold text-black dark:text-white mb-2">
+                      <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
                         Technical Credits
-                      </h3>
-                      <p className="text-body-color text-xl font-medium mb-2 dark:text-body-color-dark">
+                      </h4>
+                      <p className="text-body-color text-2xl font-medium mb-2 sm:text-2xl lg:text-2xl xl:text-3xl">
                         Built with Next.js, React, and Tailwind CSS
                       </p>
-                      <p className="text-body-color text-lg font-medium dark:text-body-color-dark">
+                      <p className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                         Hosted on Vercel
                       </p>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h3 className="text-3xl font-bold text-black dark:text-white mb-2">
+                      <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
                         Data & Tools
-                      </h3>
-                      <p className="text-body-color text-xl font-medium mb-4 dark:text-body-color-dark">
+                      </h4>
+                      <p className="text-body-color text-2xl font-medium mb-4 sm:text-2xl lg:text-2xl xl:text-3xl">
                         Thanks to community tools and databases that provide valuable data:
                       </p>
-                      <ul className="text-body-color list-inside list-disc space-y-2">
-                        <li className="text-body-color text-xl font-medium dark:text-body-color-dark">
+                      <ul className="text-body-color list-inside list-disc space-y-2 mb-10">
+                        <li className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                           UMADB - Uma Musume Database
                         </li>
-                        <li className="text-body-color text-xl font-medium dark:text-body-color-dark">
+                        <li className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                           Run Genesis - Training simulator
                         </li>
-                        <li className="text-body-color text-xl font-medium dark:text-body-color-dark">
+                        <li className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                           GameWith Uma Musume Wiki
                         </li>
                       </ul>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
-                      <h3 className="text-3xl font-bold text-black dark:text-white mb-2">
+                      <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
                         Contributors
-                      </h3>
-                      <p className="text-body-color text-xl font-medium mb-4 dark:text-body-color-dark">
+                      </h4>
+                      <p className="text-body-color text-2xl font-medium mb-4 sm:text-2xl lg:text-2xl xl:text-3xl">
                         Thank you to everyone who has contributed feedback, suggestions, and corrections to improve the guides.
                       </p>
-                      <p className="text-body-color text-lg font-medium dark:text-body-color-dark">
-                        Want to contribute? Reach out via our <a href="/contact" className="text-primary hover:underline">contact page</a> or on <a href="https://x.com/_t2ddy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Twitter</a>.
+                      <p className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
+                        Want to contribute? Reach out via our <a href="/contact" className="text-primary hover:underline dark:text-white">contact page</a> or on <a href="https://x.com/_t2ddy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline dark:text-white">Twitter</a>.
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-primary/10 rounded-lg p-8">
-                  <h3 className="text-4xl font-bold text-black dark:text-white mb-4">
+                  <h4 className="text-body-color mb-5 text-4xl font-bold text-black dark:text-white sm:text-3xl">
                     Thank You! 💙
-                  </h3>
-                  <p className="text-body-color text-2xl font-medium dark:text-body-color-dark">
+                  </h4>
+                  <p className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                     To everyone who uses, shares, and supports umaAssist - thank you for being part of this journey. Your passion for Uma Musume keeps this project going!
                   </p>
                 </div>
