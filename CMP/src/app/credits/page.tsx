@@ -57,7 +57,7 @@ const CreditsPage = () => {
     <>
       <Breadcrumb
         pageName="Credits & Special Thanks"
-        description="Thank you to everyone who made this possible"
+        description="Thank you :p"
       />
       <CreditsSection />
       <section className="pb-[120px]">
@@ -65,9 +65,8 @@ const CreditsPage = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div>
-                <p className="text-body-color mb-10 text-2xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-3xl xl:leading-relaxed">
-                  umaAssist wouldn't exist without the incredible community, talented artists, and amazing developers who share their knowledge and creativity. This page is dedicated to everyone who has contributed to making this resource possible.
-                </p>
+                {/* <p className="text-body-color mb-10 text-2xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-3xl xl:leading-relaxed">
+                </p> */}
 
                 <h3 className="mb-8 mt-12 text-4xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white scroll-mt-24">
                   Artists
@@ -160,7 +159,10 @@ const CreditsPage = () => {
                           Uma Musume Discord Communities
                         </li>
                         <li className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
-                          Reddit r/UmaMusume community
+                          <a href="https://www.canva.com/design/DAGtOO4KsO4/Koz7xqxxQvpicG84ABIZXw/edit" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline dark:text-white">
+                            Tachyon - Whiteboard
+                          </a>
+                          {" "}(the ultimate cm guide)
                         </li>
                       </ul>
                     </div>
@@ -169,17 +171,23 @@ const CreditsPage = () => {
                       <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
                         Technical Credits
                       </h4>
-                      <p className="text-body-color text-2xl font-medium mb-2 sm:text-2xl lg:text-2xl xl:text-3xl">
-                        Built with Next.js, React, and Tailwind CSS
-                      </p>
-                      <p className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
-                        Hosted on Vercel
+                      <p className="text-body-color text-2xl font-medium mb-4 sm:text-2xl lg:text-2xl xl:text-3xl">
+                        This site is built using the{" "}
+                        <a 
+                          href="https://github.com/NextJSTemplates/startup-nextjs" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-primary hover:underline dark:text-white"
+                        >
+                          Startup Next.js template
+                        </a>
+                        {" "}by NextJSTemplates. Built with Next.js, React, and Tailwind CSS.
                       </p>
                     </div>
 
                     <div className="border-l-4 border-primary pl-4">
                       <h4 className="text-body-color mb-5 mt-10 text-3xl font-bold text-black dark:text-white sm:text-3xl">
-                        Data & Tools
+                        Tools
                       </h4>
                       <p className="text-body-color text-2xl font-medium mb-4 sm:text-2xl lg:text-2xl xl:text-3xl">
                         Thanks to community tools and databases that provide valuable data:
@@ -191,9 +199,6 @@ const CreditsPage = () => {
                         <li className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                           Run Genesis - Training simulator
                         </li>
-                        <li className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
-                          GameWith Uma Musume Wiki
-                        </li>
                       </ul>
                     </div>
 
@@ -202,7 +207,7 @@ const CreditsPage = () => {
                         Contributors
                       </h4>
                       <p className="text-body-color text-2xl font-medium mb-4 sm:text-2xl lg:text-2xl xl:text-3xl">
-                        Thank you to everyone who has contributed feedback, suggestions, and corrections to improve the guides.
+                        Thank you :p
                       </p>
                       <p className="text-body-color text-2xl font-medium sm:text-2xl lg:text-2xl xl:text-3xl">
                         Want to contribute? Reach out via our <a href="/contact" className="text-primary hover:underline dark:text-white">contact page</a> or on <a href="https://x.com/_t2ddy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline dark:text-white">Twitter</a>.
