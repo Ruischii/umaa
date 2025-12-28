@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SingleBlog = ({ blog }: { blog: Blog }) => {
-  const { slug, title, image, paragraph, tags, isCurrent, timeline } = blog;
+  const { slug, title, image, paragraph, tags, isCurrent, isNext, timeline } = blog;
   const guideLink = `/guides/${slug}`;
   
   // Extract race name from title (e.g., "Champions Meeting Libra Guide" -> "Libra")
@@ -14,15 +14,23 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
   
   const raceName = extractRaceName(title);
   
-  // Determine the tag to display based on isCurrent status
-  const displayTag = isCurrent !== undefined 
-    ? (isCurrent ? "Current CM" : "Past CM")
-    : tags[0];
+  // Determine the tag to display based on status
+  let displayTag = tags[0];
+  if (isCurrent) {
+    displayTag = "Current CM";
+  } else if (isNext) {
+    displayTag = "Next CM";
+  } else if (isCurrent === false) {
+    displayTag = "Past CM";
+  }
   
-  // Set tag color based on current/past status
-  const tagColorClass = isCurrent 
-    ? "bg-primary" 
-    : "bg-gray-500 dark:bg-gray-600";
+  // Set tag color based on status
+  let tagColorClass = "bg-gray-500 dark:bg-gray-600";
+  if (isCurrent) {
+    tagColorClass = "bg-primary";
+  } else if (isNext) {
+    tagColorClass = "bg-green-500";
+  }
   
   return (
     <>

@@ -14,5 +14,6 @@ export type Blog = {
   tags: string[];
   publishDate: string;
   isCurrent?: boolean;
+  isNext?: boolean;
   timeline?: string;
 };

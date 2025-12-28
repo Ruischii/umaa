@@ -12,12 +12,32 @@ export type CMGuide = {
   tags: string[];
   publishDate: string; // mm/dd/yy format
   isCurrent: boolean;
+  isNext?: boolean;
   underConstruction?: boolean;
   content?: string;
   timeline?: string;
 };
 
 export const guidesData: CMGuide[] = [
+  {
+    id: -1,
+    slug: "cm-sagittarius-2026",
+    title: "Champions Meeting Sagittarius Guide",
+    paragraph:
+      "Complete guide for Champions Meeting Sagittarius. Learn the best strategies and tips.",
+    image: "/images/cm/Sagittarius2026/sagittarius-cm.jpg",
+    author: {
+      name: "umaa Team",
+      image: "/images/blog/author-03.png",
+      designation: "Guide Writer",
+    },
+    tags: ["champions-meeting"],
+    publishDate: "01/08/26",
+    isCurrent: false,
+    isNext: true,
+    underConstruction: true,
+    timeline: "Late January 2026",
+  },
   {
     id: 0,
     slug: "cm-scorpio-2025",
@@ -98,12 +118,32 @@ function parseDateMMDDYY(dateStr: string): Date {
   return new Date(fullYear, month - 1, day);
 }
 
-// Automatically set isCurrent based on the newest publishDate
+// Automatically set isCurrent and isNext based on publishDate and construction status
 const sortedByDate = [...guidesData].sort((a, b) => {
   return parseDateMMDDYY(b.publishDate).getTime() - parseDateMMDDYY(a.publishDate).getTime();
 });
 
 if (sortedByDate.length > 0) {
-  sortedByDate[0].isCurrent = true;
+  // Find the newest guide that is NOT under construction
+  const newestCompleteGuide = sortedByDate.find(guide => !guide.underConstruction);
+  
+  if (newestCompleteGuide) {
+    // Set the newest complete guide as current
+    newestCompleteGuide.isCurrent = true;
+    
+    // Find guides newer than current that are under construction and mark as "Next CM"
+    const currentDate = parseDateMMDDYY(newestCompleteGuide.publishDate);
+    sortedByDate.forEach(guide => {
+      if (guide !== newestCompleteGuide && 
+          guide.underConstruction && 
+          parseDateMMDDYY(guide.publishDate).getTime() > currentDate.getTime()) {
+        guide.isNext = true;
+        guide.isCurrent = false;
+      }
+    });
+  } else {
+    // If all guides are under construction, mark the newest as current
+    sortedByDate[0].isCurrent = true;
+  }
 }
 
