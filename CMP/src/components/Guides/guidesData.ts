@@ -24,7 +24,7 @@ export const guidesData: CMGuide[] = [
     title: "Champions Meeting Scorpio Guide",
     paragraph:
       "Complete guide for Champions Meeting Scorpio. Learn the best strategies and tips.",
-    image: "/images/cm/libra2025/libra-cm.jpg",
+    image: "/images/cm/Scorpio2026/scorpio-cm.jpg",
     author: {
       name: "umaa Team",
       image: "/images/blog/author-03.png",
