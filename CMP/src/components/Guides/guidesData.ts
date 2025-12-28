@@ -53,7 +53,7 @@ export const guidesData: CMGuide[] = [
     tags: ["champions-meeting"],
     publishDate: "12/28/25",
     isCurrent: true,
-    timeline: "December 28, 2025 to January 7, 2026",
+    timeline: "December 28, 2025 to January 4, 2026",
   },
   {
     id: 1,
@@ -106,7 +106,7 @@ export const guidesData: CMGuide[] = [
     publishDate: "08/20/25",
     isCurrent: false,
     underConstruction: true,
-    timeline: "November 3rd to November 9th, 2025",
+    timeline: "November 3 to November 9, 2025",
   },
 ];
 
