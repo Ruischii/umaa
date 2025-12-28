@@ -19,6 +19,23 @@ export type CMGuide = {
 
 export const guidesData: CMGuide[] = [
   {
+    id: 0,
+    slug: "cm-scorpio-2025",
+    title: "Champions Meeting Scorpio Guide",
+    paragraph:
+      "Complete guide for Champions Meeting Scorpio. Learn the best strategies and tips.",
+    image: "/images/cm/libra2025/libra-cm.jpg",
+    author: {
+      name: "umaa Team",
+      image: "/images/blog/author-03.png",
+      designation: "Guide Writer",
+    },
+    tags: ["champions-meeting"],
+    publishDate: "12/28/25",
+    isCurrent: true,
+    timeline: "December 28, 2025 to January 7, 2026",
+  },
+  {
     id: 1,
     slug: "cm-libra-2025",
     title: "Champions Meeting Libra Guide",

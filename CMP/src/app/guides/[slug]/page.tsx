@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import UnderConstruction from "@/components/Common/UnderConstruction";
 import LibraGuideContent from "@/components/Guides/LibraGuideContent";
+import ScorpioGuideContent from "@/components/Guides/ScorpioGuideContent";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -138,7 +139,9 @@ const GuidePage = async ({ params }: Props) => {
                 </div>
               </div>
               <div>
-                {guide.slug === "cm-libra-2025" ? (
+                {guide.slug === "cm-scorpio-2025" ? (
+                  <ScorpioGuideContent />
+                ) : guide.slug === "cm-libra-2025" ? (
                   <LibraGuideContent />
                 ) : (
                   <p className="text-body-color mb-10 text-xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
