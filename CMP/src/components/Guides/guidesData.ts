@@ -20,6 +20,25 @@ export type CMGuide = {
 
 export const guidesData: CMGuide[] = [
   {
+    id: -2,
+    slug: "cm-capricorn-2026",
+    title: "Champions Meeting Capricorn Guide",
+    paragraph:
+      "Complete guide for Champions Meeting Capricorn. Learn the best strategies and tips.",
+    image: "/images/cm/Capricorn2026/capricorn-cm.jpg",
+    author: {
+      name: "umaa Team",
+      image: "/images/blog/author-03.png",
+      designation: "Guide Writer",
+    },
+    tags: ["champions-meeting"],
+    publishDate: "02/01/26",
+    isCurrent: false,
+    isNext: false,
+    underConstruction: true,
+    timeline: "Late January to Early February 2026",
+  },
+  {
     id: -1,
     slug: "cm-sagittarius-2026",
     title: "Champions Meeting Sagittarius Guide",
@@ -35,7 +54,6 @@ export const guidesData: CMGuide[] = [
     publishDate: "01/08/26",
     isCurrent: false,
     isNext: true,
-    underConstruction: true,
     timeline: "Late January 2026",
   },
   {
@@ -52,7 +70,7 @@ export const guidesData: CMGuide[] = [
     },
     tags: ["champions-meeting"],
     publishDate: "12/28/25",
-    isCurrent: true,
+    isCurrent: false,
     timeline: "December 28, 2025 to January 4, 2026",
   },
   {

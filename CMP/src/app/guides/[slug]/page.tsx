@@ -2,6 +2,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import UnderConstruction from "@/components/Common/UnderConstruction";
 import LibraGuideContent from "@/components/Guides/LibraGuideContent";
 import ScorpioGuideContent from "@/components/Guides/ScorpioGuideContent";
+import SagittariusGuideContent from "@/components/Guides/SagittariusGuideContent";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -143,6 +144,8 @@ const GuidePage = async ({ params }: Props) => {
                   <ScorpioGuideContent />
                 ) : guide.slug === "cm-libra-2025" ? (
                   <LibraGuideContent />
+                ) : guide.slug === "cm-sagittarius-2026" ? (
+                  <SagittariusGuideContent />
                 ) : (
                   <p className="text-body-color mb-10 text-xl leading-relaxed font-medium sm:text-2xl sm:leading-relaxed lg:text-xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed">
                     Guide content coming soon...

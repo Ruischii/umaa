@@ -1,5 +1,6 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Pagination from "@/components/Common/Pagination";
 import { getAllCMGuides } from "@/lib/guides";
 
 import { Metadata } from "next";
@@ -9,8 +10,25 @@ export const metadata: Metadata = {
   description: "Champions Meeting guides for Uma Musume Pretty Derby",
 };
 
-const GuidesPage = () => {
+interface GuidesPageProps {
+  searchParams: Promise<{ page?: string }>;
+}
+
+const GuidesPage = async ({ searchParams }: GuidesPageProps) => {
   const guides = getAllCMGuides();
+  const params = await searchParams;
+  const currentPage = params.page ? parseInt(params.page, 10) : 1;
+  const itemsPerPage = 4;
+
+  // Validate page number
+  const validPage = currentPage > 0 && currentPage <= Math.ceil(guides.length / itemsPerPage) 
+    ? currentPage 
+    : 1;
+
+  // Calculate pagination
+  const startIndex = (validPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedGuides = guides.slice(startIndex, endIndex);
 
   return (
     <>
@@ -37,15 +55,21 @@ const GuidesPage = () => {
       <section className="pt-[120px] pb-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
-            {guides.map((guide) => (
+            {paginatedGuides.map((guide) => (
               <div
                 key={guide.id}
-                className="w-full px-4 mb-10 md:mb-8 lg:mb-10 md:w-2/3 lg:w-1/2 xl:w-1/3"
+                className="w-full px-4 mb-10 md:mb-8 lg:mb-10 md:w-2/3 lg:w-1/2"
               >
                 <SingleBlog blog={guide} />
               </div>
             ))}
           </div>
+          <Pagination
+            totalItems={guides.length}
+            itemsPerPage={itemsPerPage}
+            currentPage={validPage}
+            basePath="/guides"
+          />
         </div>
       </section>
     </>
