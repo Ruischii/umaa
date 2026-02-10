@@ -2,77 +2,17 @@
 
 import Link from "next/link";
 import { getCurrentCMGuide } from "@/lib/guides";
-import { useEffect, useState } from "react";
-import Image from "next/image";
-
-interface StatPosition {
-  image: string;
-  x: number;
-  y: number;
-  rotation: number;
-  scale: number;
-}
-
-const statImages = [
-  "gutsStat.png",
-  "speedStat.png",
-  "staminaStat.png",
-  "strengthStat.png",
-  "witStat.png",
-];
 
 const Hero = () => {
   const currentGuide = getCurrentCMGuide();
   const currentGuideUrl = currentGuide ? `/guides/${currentGuide.slug}` : "/guides";
-  const [positions, setPositions] = useState<StatPosition[]>([]);
 
-  useEffect(() => {
-    // Generate random positions for each stat image on mount
-    const generatePositions = () => {
-      return statImages.map((image) => ({
-        image,
-        x: Math.random() * 85 + 5, // 5% to 90% from left
-        y: Math.random() * 85 + 5, // 5% to 90% from top
-        rotation: Math.random() * 360, // Random rotation 0-360 degrees
-        scale: Math.random() * 0.5 + 0.75, // Random scale between 0.75 and 1.25
-      }));
-    };
-
-    setPositions(generatePositions());
-  }, []);
-  
   return (
     <>
       <section
         id="home"
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
-        {/* Scattered Stat Images */}
-        {positions.map((pos, index) => (
-          <div
-            key={pos.image}
-            className="pointer-events-none absolute opacity-10 transition-all duration-1000 ease-out"
-            style={{
-              left: `${pos.x}%`,
-              top: `${pos.y}%`,
-              transform: `translate(-50%, -50%) rotate(${pos.rotation}deg) scale(${pos.scale})`,
-              zIndex: 1,
-            }}
-          >
-            <Image
-              src={`/images/statImage/${pos.image}`}
-              alt={pos.image.replace(".png", "")}
-              width={100}
-              height={100}
-              className="animate-pulse drop-shadow-lg"
-              style={{
-                animationDuration: `${3 + index}s`,
-                animationDelay: `${index * 0.5}s`,
-              }}
-            />
-          </div>
-        ))}
-        
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
