@@ -1,74 +1,60 @@
-# Startup - Free Next.js Startup Website Template
+# Uma Assists
 
-Startup is a free, open-source, and premium-quality [**Next.js startup website template**](https://nextjstemplates.com/templates/startup) that comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+A comprehensive guide website for Uma Musume Global Server, providing strategies and information for Team Trials and Champions Meetings.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+## About
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+Uma Assists is a community resource dedicated to helping Uma Musume players navigate competitive game modes. The site offers detailed guides for Champions Meetings and Team Trials, making it easier for players to prepare and strategize.
 
-### 🙌 Detailed comparison between the Free and Pro versions of Startup
+## Features
 
-| Feature             | Free | Pro |
-|---------------------|------------|----------|
-| Next.js Landing Page             | ✅ Yes      | ✅ Yes      |
-| All The Integrations - Auth, DB, Payments, Blog and many more ...             | ❌ No      | ✅ Yes |
-| Homepage Variations             | 1      | 2 |
-| Additional SaaS Pages and Components             | ❌ No      | ✅ Yes |
-| Functional Blog with Sanity       | ❌ No      | ✅ Yes |
-| Use with Commercial Projects            | ✅ Yes      | ✅ Yes      |
-| Lifetime Free Updates             | ✅ Yes      | ✅ Yes |
-| Email Support       | ❌ No         | ✅ Yes       |
-| Community Support         | ✅ Yes         | ✅ Yes       |
+- Champions Meeting Guides - Detailed strategies for current and past Champions Meetings
+- Team Trials Information - Resources and guides for Team Trials mode
+- Current CM Tracker - Easy access to the latest Champions Meeting information
+- Responsive Design - Optimized for both desktop and mobile viewing
+- Clean Navigation - Easy-to-use interface with organized content sections
 
+## Tech Stack
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+The specific technologies used can be found in the repository's package.json and configuration files.
 
-[![Startup Pro](https://raw.githubusercontent.com/NextJSTemplates/startup-nextjs/main/startup-pro.webp)](https://nextjstemplates.com/templates/saas-starter-startup)
+## Pages
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+- **Home** - Landing page with quick access to current guides
+- **About** - Information about the site and its purpose
+- **CM Guides** - Archive of Champions Meeting guides
+- **Team Trials** - Team Trials resources and strategies
+- **Contact** - Ways to reach out and provide feedback
+- **Credits** - Acknowledgments and attributions
 
+## Development
+```bash
+# Install dependencies
+npm install
 
-- [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+# Run development server
+npm run dev
 
-- [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+# Build for production
+npm run build
 
-- [📦 Download](https://nextjstemplates.com/templates/startup)
+# Start production server
+npm start
+```
 
-- [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+## Deployment
 
-- [🔌 Documentation](https://nextjstemplates.com/docs)
+The site is deployed at [umaa.moe](https://www.umaa.moe/)
 
-### ⚡ Deploy Now
+## Links
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
+- Portfolio: [t2ddy-personal.vercel.app](https://t2ddy-personal.vercel.app/)
+- Terms of Use: [umaa.moe/terms](https://www.umaa.moe/terms)
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
+## Contributing
 
+If you'd like to contribute guides or report issues, please reach out through the contact page.
 
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
+## License
 
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
-
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
-
-### Update Log
-
-**10 April 2025**
-- Fix peer deps issue with Next.js 15
-- Upgrade to tailwind v4
-- Refactored blog cards for handling edge cases(text ellipsis on bio, keeping author details at the bottom etc.)
-- Re-wrote blog details page with icons separation, fallback author image and better markup.
-- Fixed duplicate key errors on homepage.
-- Separated icons on theme-switcher button, and refactored scroll-to-top button.
-
-**29 Jan 2025**
-- Upgraded to Next.js 15
+See [Terms of Use](https://www.umaa.moe/terms) for usage information.
